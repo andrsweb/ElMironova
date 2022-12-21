@@ -2,6 +2,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	renderSVGs( document.querySelector( '.header-logo' ) )
+	renderSVGs( document.querySelector( '.surgeon' ) )
 } )
 
 

@@ -1,0 +1,118 @@
+.surgeon {
+	position: relative;
+	padding: 35px 0;
+	background: $bg;
+
+	.container {
+		max-width: 1110px;
+	}
+
+	&-box {
+		padding-top: 35px;
+	}
+
+	&-title-wrapper {
+		border-bottom: 1px solid $dark;
+		border-top: 1px solid $dark;
+		margin-bottom: 40px;
+
+		h2 {
+			padding: 10px 0 7px;
+			font-weight: $fw-bold;
+			font-size: 27px;
+			line-height: 35px;
+			color: $white;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&-video {
+		position: relative;
+		width: 43%;
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: calc( 57% - 45px );
+		margin-left: 45px;
+
+		h3 {
+			width: 100%;
+			position: relative;
+			font-weight: $fw-bold;
+			font-size: 26px;
+			line-height: 34px;
+			color: $white;
+			padding-bottom: 5px;
+			margin-bottom: 11px;
+			text-align: center;
+
+			&::before {
+				content: "";
+				display: block;
+				height: 1px;
+				width: 110px;
+				background: $dark;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX( -50% );
+			}
+		}
+
+		h4 {
+			font-weight: $fw-regular;
+			font-size: 15px;
+			line-height: 20px;
+			color: $darker;
+			margin-bottom: 20px;
+		}
+	}
+
+	&-text {
+		display: flex;
+		align-items: center;
+		font-weight: $fw-regular;
+		font-size: 15px;
+		line-height: 20px;
+		color: $white;
+		margin-bottom: 20px;
+		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		svg {
+			margin-right: 13px;
+		}
+	}
+
+	&-bg {
+		height: 56px;
+		width: 100vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25) );
+	}
+
+	&-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		transition: scale ease $tr;
+		cursor: pointer;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+}
