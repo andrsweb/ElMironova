@@ -46,7 +46,7 @@
     "last 3 versions"
   ],
   "dependencies": {
-    "glightbox": "^3.2.0",
+    "@fancyapps/ui": "^4.0.31",
     "swiper": "^8.4.5"
   }
 }

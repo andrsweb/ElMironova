@@ -31,8 +31,15 @@
 }
 
 .surgeon-slide {
-
 	&-inner {
+		height: 100%;
+		width: 100%;
+		transition: scale ease $tr;
+
+		&:hover {
+			scale: 1.01	;
+		}
+
 		img {
 			position: absolute;
 			width: 100%;
