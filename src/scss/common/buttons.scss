@@ -17,6 +17,8 @@
 		background: #505050;
 		color: $white;
 	}
+
+	&.slide {}
 }
 
 .burger-button {
@@ -27,6 +29,7 @@
 	height: 25px;
 	transition: opacity ease $tr;
 	cursor: pointer;
+	z-index: 101;
 
 	span {
 		position: absolute;
