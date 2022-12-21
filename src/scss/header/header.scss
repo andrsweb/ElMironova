@@ -1,9 +1,44 @@
 .header {
 	padding: 12px 0;
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	left: 0;
+	z-index: 100;
+	transition:
+		box-shadow ease $tr,
+		padding ease $tr,
+		background ease $tr;
+
+	&.scrolled {
+		background: $white;
+		box-shadow: 1px 1px 5px $black;
+		padding: 10px 0;
+
+		.header-link {
+			color: $black;
+		}
+
+		.header-phone {
+			color: $black;
+		}
+
+		.header-consultation {
+			color: $black;
+		}
+
+		.header-link:hover {
+			text-decoration-color: $black;
+		}
+
+		.burger-button span, .burger-button span::before, .burger-button span::after {
+			background: $black;
+		}
+
+		.header-logo svg path {
+			fill: $black;
+		}
+	}
 
 	.container {
 		max-width: 1270px;
@@ -75,7 +110,7 @@
 		width: 220px;
 		height: 340px;
 		padding-top: 65px;
-		position: fixed;
+		position: absolute;
 		z-index: 100;
 		background: #BAA586;
 		top: 12px;
