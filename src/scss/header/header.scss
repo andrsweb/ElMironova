@@ -1,0 +1,111 @@
+.header {
+	padding: 12px 0;
+
+	.container {
+		max-width: 1270px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-logo {
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-nav {
+		display: flex;
+	}
+
+	&-link {
+		font-size: 12px;
+		line-height: 21px;
+		color: $white;
+		margin-right: 10px;
+		text-decoration-color: transparent;
+		text-decoration-style: solid;
+		text-decoration-line: underline;
+		text-underline-offset: 5px;
+		transition: text-decoration-color ease $tr,
+					color ease $tr;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			text-decoration-color: $white;
+		}
+	}
+
+	&-phone {
+		font-size: 20px;
+		line-height: 26px;
+		color: $white;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-consultation {
+		font-size: 18px;
+		line-height: 23px;
+		color: $white;
+		max-width: 141px;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	.burger-menu {
+		width: 220px;
+		height: 340px;
+		padding-top: 65px;
+		position: fixed;
+		background: #BAA586;
+		top: 12px;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity ease 0.5s,
+					visibility ease 0.5s;
+
+		&.opened {
+			opacity: $op;
+			visibility: visible;
+		}
+	}
+
+	.burger-link {
+		font-weight: $fw-bold;
+		font-style: 16px;
+		line-height: 21px;
+		color: $white;
+		margin-bottom: 15px;
+		text-align: center;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		opacity: 1;
+		transition: opacity ease $tr;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+}
+
