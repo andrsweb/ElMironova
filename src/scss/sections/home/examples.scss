@@ -41,33 +41,9 @@
 		position: relative;
 	}
 
-	.slide-link {
-		position: absolute;
-		bottom: 14px;
-		right: 14px;
-		padding: 15px 24px 14px 34px;
-		text-transform: uppercase;
-		font-size: 12px;
-		line-height: 16px;
-		color: $btn;
-		background: $white;
-		box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
-		transition: background ease $tr,
-					color ease $tr;
-
-		&:hover {
-			background: #505050;
-			color: $white;
-		}
-	}
-
-	.examples-pagination {
+	.examples-pagination, .surgeon-pagination {
 		position: relative;
 		bottom: 0;
-	}
-
-	.swiper-pagination-bullet-active {
-		background: $black;
 	}
 
 	.examples-prev, .examples-next {
@@ -98,5 +74,29 @@
 		right: 20px;
 		transform: rotate( 45deg )
 				translateY( 45% );
+	}
+}
+
+.swiper-pagination-bullet-active {
+	background: $black;
+}
+
+.slide-link {
+	position: absolute;
+	bottom: 14px;
+	right: 14px;
+	padding: 15px 24px 14px 34px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 16px;
+	color: $btn;
+	background: $white;
+	box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
+	transition: background ease $tr,
+				color ease $tr;
+
+	&:hover {
+		background: #505050;
+		color: $white;
 	}
 }
