@@ -47,11 +47,13 @@ h6, .h6 {
 }
 
 a {
+	font-family: $ff;
 	display: inline-block;
 	text-decoration: none;
 }
 
 p {
+	font-family: $ff;
 	margin: 0
 }
 
