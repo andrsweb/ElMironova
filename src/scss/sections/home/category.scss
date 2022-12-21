@@ -44,23 +44,21 @@
 
 			.category-hover {
 				background:  #baa586a6;
-				visibility: visible;
 				opacity: 1;
-				width: 100%;
-				height: 100%;
 			}
 		}
 	}
 
 	&-hover {
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		visibility: hidden;
 		opacity: 0;
-		transition: visibility ease 0.5s,
-					opacity ease 0.5s;
+		transition: opacity ease 0.5s,
+				background ease 0.5s;
 	}
 
 	&-text {
