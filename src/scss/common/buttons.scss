@@ -1,7 +1,28 @@
+.button {
+	padding: 12px 26px 11px 26px;
+	font-family: $ff;
+	font-weight: $fw-regular;
+	font-size: 17px;
+	line-height: 22px;
+	text-transform: uppercase;
+	border-style: none;
+	color: $btn;
+	background: $white;
+	box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
+	cursor: pointer;
+	transition: background ease $tr,
+				color ease $tr;
+
+	&:hover {
+		background: #505050;
+		color: $white;
+	}
+}
+
 .burger-button {
 	position: absolute;
 	top: 24px;
-	right: 20px;
+	right: 34px;
 	width: 33px;
 	height: 25px;
 	transition: opacity ease $tr;

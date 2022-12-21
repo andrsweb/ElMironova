@@ -1,0 +1,46 @@
+.hero {
+	width: 100vw;
+	background-image: url( '../img/home/hero/hero-banner.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	padding-top: 70vh;
+
+	.container {
+		max-width: 1080px;
+	}
+
+	&-block {
+		position: relative;
+		background: #baa586a6;
+		padding: 25px 0 20px;
+
+		&::before, &::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			height: 50%;
+			width: calc( (100vw - 100%) / 2 );
+			background: $white;
+		}
+
+		&::before {
+			left: 100%;
+		}
+
+		&::after {
+			right: 100%;
+		}
+
+		h1 {
+			font-weight: $fw-regular;
+			margin-bottom: 19px;
+		}
+
+		.button {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
