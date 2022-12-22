@@ -8,14 +8,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const initSwiper = () => {
 
-	const swiper = new Swiper( '.examples-swiper', {
+	const swiper = new Swiper('.examples-swiper', {
 
 		direction: 'horizontal',
 		loop: true,
 		slidesPerView: 2,
 		spaceBetween: 12,
 
-		modules: [ Pagination, Navigation ],
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 20
+			},
+			634: {
+				slidesPerView: 2,
+				spaceBetween: 12
+			}
+		},
+
+		modules: [Pagination, Navigation],
 
 		pagination: {
 			el: '.examples-pagination',
@@ -25,6 +36,6 @@ const initSwiper = () => {
 			nextEl: '.examples-next',
 			prevEl: '.examples-prev'
 		}
-	} )
+	})
 }
 
