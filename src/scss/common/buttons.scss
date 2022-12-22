@@ -17,6 +17,22 @@
 		background: #505050;
 		color: $white;
 	}
+
+	&.tab {
+		font-weight: $fw-bold;
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		color: $black;
+		box-shadow: none;
+		border: 2px solid $grey;
+		transition: border-color ease $tr;
+
+		&:hover {
+			border-color: $dark;
+			color: $white;
+		}
+	}
 }
 
 .burger-button {
