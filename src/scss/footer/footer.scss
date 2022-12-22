@@ -1,0 +1,45 @@
+.footer {
+	padding: 29px 0 90px;
+	border-top: 2px solid $grey;
+
+	.container {
+		max-width: 1400px;
+	}
+
+	&-wrapper {
+		display: flex;
+	}
+
+	&-logo-inner {
+		width: 30%;
+	}
+
+	&-nav {
+		width: 30%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 40px;
+	}
+
+	&-link {
+		width: 50%;
+		color: $black;
+		margin-bottom: 10px;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.footer-item {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		color: $black;
+
+		img {
+			margin-right: 10px;
+		}
+	}
+}
