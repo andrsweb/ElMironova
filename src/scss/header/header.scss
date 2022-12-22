@@ -5,10 +5,15 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
+	background: $dark;
 	transition:
 		box-shadow ease $tr,
 		padding ease $tr,
 		background ease $tr;
+
+		@media all and (min-width: $md) {
+			background: transparent;
+		}
 
 	&-logo-scrolled {
 		display: none;

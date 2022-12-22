@@ -1,19 +1,35 @@
 .hero {
 	width: 100vw;
-	background-image: url( '../img/home/hero/hero-banner.png');
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: cover;
-	padding-top: 70vh;
+	padding-top: 110px;
+
+	@media all and (min-width: $md) {
+		background-image: url( '../img/home/hero/hero-banner.png');
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		padding-top: 70vh;
+	}
+
+	@media all and (min-width: $lg) {
+		padding-top: 80vh;
+	}
 
 	.container {
 		max-width: 1080px;
 	}
 
+	&-img-mob {
+		margin-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
+	}
+
 	&-block {
 		position: relative;
 		background: #baa586a6;
-		padding: 25px 0 20px;
+		padding: 15px 0 10px;
 
 		&::before, &::after {
 			content: "";
@@ -23,6 +39,10 @@
 			height: 50%;
 			width: calc( (100vw - 100%) / 2 );
 			background: $white;
+		}
+
+		@media all and (min-width: $md) {
+			padding: 25px 0 20px;
 		}
 
 		&::before {
