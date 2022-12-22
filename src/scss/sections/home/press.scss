@@ -1,5 +1,13 @@
 .press {
-	padding: 120px 0 123px; //
+	padding: 40px 0;
+
+	@media all and (min-width: $md) {
+		padding: 100px 0 40px;
+	}
+
+	@media all and (min-width: $xl) {
+		padding: 120px 0 123px;
+	}
 
 	.container {
 		max-width: 1110px;
@@ -13,8 +21,17 @@
 
 	&-item {
 		padding: 0 14px;
-		width: calc( 100% / 4 );
+		width: calc( 100% / 1 ); //4
 		cursor: default;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $sm) {
+			width: calc( 100% / 2 );
+		}
+
+		@media all and (min-width: $md) {
+			width: calc( 100% / 4 );
+		}
 
 		&-inner {
 			padding: 30px 23px;
@@ -23,7 +40,10 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			border: 1px solid $bg;
+
+			@media all and (min-width: $sm) {
+				border: 1px solid $bg;
+			}
 
 			img {
 				cursor: pointer;
