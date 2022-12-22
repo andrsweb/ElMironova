@@ -3,6 +3,11 @@
 	flex-wrap: wrap;
 	align-items: center;
 	margin-top: 51px;
+	justify-content: center;
+
+	@media all and (min-width: $lg) {
+		justify-content: flex-start;
+	}
 
 	&.active {
 		animation: fadeIn 1s;
@@ -24,9 +29,14 @@
 .choose-tabs-left {
 	display: block;
 	position: relative;
-	width: 50%;
 	max-width: 600px;
 	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+
+	@media all and (min-width: $lg) {
+		width: 50%;
+	}
 }
 
 .choose-tabs-block {
@@ -68,10 +78,14 @@
 }
 
 .choose-tabs-right {
-	width: calc( 50% - 90px );
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-left: 90px;
+
+	@media all and (min-width: $lg) {
+		width: calc( 50% - 90px );
+		margin-left: 90px;
+	}
 }
 
 
@@ -104,19 +118,51 @@
 
 	h5 {
 		font-weight: $fw-bold;
-		font-size: 15px;
+		font-size: 8px;
 		line-height: 21px;
 		color: $black;
 		cursor: pointer;
 		text-align: left;
+
+		@media all and (min-width: $sm) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: 576px) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 15px;
+		}
 	}
 
 	span {
 		font-weight: $fw-bold;
-		font-size: 24px;
+		font-size: 12px;
 		line-height: 31px;
 		color: $black;
-		margin: 0 20px;
+		margin: 0 5px;
+
+		@media all and (min-width: $sm) {
+			font-size: 24px;
+		}
+
+		@media all and (min-width: $md) {
+			margin: 0 20px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin: 0 10px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin: 0 20px;
+		}
 	}
 }
 
@@ -127,7 +173,11 @@
 		line-height: 31px;
 		color: #010101;
 		text-align: left;
-		margin: 47px 0 25px;
+		margin: 20px 0;
+
+		@media all and (min-width: $xl) {
+			margin: 47px 0 25px;
+		}
 	}
 }
 

@@ -4,10 +4,18 @@
 
 	h2 {
 		font-weight: $fw-bold;
-		font-size: 22px;
+		font-size: 15px; //
 		line-height: 29px;
 		color: $black;
 		margin-bottom: 33px;
+
+		@media all and (min-width: $sm) {
+			font-size: 18px;
+		}
+
+		@media all and (min-width: $md) {
+			font-size: 22px;
+		}
 	}
 
 	&-wrapper {
