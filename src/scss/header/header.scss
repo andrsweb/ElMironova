@@ -10,10 +10,23 @@
 		padding ease $tr,
 		background ease $tr;
 
+	&-logo-scrolled {
+		display: none;
+	}
+
 	&.scrolled {
+		position: fixed;
 		background: $white;
 		box-shadow: 1px 1px 5px $black;
 		padding: 10px 0;
+
+		.header-logo {
+			display: none;
+
+			&-scrolled {
+				display: block;
+			}
+		}
 
 		.header-link {
 			color: $black;
@@ -21,6 +34,10 @@
 
 		.header-phone {
 			color: $black;
+
+			&-mob {
+				color: $black;
+			}
 		}
 
 		.header-consultation {
@@ -37,6 +54,10 @@
 
 		.header-logo svg path {
 			fill: $black;
+		}
+
+		.header-consultation-mob {
+			color: $black;
 		}
 	}
 
@@ -59,7 +80,20 @@
 	}
 
 	&-nav {
-		display: flex;
+		display: none; //
+	}
+
+	&-nav-mob {
+		width: 100%;
+
+		.header-link {
+			font-size: 10px;
+			margin-right: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 
 	&-link {
@@ -84,6 +118,7 @@
 	}
 
 	&-phone {
+		display: none;
 		font-size: 20px;
 		line-height: 26px;
 		color: $white;
@@ -92,9 +127,15 @@
 		&:hover {
 			opacity: $op;
 		}
+
+		&-mob {
+			font-size: 12px;
+			color: $white;
+		}
 	}
 
 	&-consultation {
+		display: none; //
 		font-size: 18px;
 		line-height: 23px;
 		color: $white;
@@ -103,6 +144,11 @@
 
 		&:hover {
 			opacity: $op;
+		}
+
+		&-mob {
+			font-size: 12px;
+			color: $white;
 		}
 	}
 
@@ -123,7 +169,7 @@
 					visibility ease 0.5s;
 
 		&.opened {
-			opacity: $op;
+			opacity: 0.9;
 			visibility: visible;
 		}
 	}

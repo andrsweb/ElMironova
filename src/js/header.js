@@ -1,7 +1,7 @@
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
-	// headerScroll()
+	headerScroll()
 	toogleBurgerMenu()
 } )
 
@@ -29,7 +29,7 @@ const headerScroll = () => {
         const scrollTop = window.scrollY
         const header = document.querySelector( '.header' )
 
-        if ( scrollTop > 0 ) {
+        if ( scrollTop > 600 ) {
             if ( ! header.classList.contains( 'scrolled' ) )
                 header.classList.add( 'scrolled' )
 		}   else {

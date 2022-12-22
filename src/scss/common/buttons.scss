@@ -36,9 +36,9 @@
 }
 
 .burger-button {
-	position: absolute;
-	top: 24px;
-	right: 34px;
+	position: relative; //
+	// top: 24px;
+	// right: 34px;
 	width: 33px;
 	height: 25px;
 	transition: opacity ease $tr;
