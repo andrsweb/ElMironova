@@ -1,0 +1,47 @@
+.benefit {
+	padding: 45px 0 70px;
+
+	.container {
+		max-width: 1080px;
+	}
+
+	h2 {
+		font-weight: $fw-bold;
+		font-size: 22px;
+		line-height: 29px;
+		color: $black;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&-list {
+		margin-bottom: 30px;
+	}
+
+	&-item {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 21px;
+		color: $black;
+	}
+
+	&-info {
+		width: 50%;
+		margin-top: 60px;
+	}
+
+	&-img {
+		display: flex;
+		align-items: center;
+		width: 50%;
+	}
+
+	.button {
+		width: 100%;
+		max-width: 345px;
+	}
+}
