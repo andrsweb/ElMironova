@@ -134,7 +134,7 @@
 
 	.button {
 		width: 100%;
-		max-width: 300px;
+		max-width: 260px;
 		background: $bg;
 		color: $white;
 		font-weight: $fw-bold;
@@ -142,6 +142,10 @@
 		line-height: 18px;
 		padding: 8.5px 26px 8.5px 26px;
 		transition: opacity ease $tr;
+
+		@media all and (min-width: $md) {
+			max-width: 300px;
+		}
 
 		&:hover {
 			opacity: $op;

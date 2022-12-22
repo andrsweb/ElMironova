@@ -49,6 +49,16 @@
 	}
 }
 
+.slide-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 297px;
+	height: 47px;
+	white-space: nowrap;
+}
+
 .swiper-pagination.surgeon-pagination  {
 	position: relative;
 	bottom: 0;
