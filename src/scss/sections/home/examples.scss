@@ -1,5 +1,4 @@
 .examples {
-
 	.container {
 		max-width: 1240px;
 	}
@@ -16,8 +15,12 @@
 
 	&-box {
 		position: relative;
-		padding: 103px 0 128px;
+		padding: 30px 0;
 		border-top: 3px solid #6e6e6e;
+
+		@media all and (min-width: $xl) {
+			padding: 103px 0 128px;
+		}
 
 		&::before {
 			content: "";

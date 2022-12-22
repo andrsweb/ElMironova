@@ -46,7 +46,11 @@
 }
 
 .dropdown-text {
-	font-size: 15px;
+	font-size: 12px;
 	line-height: 20px;
 	color: #FFFFFF;
+
+	@media all and (min-width: $md) {
+		font-size: 15px;
+	}
 }

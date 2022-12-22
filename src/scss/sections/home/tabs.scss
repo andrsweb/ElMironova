@@ -89,7 +89,7 @@
 	align-items: center;
 	padding-bottom: 6px;
 
-	&.opened {
+	&.active {
 		&::before {
 			content: "";
 			display: block;
@@ -134,7 +134,7 @@
 .tab-info-text {
 	display: none;
 
-	&.opened {
+	&.active {
 		animation: 1s fade;
 		@keyframes fade {
 			0% {

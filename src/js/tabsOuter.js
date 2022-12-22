@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const tabsOuter = () => {
-	const tabBtns        = document.querySelectorAll('.tab-btn')
-	const tabContentLeft = document.querySelectorAll('.choose-tabs-box')
+	const tabBtns = document.querySelectorAll('.tab-btn')
+	const tabContents = document.querySelectorAll('.choose-tabs-box')
 
 	const clearActive = (element, className = 'active') => {
 		element.forEach(item => item.classList.remove(`${className}`))
@@ -20,18 +20,39 @@ const tabsOuter = () => {
 
 		item.addEventListener('click', () => {
 
-			if( item.classList.contains( 'active' ) ) return
+			if (item.classList.contains('active')) return
 
-			clearActive( tabBtns )
-			clearActive( tabContentLeft )
+			clearActive(tabBtns)
+			clearActive(tabContents)
 
-			setActive( tabBtns, index)
-			setActive(tabContentLeft, index)
+			setActive(tabBtns, index)
+			setActive(tabContents, index)
 		})
 	}
 
 	tabBtns.forEach(checkOutTabs)
+
+	tabContents.forEach(tab => {
+		const tabBtns = tab.querySelectorAll('.choose-tab-select')
+		const tabText = tab.querySelectorAll('.tab-info-text')
+
+		tabBtns.forEach( (item, index) => {
+
+			item.addEventListener('click', () => {
+
+				if (item.classList.contains('active')) return
+
+				clearActive(tabBtns)
+				clearActive(tabText)
+
+				setActive(tabBtns, index)
+				setActive(tabText, index)
+			})
+		})
+	})
 }
+
+
 
 
 

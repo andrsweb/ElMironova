@@ -1,11 +1,12 @@
 .surgeon-slider {
 	position: relative;
-	padding: 0 0 85px;
+	// padding: 0 0 85px;
+	padding: 0 0 30px;
 	background: $bg;
 
 	&::after {
 		position: absolute;
-		bottom: 0;
+		bottom: -66px;
 		left: 0;
 		content: "";
 		display: block;
