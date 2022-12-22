@@ -1,0 +1,19 @@
+.cost {
+	padding: 50px 0 63px;
+	background: #F7F4F4;
+
+	h2 {
+		font-weight: $fw-bold;
+		font-size: 22px;
+		line-height: 29px;
+		color: $black;
+		margin-bottom: 33px;
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
