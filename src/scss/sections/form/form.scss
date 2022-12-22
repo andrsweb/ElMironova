@@ -1,0 +1,116 @@
+.home-form {
+	padding: 100px 0;
+	background: #3a3a3a;
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h2 {
+		font-weight: $fw-bold;
+		font-size: 20px;
+		line-height: 26px;
+		color: $white;
+		position: relative;
+		padding-bottom: 15px;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX( -50% );
+			width: 107px;
+			height: 9px;
+			background: $bg;
+		}
+	}
+
+	.form-wrapper {
+		display: flex;
+		justify-content: center;
+		margin: 26px 0 0 0;
+	}
+
+	fieldset {
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+
+	.form {
+		display: flex;
+		max-width: 1000px;
+		padding: 20px;
+	}
+
+	.consultation {
+		font-weight: $fw-bold;
+		font-size: 16px;
+		line-height: 21px;
+		color: $white;
+		text-align: left;
+	}
+
+	.radio-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 20px 0 18px 0;
+
+		.radio-label {
+			font-weight: $fw-regular;
+			font-size: 15px;
+			line-height: 20px;
+			color: $white;
+			margin-right: 78px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.radio {
+			margin-right: 10px;
+		}
+	}
+
+	.inputs {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 20px 0  22px 0;
+
+		input {
+			width: 100%;
+			max-width: 260px;
+			height: 38px;
+			margin-right: 30px;
+			font-weight: $fw-regular;
+			font-size: 14px;
+			line-height: 18px;
+			padding-left: 11px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.button {
+		width: 100%;
+		max-width: 300px;
+		background: $bg;
+		color: $white;
+		font-weight: $fw-bold;
+		font-size: 14px;
+		line-height: 18px;
+		padding: 8.5px 26px 8.5px 26px;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+}
