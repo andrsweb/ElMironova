@@ -4,7 +4,7 @@
 
 	h2 {
 		font-weight: $fw-bold;
-		font-size: 15px; //
+		font-size: 15px;
 		line-height: 29px;
 		color: $black;
 		margin-bottom: 33px;
@@ -23,5 +23,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.button {
+		width: 100%;
+		max-width: 345px;
 	}
 }

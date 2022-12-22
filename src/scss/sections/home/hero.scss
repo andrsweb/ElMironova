@@ -57,10 +57,39 @@
 			font-weight: $fw-regular;
 			margin-bottom: 19px;
 		}
+	}
 
-		.button {
-			display: block;
-			margin: 0 auto;
+	&-link {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 345px;
+		height: 45px;
+		font-family: $ff;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 22px;
+		text-align: center;
+		text-transform: uppercase;
+		border-style: none;
+		color: $btn;
+		background: $white;
+		box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
+		cursor: pointer;
+		white-space: nowrap;
+		transition: background ease $tr,
+					color ease $tr;
+
+		@media all and (min-width: $lg) {
+			font-size: 17px;
+			line-height: 33px;
+		}
+
+		&:hover {
+			background: #505050;
+			color: $white;
 		}
 	}
 }

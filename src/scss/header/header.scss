@@ -30,6 +30,11 @@
 
 			&-scrolled {
 				display: block;
+				transition: opacity ease $tr;
+
+				&:hover {
+					opacity: $op;
+				}
 			}
 		}
 
