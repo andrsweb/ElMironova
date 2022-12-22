@@ -80,15 +80,35 @@
 	}
 
 	&-nav {
-		display: none; //
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 	}
 
 	&-nav-mob {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		width: 100%;
 
 		.header-link {
 			font-size: 10px;
 			margin-right: 5px;
+
+			@media all and (min-width: $sm) {
+				font-size: 13px;
+				margin-right: 8px;
+			}
+
+			@media all and (min-width: 602px) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
 
 			&:last-child {
 				margin-right: 0;
@@ -115,6 +135,14 @@
 		&:hover {
 			text-decoration-color: $white;
 		}
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 16px;
+		}
 	}
 
 	&-phone {
@@ -128,19 +156,50 @@
 			opacity: $op;
 		}
 
+		@media all and (min-width: $lg) {
+			display: block;
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+
 		&-mob {
 			font-size: 12px;
 			color: $white;
+
+			@media all and (min-width: $sm) {
+				font-size: 13px;
+			}
+
+			@media all and (min-width: 602px) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
 		}
 	}
 
 	&-consultation {
-		display: none; //
+		display: none;
 		font-size: 18px;
 		line-height: 23px;
 		color: $white;
 		max-width: 141px;
 		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			display: block;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+		}
 
 		&:hover {
 			opacity: $op;
@@ -149,6 +208,18 @@
 		&-mob {
 			font-size: 12px;
 			color: $white;
+
+			@media all and (min-width: $sm) {
+				font-size: 13px;
+			}
+
+			@media all and (min-width: 602px) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
 		}
 	}
 
