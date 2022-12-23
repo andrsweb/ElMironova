@@ -1,3 +1,8 @@
+@import '../../node_modules/@fancyapps/ui/dist/fancybox';
+
+//Swiper modules and styles
+@import '../../node_modules/swiper/swiper-bundle.min';
+
 // Defaults styles.
 @import 'common/fonts';
 @import 'common/vars';
@@ -14,3 +19,18 @@
 
 // Home page sections styles.
 @import 'sections/home/hero';
+@import 'sections/home/category';
+@import 'sections/home/examples';
+@import 'sections/home/surgeon';
+@import 'sections/home/dropdown';
+@import 'sections/home/surgeon-slider';
+@import 'sections/home/press';
+@import 'sections/home/choose';
+@import 'sections/home/tabs';
+@import 'sections/home/cost';
+@import 'sections/home/benefit';
+
+//Form
+@import 'sections/form/form';
+
+

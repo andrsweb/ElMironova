@@ -1,5 +1,75 @@
 .header {
 	padding: 12px 0;
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: $dark;
+	transition:
+		box-shadow ease $tr,
+		padding ease $tr,
+		background ease $tr;
+
+		@media all and (min-width: $md) {
+			background: transparent;
+		}
+
+	&-logo-scrolled {
+		display: none;
+	}
+
+	&.scrolled {
+		position: fixed;
+		background: $white;
+		box-shadow: 1px 1px 5px $black;
+		padding: 10px 0;
+
+		.header-logo {
+			display: none;
+
+			&-scrolled {
+				display: block;
+				transition: opacity ease $tr;
+
+				&:hover {
+					opacity: $op;
+				}
+			}
+		}
+
+		.header-link {
+			color: $black;
+		}
+
+		.header-phone {
+			color: $black;
+
+			&-mob {
+				color: $black;
+			}
+		}
+
+		.header-consultation {
+			color: $black;
+		}
+
+		.header-link:hover {
+			text-decoration-color: $black;
+		}
+
+		.burger-button span, .burger-button span::before, .burger-button span::after {
+			background: $black;
+		}
+
+		.header-logo svg path {
+			fill: $black;
+		}
+
+		.header-consultation-mob {
+			color: $black;
+		}
+	}
 
 	.container {
 		max-width: 1270px;
@@ -20,7 +90,40 @@
 	}
 
 	&-nav {
+		display: none;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
+	}
+
+	&-nav-mob {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+
+		.header-link {
+			font-size: 10px;
+			margin-right: 5px;
+
+			@media all and (min-width: $sm) {
+				font-size: 13px;
+				margin-right: 8px;
+			}
+
+			@media all and (min-width: 602px) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 
 	&-link {
@@ -42,9 +145,18 @@
 		&:hover {
 			text-decoration-color: $white;
 		}
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 16px;
+		}
 	}
 
 	&-phone {
+		display: none;
 		font-size: 20px;
 		line-height: 26px;
 		color: $white;
@@ -53,17 +165,71 @@
 		&:hover {
 			opacity: $op;
 		}
+
+		@media all and (min-width: $lg) {
+			display: block;
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+
+		&-mob {
+			font-size: 12px;
+			color: $white;
+
+			@media all and (min-width: $sm) {
+				font-size: 13px;
+			}
+
+			@media all and (min-width: 602px) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+		}
 	}
 
 	&-consultation {
+		display: none;
 		font-size: 18px;
 		line-height: 23px;
 		color: $white;
 		max-width: 141px;
 		transition: opacity ease $tr;
 
+		@media all and (min-width: $lg) {
+			display: block;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+		}
+
 		&:hover {
 			opacity: $op;
+		}
+
+		&-mob {
+			font-size: 12px;
+			color: $white;
+
+			@media all and (min-width: $sm) {
+				font-size: 13px;
+			}
+
+			@media all and (min-width: 602px) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
 		}
 	}
 
@@ -71,7 +237,8 @@
 		width: 220px;
 		height: 340px;
 		padding-top: 65px;
-		position: fixed;
+		position: absolute;
+		z-index: 100;
 		background: #BAA586;
 		top: 12px;
 		right: 0;
@@ -83,7 +250,7 @@
 					visibility ease 0.5s;
 
 		&.opened {
-			opacity: $op;
+			opacity: 0.9;
 			visibility: visible;
 		}
 	}

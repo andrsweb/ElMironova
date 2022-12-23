@@ -44,5 +44,10 @@
   },
   "browserslist": [
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^8.4.5"
+  }
 }

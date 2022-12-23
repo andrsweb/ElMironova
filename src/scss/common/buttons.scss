@@ -1,11 +1,61 @@
+.button {
+	padding: 6px 10px;
+	font-family: $ff;
+	font-weight: $fw-regular;
+	font-size: 12px;
+	line-height: 22px;
+	text-transform: uppercase;
+	border-style: none;
+	color: $btn;
+	background: $white;
+	box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background ease $tr,
+				color ease $tr;
+
+	@media all and (min-width: $lg) {
+		font-size: 17px;
+		line-height: 33px;
+		// padding: 12px 26px 11px 26px;
+	}
+
+	&:hover {
+		background: #505050;
+		color: $white;
+	}
+
+	&.tab {
+		width: 155px;
+		font-weight: $fw-bold;
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		color: $black;
+		box-shadow: none;
+		border: 2px solid $grey;
+		transition: border-color ease $tr;
+
+		&:hover {
+			border-color: $dark;
+			color: $white;
+		}
+	}
+}
+
 .burger-button {
-	position: absolute;
-	top: 24px;
-	right: 20px;
+	position: relative;
 	width: 33px;
 	height: 25px;
 	transition: opacity ease $tr;
 	cursor: pointer;
+	z-index: 101;
+
+	@media all and (min-width: $xxl) {
+		position: absolute;
+		top: 24px;
+		right: 34px;
+	}
 
 	span {
 		position: absolute;

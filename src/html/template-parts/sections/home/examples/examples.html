@@ -1,0 +1,21 @@
+<section class="examples">
+	<div class="container">
+		<div class="examples-box">
+			<h2>
+				Примеры работ
+			</h2>
+			<div class="swiper examples-swiper">
+				<div class="swiper-wrapper examples-wrapper">
+					@@loop( 'examples-slide.html', [
+						{ 'src': 'img/home/examples/face.png', 'btn': 'лица'},
+						{ 'src': 'img/home/examples/bust.png', 'btn': 'груди'},
+						{ 'src': 'img/home/examples/body.png', 'btn': 'тела'}
+					] )
+				</div>
+				<div class="swiper-pagination examples-pagination"></div>
+				<div class="swiper-prev examples-prev"></div>
+				<div class="swiper-next examples-next"></div>
+			</div>
+		</div>
+	</div>
+</section>
