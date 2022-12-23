@@ -66,19 +66,21 @@
 	}
 
 	.radio-wrapper {
+		width: 100%;
 		display: flex;
 		justify-content: center;
 		margin: 20px 0 18px 0;
 
 		.radio-label {
-			font-weight: $fw-regular;
+			font-family: $ff;
+			font-weight: $fw-light;
 			font-size: 10px;
 			line-height: 20px;
 			color: $white;
 			margin-right: 78px;
 
 			@media all and (min-width: $md) {
-				font-size: 18px;
+				font-size: 15px;
 				line-height: 30px;
 			}
 

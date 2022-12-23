@@ -123,13 +123,14 @@
 	h5 {
 		font-weight: $fw-bold;
 		font-size: 8px;
-		line-height: 21px;
+		line-height: 10px;
 		color: $black;
 		cursor: pointer;
 		text-align: left;
 
 		@media all and (min-width: $sm) {
 			font-size: 12px;
+			line-height: 15px;
 		}
 
 		@media all and (min-width: 576px) {
@@ -150,18 +151,15 @@
 		font-size: 12px;
 		line-height: 31px;
 		color: $black;
-		margin: 0 5px;
+		margin: 0 8px;
 
 		@media all and (min-width: $sm) {
 			font-size: 24px;
+			margin: 0 10px;
 		}
 
 		@media all and (min-width: $md) {
 			margin: 0 20px;
-		}
-
-		@media all and (min-width: $lg) {
-			margin: 0 10px;
 		}
 
 		@media all and (min-width: $xl) {
