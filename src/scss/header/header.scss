@@ -1,19 +1,15 @@
 .header {
-	padding: 12px 0;
+	padding: 10px 0;
 	position: absolute;
 	width: 100vw;
 	top: 0;
 	left: 0;
 	z-index: 100;
-	background: $dark;
+	background: $white;
 	transition:
 		box-shadow ease $tr,
 		padding ease $tr,
 		background ease $tr;
-
-		@media all and (min-width: $md) {
-			background: transparent;
-		}
 
 	&-logo-scrolled {
 		display: none;
@@ -22,8 +18,8 @@
 	&.scrolled {
 		position: fixed;
 		background: $white;
-		box-shadow: 1px 1px 5px $black;
-		padding: 10px 0;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		padding: 4px 0;
 
 		.header-logo {
 			display: none;
@@ -44,6 +40,8 @@
 
 		.header-phone {
 			color: $black;
+			font-size: 18px;
+			font-weight: $fw-regular;
 
 			&-mob {
 				color: $black;
@@ -72,7 +70,7 @@
 	}
 
 	.container {
-		max-width: 1270px;
+		max-width: 1240px;
 	}
 
 	&-wrapper {
@@ -127,9 +125,11 @@
 	}
 
 	&-link {
+		font-family: $ff;
+		font-weight: $fw-thin;
 		font-size: 12px;
 		line-height: 21px;
-		color: $white;
+		color: $black;
 		margin-right: 10px;
 		text-decoration-color: transparent;
 		text-decoration-style: solid;
@@ -143,7 +143,7 @@
 		}
 
 		&:hover {
-			text-decoration-color: $white;
+			text-decoration-color: $black;
 		}
 
 		@media all and (min-width: $lg) {
@@ -151,15 +151,17 @@
 		}
 
 		@media all and (min-width: $xl) {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
 	&-phone {
+		font-family: $ff;
+		font-weight: $fw-regular;
 		display: none;
 		font-size: 20px;
 		line-height: 26px;
-		color: $white;
+		color: $black;
 		transition: opacity ease $tr;
 
 		&:hover {
@@ -172,12 +174,12 @@
 		}
 
 		@media all and (min-width: $xl) {
-			font-size: 20px;
+			font-size: 16px;
 		}
 
 		&-mob {
 			font-size: 12px;
-			color: $white;
+			color: $black;
 
 			@media all and (min-width: $sm) {
 				font-size: 13px;
@@ -217,7 +219,7 @@
 
 		&-mob {
 			font-size: 12px;
-			color: $white;
+			color: $black;
 
 			@media all and (min-width: $sm) {
 				font-size: 13px;

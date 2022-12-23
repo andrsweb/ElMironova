@@ -1,14 +1,11 @@
 .hero {
 	width: 100vw;
 	padding-top: 110px;
-
-	@media all and (min-width: $md) {
-		background-image: url( '../img/home/hero/hero-banner.jpg');
-		background-repeat: no-repeat;
-		background-position: top;
-		background-size: cover;
-		padding-top: 70vh;
-	}
+	background-image: url( '../img/home/hero/hero-banner.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	padding-top: 70vh;
 
 	@media all and (min-width: $lg) {
 		padding-top: 80vh;
@@ -16,14 +13,6 @@
 
 	.container {
 		max-width: 1080px;
-	}
-
-	&-img-mob {
-		margin-bottom: 30px;
-
-		@media all and (min-width: $md) {
-			display: none;
-		}
 	}
 
 	&-block {
@@ -63,7 +52,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		// width: 100%;
+		width: 250px;
 		max-width: 345px;
 		height: 45px;
 		font-family: $ff;
@@ -80,6 +70,10 @@
 		white-space: nowrap;
 		transition: background ease $tr,
 					color ease $tr;
+
+		@media all and (min-width: 400px) {
+			width: 100%;
+		}
 
 		@media all and (min-width: $lg) {
 			font-size: 17px;
