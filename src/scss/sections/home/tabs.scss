@@ -96,8 +96,10 @@
 	border-bottom: 1px solid #D9D9D9;
 	padding-bottom: 33px;
 
-	&.flex {
-		justify-content: flex-start;
+	@media all and (min-width: $lg) {
+		&.flex {
+			justify-content: flex-start;
+		}
 	}
 }
 
