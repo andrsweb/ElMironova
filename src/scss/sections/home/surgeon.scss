@@ -2,6 +2,7 @@
 	position: relative;
 	padding: 35px 0;
 	background: $bg;
+	overflow: hidden;
 
 	&::before {
 		position: absolute;

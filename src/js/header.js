@@ -27,8 +27,8 @@ const toogleBurgerMenu = () => {
 		e.stopPropagation()
 
 		const target = e.target
-
-		if (  target.className && target.classList.contains( 'burger-menuё`' ) ) {
+		console.log( target )
+		if ( target.className && ! target.classList.contains( 'burger-menu.opened' ) ) {
 			burgerMenu.classList.remove( 'opened' )
 			burgerButton.classList.remove( 'opened' )
 		}
