@@ -63,5 +63,12 @@
 				line-height: 36px;
 			}
 		}
+
+
+		@media all and (min-width: $sm) {
+			.tab {
+				display: none;
+			}
+		}
 	}
 }
