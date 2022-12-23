@@ -12,7 +12,7 @@
 
 	h2 {
 		font-weight: $fw-bold;
-		font-size: 20px;
+		font-size: 22px;
 		line-height: 26px;
 		color: $white;
 		position: relative;
@@ -44,30 +44,36 @@
 		padding: 0;
 		margin: 0;
 		border: 0;
+
+		@media all and (min-width: $md) {
+			align-items: flex-start;
+		}
 	}
 
 	.form {
 		display: flex;
-		max-width: 1000px;
+		max-width: 1100px;
 		padding: 20px;
 	}
 
 	.consultation {
+		width: 100%;
 		font-weight: $fw-bold;
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 21px;
 		color: $white;
 		text-align: left;
 	}
 
 	.radio-wrapper {
+		width: 100%;
 		display: flex;
-		align-items: center;
 		justify-content: center;
 		margin: 20px 0 18px 0;
 
 		.radio-label {
-			font-weight: $fw-regular;
+			font-family: $ff;
+			font-weight: $fw-light;
 			font-size: 10px;
 			line-height: 20px;
 			color: $white;
@@ -75,6 +81,7 @@
 
 			@media all and (min-width: $md) {
 				font-size: 15px;
+				line-height: 30px;
 			}
 
 			&:last-child {
@@ -84,12 +91,18 @@
 
 		.radio {
 			margin-right: 10px;
+			transform: scale( 1.5);
 
 			&-inner {
+				&:first-child {
+					width: calc( 50% - 20px );
+				}
+
 				display: flex;
 				margin-right: 20px;
 
 				&:last-child {
+					width: 50%;
 					margin-right: 0;
 				}
 			}
@@ -109,25 +122,27 @@
 		}
 
 		input {
+			font-family: $ff;
 			width: 100%;
-			max-width: 260px;
-			height: 38px;
+			max-width: 291px;
+			height: 42px;
 			margin-bottom: 10px;
-			font-weight: $fw-regular;
-			font-size: 14px;
+			font-weight: $fw-bold;
+			font-size: 16px;
 			line-height: 18px;
 			padding-left: 11px;
+			color: $dark;
 
 			@media all and (min-width: $md) {
 				margin: 0 30px 0 0;
 			}
 
-			&:last-child {
-				margin-right: 0;
+			@media all and (min-width: $xl) {
+				width: 291px;
 			}
 
-			&::placeholder {
-				opacity: 1;
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 	}
@@ -144,7 +159,7 @@
 		transition: opacity ease $tr;
 
 		@media all and (min-width: $md) {
-			max-width: 300px;
+			max-width: 335px;
 		}
 
 		&:hover {
