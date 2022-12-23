@@ -22,6 +22,17 @@ const toogleBurgerMenu = () => {
 			burgerButton.classList.remove( 'opened' )
 		}
 	} )
+
+	window.addEventListener( 'click', e => {
+		e.stopPropagation()
+
+		const target = e.target
+
+		if (  target.className && target.classList.contains( 'burger-menuё' ) ) {
+			burgerMenu.classList.remove( 'opened' )
+			burgerButton.classList.remove( 'opened' )
+		}
+	} )
 }
 
 const headerScroll = () => {
@@ -38,3 +49,4 @@ const headerScroll = () => {
         }
     })
 }
+
