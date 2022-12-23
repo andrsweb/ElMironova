@@ -28,7 +28,7 @@ const toogleBurgerMenu = () => {
 
 		const target = e.target
 
-		if (  target.className && target.classList.contains( 'burger-menuё' ) ) {
+		if (  target.className && target.classList.contains( 'burger-menuё`' ) ) {
 			burgerMenu.classList.remove( 'opened' )
 			burgerButton.classList.remove( 'opened' )
 		}
