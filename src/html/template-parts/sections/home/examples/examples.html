@@ -1,21 +1,6 @@
-<section class="examples">
-	<div class="container">
-		<div class="examples-box">
-			<h2>
-				Примеры работ
-			</h2>
-			<div class="swiper examples-swiper">
-				<div class="swiper-wrapper examples-wrapper">
-					@@loop( 'examples-slide.html', [
-						{ 'src': 'img/home/examples/face.png', 'btn': 'лица'},
-						{ 'src': 'img/home/examples/bust.png', 'btn': 'груди'},
-						{ 'src': 'img/home/examples/body.png', 'btn': 'тела'}
-					] )
-				</div>
-				<div class="swiper-pagination examples-pagination"></div>
-				<div class="swiper-prev examples-prev"></div>
-				<div class="swiper-next examples-next"></div>
-			</div>
-		</div>
-	</div>
-</section>
+@@loop( 'examples-slide.html', [
+	{ 'h2': 'Примеры работ', 'swiper': 'examples-swiper', 'wrapper': 'examples-wrapper', 'slide': 'examples-slide',
+		'pagination': 'examples-pagination', 'src1': 'img/home/examples/face.png', 'src2':'img/home/examples/bust.png',
+		'src3': 'img/home/examples/body.png', 'prev': 'examples-prev', 'next': 'examples-next', 'src-set1':'img/home/examples/face-mob.webp',
+		'src-set2':'img/home/examples/face.png', 'src-set3':'img/home/examples/face-mob.png', 'src-set4':'img/home/examples/face-mob.png' }
+] )
