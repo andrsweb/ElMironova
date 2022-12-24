@@ -25,10 +25,7 @@ const toggleBurgerMenu = () => {
 
 	document.addEventListener( 'click', e => {
 		e.stopPropagation()
-	// window.addEventListener( 'click', e => {
-	// 	e.stopPropagation()
-
-	// 	const target = e.target
+		target = e.target
 
 		if (
 			! target.className ||
@@ -39,11 +36,6 @@ const toggleBurgerMenu = () => {
 		burgerMenu.classList.remove( 'opened' )
 		burgerButton.classList.remove( 'opened' )
 	} )
-	// 	if ( ! target.className && ! target.classList.contains( '.burger-menu' ) ) {
-	// 		burgerMenu.classList.remove( 'opened' )
-	// 		burgerButton.classList.remove( 'opened' )
-	// 	}
-	// } )
 }
 
 const headerScroll = () => {

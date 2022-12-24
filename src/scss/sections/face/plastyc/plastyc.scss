@@ -2,6 +2,10 @@
 	position: relative;
 	padding: 120px 0 70px;
 
+	.container {
+		max-width: 1400px;
+	}
+
 	&::before {
 		position: absolute;
 		top: 0;
@@ -38,9 +42,11 @@
 	}
 
 	&-wrapper {
+		padding-left: 37.4%;
+		width: 100%;
 		display: flex;
 		align-items: center;
-		margin-top: 30px;
+		margin: 30px 0 45px;
 	}
 
 	&-video {
@@ -49,9 +55,6 @@
 		img {
 			max-height: 606px;
 		}
-	}
-
-	&-list {
 	}
 
 	&-item {
@@ -71,7 +74,9 @@
 			margin-right: 10px;
 		}
 	}
+}
 
-	.slide-link {
-	}
+.face .slide-link {
+	position: static;
+	margin: 0 auto;
 }
