@@ -28,6 +28,14 @@
 
 		@media all and (min-width: $lg) {
 			flex-direction: row;
+
+			&.reverse {
+				flex-direction: row-reverse;
+
+				.before-video {
+					margin: 0 0 0 7%;
+				}
+			}
 		}
 
 		img {
@@ -74,6 +82,7 @@
 		}
 	}
 	&-text {
+		position: relative;
 		font-weight: $fw-regular;
 		font-size: 12px;
 		line-height: 15px;
@@ -86,6 +95,26 @@
 			margin-bottom: 51px;
 			line-height: 31px;
 		}
+
+		&::before, &::after {
+			content: "";
+			display: block;
+			width: 158px;
+			height: 1px;
+			background: $bg;
+			position: absolute;
+			left: 50%;
+			transform: translateX( -50% );
+		}
+
+		&::before {
+			top: -15px;
+		}
+
+		&::after {
+			bottom: -25px;
+		}
+
 	}
 
 	&-name {
