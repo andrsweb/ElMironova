@@ -1,0 +1,62 @@
+.live {
+	padding: 90px 0 30px;
+
+	.container {
+		max-width: 1240px;
+	}
+
+	h2 {
+		text-align: left;
+		font-weight: $fw-bold;
+		font-size: 22px;
+		line-height: 29px;
+		color: $black;
+		margin-bottom: 55px;
+		padding-left: 10px;
+	}
+
+	&-wrapper {
+		padding: 30px 0;
+	}
+
+	&-slide {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-pagination {
+		margin-top: 10px;
+		position: relative;
+		bottom: 0;
+	}
+
+	& .live-prev {
+		top: 40%;
+		left: 20px;
+		transform: rotate( -135deg );
+	}
+
+	& .live-next {
+		top: 40%;
+		right: 20px;
+		transform: rotate( 45deg );
+	}
+
+	& .live-prev, & .live-next {
+		position: absolute;
+		z-index: 2;
+		display: block;
+		width: 12px;
+		height: 12px;
+		border-top: 3px solid $grey;
+		border-right: 3px solid $grey;
+		cursor: pointer;
+		transition: scale ease $tr;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+}
