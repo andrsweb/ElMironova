@@ -1,0 +1,85 @@
+.hero {
+	background-image: url( '../img/face/hero/hero-banner-mob.jpg');
+
+	@media all and (min-width: $lg) {
+		padding-top: 80vh;
+		background-image: url( '../img/face/hero/hero-banner.jpg');
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	h5 {
+		font-weight: $fw-light;
+		font-size: 18px;
+		color: $white;
+		line-height: 27px;
+		text-transform: uppercase;
+		margin-bottom: 27px;
+
+		@media all and (min-width: $md) {
+			font-size: 22px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 26px;
+		}
+	}
+
+	&-block {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		&-inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&-list {
+		width: 100%;
+		max-width: 380px;
+		margin-bottom: 25px;
+		padding: 0 10px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 55px;
+		}
+	}
+
+	&-item {
+		text-align: center;
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		color: $white;
+		margin-bottom: 33px;
+
+		@media all and (min-width: 576px) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 16px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		img {
+			margin-right: 5px;
+		}
+	}
+
+	&-text {
+		font-weight: $fw-light;
+		font-size: 15px;
+		color: $white;
+		margin: 10px 0 20px;
+	}
+}
+
