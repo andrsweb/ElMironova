@@ -1,0 +1,77 @@
+.plastyc {
+	position: relative;
+	padding: 120px 0 70px;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 80px;
+		background-image: url( '../img/face/plastyc/bg.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	h2 {
+		position: relative;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 26px;
+		text-align: center;
+		color: $black;
+		padding-bottom: 20px;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX( -50% );
+			width: 121px;
+			height: 9px;
+			background: $bg;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	&-video {
+		margin-right: 40px;
+
+		img {
+			max-height: 606px;
+		}
+	}
+
+	&-list {
+	}
+
+	&-item {
+		display: flex;
+		align-items: center;
+		font-weight: $fw-bold;
+		font-size: 20px;
+		line-height: 26px;
+		color: $black;
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		img {
+			margin-right: 10px;
+		}
+	}
+
+	.slide-link {
+	}
+}
