@@ -1,14 +1,51 @@
 <section class="category" id="category">
 	<div class="container">
 		<div class="category-items">
-			@@loop( 'category-item.html', [
-				{ 'src': 'img/home/category/face.png', 'title': 'Лицо', 'text1': 'Эндоскопическая<br> подтяжка лба', 'text2': 'Блефаропластика<br> и броулифтинг',
-					'text3': 'СМАС-лифтинг' },
-				{ 'src': 'img/home/category/bust.png', 'title': 'Грудь', 'text1': 'Увеличение груди', 'text2': 'Подтяжка без<br> имплантов',
-					'text3': 'Подтяжка груди на<br> имплантах' },
-				{ 'src': 'img/home/category/body.png', 'title': 'Тело', 'text1': 'Абдоминопластика', 'text2': 'Липосакция',
-					'text3': '' }
-			] )
+			<div class="category-item">
+				<img class="category-img" src="@@src1" width="300" height="400" alt="" loading="lazy">
+				<div class="category-inner">
+					<div class="category-info">
+						<h5 class="category-title">
+							@@title1
+						</h5>
+					</div>
+					<div class="category-hover">
+						<p class="category-text">@@text1</p>
+						<p class="category-text">@@text2</p>
+						<p class="category-text">@@text3</p>
+					</div>
+				</div>
+			</div>
+			<div class="category-item">
+				<img class="category-img" src="@@src2" width="300" height="400" alt="" loading="lazy">
+				<div class="category-inner">
+					<div class="category-info">
+						<h5 class="category-title">
+							@@title2
+						</h5>
+					</div>
+					<div class="category-hover">
+						<p class="category-text">@@text4</p>
+						<p class="category-text">@@text5</p>
+						<p class="category-text">@@text6</p>
+					</div>
+				</div>
+			</div>
+			<div class="category-item">
+				<img class="category-img" src="@@src3" width="300" height="400" alt="" loading="lazy">
+				<div class="category-inner">
+					<div class="category-info">
+						<h5 class="category-title">
+							@@title3
+						</h5>
+					</div>
+					<div class="category-hover">
+						<p class="category-text">@@text7</p>
+						<p class="category-text">@@text8</p>
+						<p class="category-text">@@text9</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

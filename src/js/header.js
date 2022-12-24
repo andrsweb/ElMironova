@@ -23,16 +23,16 @@ const toogleBurgerMenu = () => {
 		}
 	} )
 
-	window.addEventListener( 'click', e => {
-		e.stopPropagation()
+	// window.addEventListener( 'click', e => {
+	// 	e.stopPropagation()
 
-		const target = e.target
+	// 	const target = e.target
 
-		if ( ! target.className && ! target.classList.contains( '.burger-menu' ) ) {
-			burgerMenu.classList.remove( 'opened' )
-			burgerButton.classList.remove( 'opened' )
-		}
-	} )
+	// 	if ( ! target.className && ! target.classList.contains( '.burger-menu' ) ) {
+	// 		burgerMenu.classList.remove( 'opened' )
+	// 		burgerButton.classList.remove( 'opened' )
+	// 	}
+	// } )
 }
 
 const headerScroll = () => {
