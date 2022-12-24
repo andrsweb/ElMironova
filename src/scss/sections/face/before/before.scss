@@ -1,0 +1,148 @@
+.before {
+	padding-bottom: 40px;
+
+	.container {
+		max-width: 1240px;
+	}
+
+	@media all and (min-width: $lg) {
+		padding-bottom: 105px;
+	}
+
+	h2 {
+		text-align: left;
+		font-weight: $fw-bold;
+		font-size: 22px;
+		line-height: 29px;
+		color: $black;
+		margin-bottom: 55px;
+		padding-left: 10px;
+	}
+
+	&-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+
+		img {
+			object-fit: cover;
+			margin: 0 auto;
+			max-width: 70%;
+			max-height: 300px;
+
+			@media all and (min-width: $lg) {
+				max-width: 80%;
+				max-height: auto;
+			}
+
+			@media all and (min-width: $xl) {
+				max-height: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+
+	&-video {
+		margin: 0 0 30px 0;
+
+		@media all and (min-width: $lg) {
+			margin: 0 7% 0 0;
+		}
+	}
+
+	&-info {
+		max-width: 600px;
+	}
+
+	&-title {
+		font-weight: $fw-bold;
+		font-size: 20px;
+		line-height: 27px;
+		text-align: center;
+		color: $black;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $xl) {
+			font-size: 36px;
+			margin-bottom: 41px;
+		}
+	}
+	&-text {
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: $black;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $xl) {
+			font-size: 24px;
+			margin-bottom: 51px;
+			line-height: 31px;
+		}
+	}
+
+	&-name {
+		font-family: $ff;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 20px;
+		color: $black;
+		text-align: center;
+
+		@media all and (min-width: $xl) {
+			font-size: 24px;
+			line-height: 31px;
+		}
+	}
+
+	&-pagination {
+		margin-top: 40px;
+		position: relative;
+		bottom: 0;
+	}
+
+	& .before-prev {
+		top: 40%;
+		left: 20px;
+		transform: rotate( -135deg );
+	}
+
+	& .before-next {
+		top: 40%;
+		right: 20px;
+		transform: rotate( 45deg );
+	}
+
+	& .before-prev, & .before-next {
+		position: absolute;
+		z-index: 2;
+		display: block;
+		width: 12px;
+		height: 12px;
+		border-top: 3px solid $grey;
+		border-right: 3px solid $grey;
+		cursor: pointer;
+		transition: scale ease $tr;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+
+	.hero-link {
+		font-size: 12px;
+		white-space:normal;
+		max-width: 457px;
+
+		@media all and (min-width: $md) {
+			font-size: 16px;
+		}
+	}
+}

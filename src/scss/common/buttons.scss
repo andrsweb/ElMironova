@@ -17,7 +17,6 @@
 	@media all and (min-width: $lg) {
 		font-size: 17px;
 		line-height: 33px;
-		// padding: 12px 26px 11px 26px;
 	}
 
 	&:hover {
@@ -27,7 +26,6 @@
 
 	&.tab {
 		width: 155px;
-		font-weight: $fw-bold;
 		font-size: 14px;
 		line-height: 18px;
 		text-align: center;
@@ -35,6 +33,7 @@
 		box-shadow: none;
 		border: 2px solid $grey;
 		transition: border-color ease $tr;
+		box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
 
 		&:hover {
 			border-color: $dark;

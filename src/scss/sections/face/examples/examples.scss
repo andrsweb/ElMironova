@@ -2,14 +2,26 @@
 
 	&-slide {
 		position: relative;
+		display: flex;
 
 		img {
 			object-fit: cover;
+			height: 100%;
+			max-height: 370px;
 		}
+	}
+
+	h2 {
+		margin-bottom: 35px;
 	}
 
 	.off {
 		display: none;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: flex-end;
 	}
 
 	&-pagination {
