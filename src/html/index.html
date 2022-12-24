@@ -9,7 +9,8 @@
 		'text4': 'Увеличение груди', 'text5': 'Подтяжка без<br> имплантов', 'text6': 'Подтяжка груди на<br> имплантах',
 		'text7': 'Абдоминопластика', 'text8': 'Липосакция', 'text9': '' }
 	] )
-	@@include( 'template-parts/sections/home/examples/examples.html' )
+	@@include( 'template-parts/sections/home/examples/examples.html', { h2: 'Примеры работ', swiper: 'examples-swiper', wrapper: 'examples-wrapper',
+		pag: 'examples-pagination', prev: 'examples-prev', next: 'examples-next' } )
 	@@include( 'template-parts/sections/home/surgeon/surgeon.html' )
 	@@include( 'template-parts/sections/home/surgeon/surgeon-slider.html' )
 	@@include( 'template-parts/sections/home/press/press.html' )
