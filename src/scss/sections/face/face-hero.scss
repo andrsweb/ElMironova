@@ -8,6 +8,7 @@
 
 	h1 {
 		text-transform: uppercase;
+		margin-top: 30px;
 	}
 
 	h5 {
@@ -16,7 +17,7 @@
 		color: $white;
 		line-height: 27px;
 		text-transform: uppercase;
-		margin-bottom: 27px;
+		margin-bottom: 30px;
 
 		@media all and (min-width: $md) {
 			font-size: 22px;
