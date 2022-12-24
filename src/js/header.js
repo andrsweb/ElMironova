@@ -2,10 +2,10 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	headerScroll()
-	toogleBurgerMenu()
+	toggleBurgerMenu()
 } )
 
-const toogleBurgerMenu = () => {
+const toggleBurgerMenu = () => {
 	const burgerButton  = document.querySelector( '.burger-button' )
 	const burgerMenu    = document.querySelector( '.burger-menu' )
 
@@ -23,11 +23,22 @@ const toogleBurgerMenu = () => {
 		}
 	} )
 
+	document.addEventListener( 'click', e => {
+		e.stopPropagation()
 	// window.addEventListener( 'click', e => {
 	// 	e.stopPropagation()
 
 	// 	const target = e.target
 
+		if (
+			! target.className ||
+			target.classList.contains( 'burger-menu' ) ||
+			target.classList.contains( 'burger-button' )
+		) return
+
+		burgerMenu.classList.remove( 'opened' )
+		burgerButton.classList.remove( 'opened' )
+	} )
 	// 	if ( ! target.className && ! target.classList.contains( '.burger-menu' ) ) {
 	// 		burgerMenu.classList.remove( 'opened' )
 	// 		burgerButton.classList.remove( 'opened' )
