@@ -18,17 +18,27 @@
 @import 'footer/footer';
 
 // Home page sections styles.
-@import 'sections/home/hero';
-@import 'sections/home/category';
-@import 'sections/home/examples';
-@import 'sections/home/surgeon';
-@import 'sections/home/dropdown';
-@import 'sections/home/surgeon-slider';
-@import 'sections/home/press';
-@import 'sections/home/choose';
-@import 'sections/home/tabs';
-@import 'sections/home/cost';
-@import 'sections/home/benefit';
+@import 'sections/home/hero/hero';
+@import 'sections/home/category/category';
+@import 'sections/home/examples/examples';
+@import 'sections/home/surgeon/surgeon';
+@import 'sections/home/dropdown/dropdown';
+@import 'sections/home/surgeon/surgeon-slider';
+@import 'sections/home/press/press';
+@import 'sections/home/choose/choose';
+@import 'sections/home/choose/tabs';
+@import 'sections/home/cost/cost';
+@import 'sections/home/benefit/benefit';
+
+// Face page sections styles.
+@import 'sections/face/face-hero';
+@import 'sections/face/category/category';
+@import 'sections/face/plastyc/plastyc';
+@import 'sections/face/examples/examples';
+@import 'sections/face/before/before';
+@import 'sections/face/live/live';
+@import 'sections/face/benefits/benefits';
+@import 'sections/face/price/price';
 
 //Form
 @import 'sections/form/form';

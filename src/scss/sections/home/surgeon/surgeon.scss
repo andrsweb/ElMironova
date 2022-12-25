@@ -1,0 +1,135 @@
+.surgeon {
+	position: relative;
+	padding: 35px 0;
+	background: $bg;
+	overflow: hidden;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 56px;
+		background-image: url( '../img/home/surgeon/surg-bg.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		max-width: 1110px;
+	}
+
+	&-box {
+		padding-top: 35px;
+	}
+
+	&-title-wrapper {
+		border-bottom: 1px solid $dark;
+		border-top: 1px solid $dark;
+		margin-bottom: 40px;
+
+		h2 {
+			padding: 10px 0 7px;
+			font-weight: $fw-bold;
+			font-size: 27px;
+			line-height: 35px;
+			color: $white;
+		}
+	}
+
+	&-box {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&-video {
+		position: relative;
+		width: 100%;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			width: 43%;
+		}
+
+		img {
+			width: 100%;
+			max-width: 70%;
+			margin: 0 auto;
+
+			@media all and (min-width: $xl) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			width: calc( 57% - 45px );
+			margin-left: 45px;
+		}
+
+		h3 {
+			width: 100%;
+			position: relative;
+			font-weight: $fw-bold;
+			font-size: 26px;
+			line-height: 34px;
+			color: $white;
+			padding-bottom: 5px;
+			margin-bottom: 11px;
+			text-align: center;
+
+			&::before {
+				content: "";
+				display: block;
+				height: 1px;
+				width: 110px;
+				background: $dark;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX( -50% );
+			}
+		}
+
+		h4 {
+			font-weight: $fw-regular;
+			font-size: 14px;
+			line-height: 20px;
+			color: $darker;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+
+	&-text {
+		display: flex;
+		align-items: center;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 20px;
+		color: $white;
+		margin-bottom: 20px;
+		position: relative;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		img {
+			margin-right: 13px;
+		}
+	}
+}

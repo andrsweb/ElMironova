@@ -1,0 +1,34 @@
+.face {
+
+	& .category-title {
+		width: 100%;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	& .category-inner {
+		max-width: 310px;
+	}
+
+	& .category-item {
+
+		img {
+			width: 310px;
+		}
+	}
+
+	& .category-hover {
+		max-width: 310px;
+	}
+
+	& .category-text {
+		padding: 0 25px;
+		width: 100%;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		color: $white;
+		margin: 0;
+	}
+}

@@ -25,8 +25,7 @@ const toggleBurgerMenu = () => {
 
 	document.addEventListener( 'click', e => {
 		e.stopPropagation()
-
-		const target = e.target
+		target = e.target
 
 		if (
 			! target.className ||
