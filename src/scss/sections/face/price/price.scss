@@ -23,7 +23,7 @@
 
 	&.opened {
 		.price-start::before {
-			transform: translateY( -10% )
+			transform: translateY( -20% )
 						rotate( -45deg );
 		}
 	}
@@ -78,15 +78,15 @@
 				transition: transform ease $tr;
 				position: absolute;
 				top: 50%;
-				right: 20px;
+				right: 10px;
 				transform: translateY( -70% )
 							rotate( 135deg );
 				display: block;
 				content: "";
 				width: 12px;
 				height: 12px;
-				border-right: 2px solid $white;
-				border-top: 2px solid $white;
+				border-right: 2px solid $black;
+				border-top: 2px solid $black;
 			}
 
 			&:hover {
