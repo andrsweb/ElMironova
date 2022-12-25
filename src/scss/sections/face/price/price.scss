@@ -1,0 +1,155 @@
+.price {
+	padding: 30px 0 30px;
+
+	@media all and (min-width: $sm) {
+		padding: 50px 0 30px;
+	}
+
+	@media all and (min-width: $m) {
+		padding: 80px 0 30px;
+	}
+
+	@media all and (min-width: $md) {
+		padding: 120px 0 50px;
+	}
+
+	@media all and (min-width: $xl) {
+		padding: 140px 0 80px;
+	}
+
+	@media all and (min-width: $xxl) {
+		padding: 160px 0 130px;
+	}
+
+	.container {
+		max-width: 1074px;
+	}
+
+
+	&-heading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+		background: #BAA586A8;
+		padding: 25px 0;
+
+		@media all and (min-width: $xl) {
+			padding: 55px 0;
+		}
+
+		h3 {
+			text-align: center;
+			font-weight: $fw-bold;
+			font-size: 15px;
+			line-height: 26px;
+			color: $black;
+			border: 1px solid $white;
+			padding: 10px 0;
+			width: 100%;
+			max-width: 172px;
+			cursor: pointer;
+			transition: scale ease $tr;
+
+			@media all and (min-width: $sm) {
+				max-width: 220px;
+			}
+
+			@media all and (min-width: $m) {
+				max-width: 300px;
+				font-size: 18px;
+			}
+
+			@media all and (min-width: $xl) {
+				max-width: 572px;
+				font-size: 23px;
+			}
+
+			&:hover {
+				scale: 1.02;
+			}
+		}
+	}
+
+	h4 {
+		font-size: 15px;
+		width: 100%;
+		text-align: center;
+		margin: 25px 0;
+
+		@media all and (min-width: $sm) {
+			font-size: 20px;
+		}
+	}
+
+	&-open {
+		background: #BAA586A8;
+	}
+
+	&-inner-top, &-inner-bottom {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 572px;
+		margin: 0 auto;
+		align-items: flex-start;
+		padding: 0 5px;
+	}
+
+	&-inner-bottom {
+		padding-bottom: 50px;
+	}
+
+	&-title {
+		font-weight: $fw-bold;
+		font-size: 9px;
+		line-height: 15px;
+		color: $black;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $sm) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $m) {
+			font-size: 15px;
+			line-height: 21px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 16px;
+			line-height: 21px;
+		}
+
+		span {
+			font-weight: $fw-light;
+			font-size: 12px;
+			line-height: 21px;
+			color: $dark;
+			margin-right: 17px;
+
+			@media all and (min-width: $sm) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&-value {
+		font-weight: $fw-thin;
+		font-size: 12px;
+		line-height: 21px;
+		color: $dark;
+		text-align: center;
+		padding-left: 50px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $sm) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $m) {
+			font-size: 17px;
+		}
+	}
+}
