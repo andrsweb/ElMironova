@@ -18,6 +18,7 @@ const initSwiper = () => {
 
 		pagination: {
 			el: '.before-pagination',
+			clickable: true
 		},
 
 		navigation: {

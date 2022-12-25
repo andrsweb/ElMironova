@@ -33,6 +33,7 @@ const initSwiper = () => {
 
 		pagination: {
 			el: '.surgeon-pagination',
+			clickable: true
 		},
 
 		navigation: {

@@ -25,6 +25,57 @@
 		margin-bottom: 30px;
 		height: 280px;
 
+		&:first-child {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX( -50% );
+				width: 300px;
+				height: 280px;
+				display: block;
+				background-image: url( '../img/home/category/face.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				border-radius: $bord;
+			}
+		}
+
+		&:nth-child(2) {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX( -50% );
+				width: 300px;
+				height: 280px;
+				display: block;
+				background-image: url( '../img/home/category/bust.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				border-radius: $bord;
+			}
+		}
+
+		&:nth-child(3) {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX( -50% );
+				width: 300px;
+				height: 280px;
+				display: block;
+				background-image: url( '../img/home/category/body.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				border-radius: $bord;
+			}
+		}
+
 		@media all and (min-width: $sm) {
 			padding: 0 -20px;
 		}
@@ -38,12 +89,6 @@
 			padding: 0 -51px;
 			width: calc( 100% / 3 );
 		}
-
-		img {
-			height: 100%;
-			margin: 0 auto;
-			object-fit: cover;
-		}
 	}
 
 	&-info {
@@ -55,6 +100,7 @@
 	}
 
 	&-inner {
+		background-color: rgba(0, 0, 0, 0.247);
 		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
 		position: absolute;
 		top: 0;

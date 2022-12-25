@@ -36,6 +36,7 @@ const initSwiper = () => {
 
 		pagination: {
 			el: '.examples-pagination',
+			clickable: true
 		},
 
 		navigation: {
