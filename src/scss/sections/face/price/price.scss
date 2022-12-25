@@ -21,6 +21,13 @@
 		padding: 160px 0 130px;
 	}
 
+	&.opened {
+		.price-start::before {
+			transform: translateY( -10% )
+						rotate( -45deg );
+		}
+	}
+
 	.container {
 		max-width: 1074px;
 	}
@@ -40,6 +47,7 @@
 		}
 
 		h3 {
+			position: relative;
 			text-align: center;
 			font-weight: $fw-bold;
 			font-size: 15px;
@@ -64,6 +72,21 @@
 			@media all and (min-width: $xl) {
 				max-width: 572px;
 				font-size: 23px;
+			}
+
+			&::before {
+				transition: transform ease $tr;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				transform: translateY( -70% )
+							rotate( 135deg );
+				display: block;
+				content: "";
+				width: 12px;
+				height: 12px;
+				border-right: 2px solid $white;
+				border-top: 2px solid $white;
 			}
 
 			&:hover {
@@ -94,7 +117,7 @@
 		max-width: 572px;
 		margin: 0 auto;
 		align-items: flex-start;
-		padding: 0 5px;
+		padding: 0 10px;
 	}
 
 	&-inner-bottom {
