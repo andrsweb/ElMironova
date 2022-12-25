@@ -1,0 +1,174 @@
+.benefits {
+	position: relative;
+	padding: 50px 0 30px;
+	background: $bg;
+
+	@media all and (min-width: $lg) {
+		padding: 50px 0 70px;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -70px;
+		left: 0;
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 87px;
+		background-image: url( '../img/face/benefits/ben-bg.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h2 {
+		font-weight: $fw-bold;
+		font-size: 20px;
+		line-height: 20px;
+		color: $white;
+		text-align: left;
+		margin-bottom: 10px;
+		border-bottom: 3px solid $dark;
+
+		@media all and (min-width: $sm) {
+			font-size: 25px;
+			line-height: 29px;
+		}
+	}
+
+	h4 {
+		font-weight: $fw-bold;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
+		text-align: left;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $sm) {
+			line-height: 21px;
+		}
+
+		@media all and (min-width: $md) {
+			font-size: 17px;
+		}
+	}
+
+	h5 {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 21px;
+		color: $white;
+		text-align: left;
+		padding-left: 40px;
+		margin-bottom: 0;
+	}
+
+	&-items {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&-item {
+		font-weight: $fw-light;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 12px;
+
+		@media all and (min-width: $md) {
+			font-size: 16px;
+			line-height: 27px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY( -50% );
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: url( '../img/face/benefits/check.png');
+		}
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+	}
+
+	&-img {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+	}
+
+	&-num-list {
+		margin: 5px 0 20px 0;
+
+		@media all and (min-width: $lg) {
+			margin: 5px 0 40px 0;
+		}
+	}
+
+	.num-item {
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 12px;
+		font-weight: $fw-light;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
+
+		@media all and (min-width: $md) {
+			font-size: 16px;
+			line-height: 21px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY( -50% );
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: url( '../img/face/benefits/check.png');
+		}
+	}
+
+	.button {
+		font-weight: $fw-regular;
+		font-size: 15px;
+		max-width: 211px;
+	}
+}
