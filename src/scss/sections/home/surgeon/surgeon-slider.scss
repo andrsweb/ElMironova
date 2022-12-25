@@ -19,6 +19,16 @@
 	.container {
 		max-width: 1240px;
 	}
+
+	.slide-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 297px;
+		height: 47px;
+		white-space: nowrap;
+	}
 }
 
 .surgeon-swiper {
@@ -76,16 +86,6 @@
 			object-fit: cover;
 		}
 	}
-}
-
-.slide-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	max-width: 297px;
-	height: 47px;
-	white-space: nowrap;
 }
 
 .swiper-pagination.surgeon-pagination  {

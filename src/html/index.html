@@ -1,5 +1,6 @@
-@@include( 'template-parts/header/header.html', { title: 'Главная' } )
-
+@@include( 'template-parts/header/header.html', { title: 'Главная', href1:'#category', href2:'#surgeon', href3:'#choose',
+	href4:'#cost', href5:'#footer', href6:'', text1: 'Направления', text2: 'О враче', text3: 'Выберите операцию',
+	text4: 'Стоимость', text5: 'Контакты', text6: '' } )
 <main>
 	@@include( 'template-parts/sections/home/hero.html' )
 	@@loop( 'template-parts/sections/home/category/category.html', [

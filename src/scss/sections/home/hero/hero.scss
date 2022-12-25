@@ -3,8 +3,8 @@
 	background-image: url( '../img/home/hero/hero-banner-mob.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: cover;
-	padding-top: 70vh;
+	background-size: 100%;
+	padding-top: 60%;
 
 	@media all and (min-width: $lg) {
 		padding-top: 80vh;
