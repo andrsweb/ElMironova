@@ -1,6 +1,6 @@
 .header {
-	padding: 10px 0;
-	position: absolute;
+	padding: 16px 0;
+	position: fixed;
 	width: 100vw;
 	top: 0;
 	left: 0;
@@ -8,82 +8,21 @@
 	background: $white;
 	transition:
 		box-shadow ease $tr,
-		padding ease $tr,
-		background ease $tr;
-
-	&-logo-scrolled {
-		display: none;
-	}
+		padding ease $tr;
 
 	&.scrolled {
-		animation: on 1s;
-
-		@keyframes on {
-			0% {
-				opacity: 0;
-				transform: translateY( -200% );
-			}
-
-			100% {
-				opacity: 1;
-				transform: translateY( 0 );
-			}
-		}
-		position: fixed;
-		background: $white;
 		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-		padding: 4px 0;
-
-		.header-logo {
-			display: none;
-
-			&-scrolled {
-				display: block;
-				transition: opacity ease $tr;
-
-				&:hover {
-					opacity: $op;
-				}
-			}
-		}
-
-		.header-link {
-			color: $black;
-		}
-
-		.header-phone {
-			color: $black;
-			font-size: 18px;
-			font-weight: $fw-regular;
-
-			&-mob {
-				color: $black;
-			}
-		}
-
-		.header-consultation {
-			color: $black;
-		}
-
-		.header-link:hover {
-			text-decoration-color: $black;
-		}
-
-		.burger-button span, .burger-button span::before, .burger-button span::after {
-			background: $black;
-		}
-
-		.header-logo svg path {
-			fill: $black;
-		}
-
-		.header-consultation-mob {
-			color: $black;
-		}
+		padding: 14px 0;
 	}
 
 	.container {
 		max-width: 1240px;
+	}
+
+	.button {
+		@media all and (min-width: $lg) {
+			display: none;
+		}
 	}
 
 	&-wrapper {
@@ -109,7 +48,7 @@
 		}
 
 		animation: trans 1s forwards;
-		animation-delay: 1s;
+		animation-delay: 0.5s;
 
 		@keyframes trans {
 			0% {
@@ -208,7 +147,11 @@
 
 		&-mob {
 			font-size: 12px;
-			color: $black;
+			color: $white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
 
 			@media all and (min-width: $sm) {
 				font-size: 13px;
@@ -228,7 +171,7 @@
 		display: none;
 		font-size: 18px;
 		line-height: 23px;
-		color: $white;
+		color: $black;
 		max-width: 141px;
 		transition: opacity ease $tr;
 
@@ -266,7 +209,7 @@
 
 	.burger-menu {
 		width: 220px;
-		height: 340px;
+		height: 430px;
 		padding-top: 65px;
 		position: absolute;
 		z-index: 100;
@@ -276,13 +219,26 @@
 		display: flex;
 		flex-direction: column;
 		opacity: 0;
+		border-bottom-left-radius: 10px ;
 		visibility: hidden;
+		box-shadow: 1px 1px 10px 1px $black;
 		transition: opacity ease 0.5s,
 					visibility ease 0.5s;
+
+		@media all and (min-width: $lg) {
+			height: 340px;
+		}
 
 		&.opened {
 			opacity: 0.9;
 			visibility: visible;
+		}
+
+		.button {
+			position: relative;
+			width: 100%;
+			max-width: 150px;
+			margin: 0 auto;
 		}
 	}
 

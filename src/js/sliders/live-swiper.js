@@ -18,6 +18,7 @@ const initSwiper = () => {
 
 		pagination: {
 			el: '.live-pagination',
+			clickable: true
 		},
 
 		navigation: {

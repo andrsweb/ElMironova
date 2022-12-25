@@ -6,19 +6,58 @@
 		line-height: 26px;
 	}
 
-	& .category-inner {
-		max-width: 310px;
-	}
-
 	& .category-item {
 
-		img {
-			width: 310px;
+		&:first-child {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX( -50% );
+				width: 300px;
+				height: 280px;
+				display: block;
+				background-image: url( '../img/face/category/milf.jpg');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				border-radius: $bord;
+			}
 		}
-	}
 
-	& .category-hover {
-		max-width: 310px;
+		&:nth-child(2) {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX( -50% );
+				width: 300px;
+				height: 280px;
+				display: block;
+				background-image: url( '../img/face/category/face.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				border-radius: $bord;
+			}
+		}
+
+		&:nth-child(3) {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX( -50% );
+				width: 300px;
+				height: 280px;
+				display: block;
+				background-image: url( '../img/face/category/women.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				border-radius: $bord;
+			}
+		}
 	}
 
 	& .category-text {

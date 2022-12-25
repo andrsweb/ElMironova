@@ -1,14 +1,15 @@
 .hero {
 	width: 100vw;
-	background-image: url( '../img/home/hero/hero-banner-mob.jpg');
+	background-image: url( '../img/home/hero/hero-bg-mob.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: cover;
-	padding-top: 70vh;
+	background-size: 100%;
+	padding-top: 50%;
 
 	@media all and (min-width: $lg) {
-		padding-top: 80vh;
-		background-image: url( '../img/home/hero/hero-banner.jpg');
+		padding-top: 65vh;
+		background-size: cover;
+		background-image: url( '../img/home/hero/hero-bg.jpg');
 	}
 
 	.container {

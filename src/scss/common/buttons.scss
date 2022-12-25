@@ -98,6 +98,17 @@
 	}
 
 	&.opened {
+		animation:  rot 0.7s 1 cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		@keyframes rot {
+			0% {
+				transform: rotate( 0 );
+			}
+
+			100% {
+				transform: rotate( 360deg);
+			}
+		}
 		span {
 			transform: rotate( -45deg );
 			top: 10px;

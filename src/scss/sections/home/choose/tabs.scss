@@ -173,14 +173,15 @@
 .choose-tab-info {
 	h3 {
 		font-weight: $fw-regular;
-		font-size: 24px;
+		font-size: 16px;
 		line-height: 31px;
 		color: #010101;
 		text-align: left;
-		margin: 20px 0;
+		margin: 10px 0;
 
 		@media all and (min-width: $xl) {
 			margin: 47px 0 25px;
+			font-size: 24px;
 		}
 	}
 }
@@ -206,11 +207,18 @@
 
 .choose-tab-text {
 	font-weight: $fw-regular;
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 12px;
+	line-height: 17px;
 	color: #010101;
 	padding-right: 15%;
-	margin-bottom: 61px;
-	min-height: 150px;
+	margin-bottom: 10px;
+	min-height: 80px;
+
+	@media all and (min-width: $xl) {
+		margin-bottom: 60px;
+		font-size: 16px;
+		line-height: 21px;
+		min-height: 150px;
+	}
 }
 

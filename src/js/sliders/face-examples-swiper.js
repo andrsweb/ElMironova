@@ -33,6 +33,7 @@ const initSwiper = () => {
 
 		pagination: {
 			el: '.face-pagination',
+			clickable: true
 		},
 
 		navigation: {
