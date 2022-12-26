@@ -2,11 +2,13 @@
 	background-image: url( '../img/about/hero/hero-bg.jpg');
 	background-size: 100%;
 	padding-top: 30%;
+	background-repeat: no-repeat;
 
 	@media all and (min-width: $lg) {
 		background-image: url( '../img/about/hero/hero-bg.jpg');
 		background-size: 100%;
 		padding-top: 50vh;
+		background-repeat: no-repeat;
 	}
 
 	@media all and (min-width: $xl) {
