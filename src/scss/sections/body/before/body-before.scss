@@ -1,0 +1,7 @@
+.body .before .before-title {
+	line-height: 20px;
+
+	@media all and (min-width: $xl) {
+		line-height: 47px;
+	}
+}
