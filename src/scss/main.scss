@@ -40,7 +40,15 @@
 @import 'sections/face/benefits/benefits';
 @import 'sections/face/price/price';
 
+// Body page sections styles.
+@import 'sections/body/hero/body-hero';
+@import 'sections/body/category/body-category';
+@import 'sections/body/before/body-before';
+
 //Form
 @import 'sections/form/form';
+
+//Other
+@import 'sections/others'
 
 

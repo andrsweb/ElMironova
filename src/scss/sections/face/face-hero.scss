@@ -12,6 +12,9 @@
 	@media all and (min-width: $xl) {
 		padding-top: 60vh;
 	}
+}
+
+.hero {
 
 	h1 {
 		text-transform: uppercase;
@@ -50,7 +53,7 @@
 
 	&-list {
 		width: 100%;
-		max-width: 380px;
+		max-width: 600px;
 		margin-bottom: 15px;
 		padding: 0 10px;
 
@@ -86,4 +89,3 @@
 		}
 	}
 }
-
