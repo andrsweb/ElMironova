@@ -1,7 +1,7 @@
 .face .hero {
 	background-image: url( '../img/face/hero/hero-bg-mob.jpg');
-	background-size: 200%;
-	padding-top: 60%;
+	background-size: 100%;
+	padding-top: 30%;
 
 	@media all and (min-width: $lg) {
 		background-image: url( '../img/face/hero/hero-bg.jpg');
