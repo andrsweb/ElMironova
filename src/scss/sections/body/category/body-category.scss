@@ -1,0 +1,53 @@
+.body .category-item {
+
+	&:first-child {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX( -50% );
+			width: 300px;
+			height: 280px;
+			display: block;
+			background-image: url( '../img/body/category/bodyplus.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			border-radius: $bord;
+		}
+	}
+
+	&:nth-child(2) {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX( -50% );
+			width: 300px;
+			height: 280px;
+			display: block;
+			background-image: url( '../img/body/category/center.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			border-radius: $bord;
+		}
+	}
+
+	&:nth-child(3) {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX( -50% );
+			width: 300px;
+			height: 280px;
+			display: block;
+			background-image: url( '../img/body/category/coat.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			border-radius: $bord;
+		}
+	}
+}
