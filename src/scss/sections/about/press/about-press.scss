@@ -1,0 +1,21 @@
+.about-press {
+
+	.container {
+		max-width: 1200px;
+	}
+
+	&-items {
+		display: flex;
+		justify-content: center;
+		background: $grey;
+		padding: 10px;
+	}
+
+	&-item {
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
