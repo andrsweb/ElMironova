@@ -1,0 +1,38 @@
+.about-info {
+	padding: 30px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 100px 0 50px;
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h2 {
+		font-weight: $fw-bold;
+		font-size: 20px;
+		line-height: 29px;
+		text-align: center;
+		color: $black;
+		border-bottom: 1px solid $black;
+		padding-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			font-size: 22px;
+		}
+	}
+
+	.about-text {
+		font-weight: $fw-light;
+		font-size: 17px;
+		line-height: 26px;
+		text-align: center;
+		color: $black;
+		margin: 30px 0;
+
+		@media all and (min-width: $md) {
+			font-size: 20px;
+		}
+	}
+}
