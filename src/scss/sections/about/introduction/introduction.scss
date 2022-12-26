@@ -1,0 +1,70 @@
+.introduction {
+	position: relative;
+	padding: 30px 0;
+
+	@media all and (min-width: $sm) {
+		padding: 50px 0 30px;
+	}
+
+	@media all and (min-width: $m) {
+		padding: 70px 0 30px;
+	}
+
+	@media all and (min-width: $md) {
+		padding: 80px 0 30px;
+	}
+
+	@media all and (min-width: $lg) {
+		padding: 90px 0 50px;
+	}
+
+	@media all and (min-width: $xl) {
+		padding: 110px 0 100px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 69px;
+		background-image: url( '../img/about/introduction/intro-bg.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h2 {
+		position: relative;
+		font-weight: $fw-bold;
+		font-size: 20px;
+		line-height: 26px;
+		text-align: center;
+		color: $black;
+		margin-bottom: 70px;
+		padding-bottom: 20px;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX( -50% );
+			width: 121px;
+			height: 10px;
+			background: $bg;
+		}
+	}
+
+	&-video {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

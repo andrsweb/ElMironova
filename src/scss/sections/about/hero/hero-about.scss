@@ -1,0 +1,62 @@
+.about .hero {
+	background-image: url( '../img/about/hero/hero-bg.jpg');
+	background-size: 100%;
+	padding-top: 30%;
+	background-repeat: no-repeat;
+
+	@media all and (min-width: $lg) {
+		background-image: url( '../img/about/hero/hero-bg.jpg');
+		background-size: 100%;
+		padding-top: 50vh;
+		background-repeat: no-repeat;
+	}
+
+	@media all and (min-width: $xl) {
+		padding-top: 62vh;
+	}
+
+	h1 {
+		margin-bottom: 10px;
+	}
+
+	h5 {
+		font-size: 15px;
+		font-weight: $fw-light;
+		text-transform: none;
+		margin-bottom: 5px;
+		padding: 0 10px;
+
+		@media all and (min-width: $md) {
+			font-size: 22px;
+		}
+	}
+
+	.hero-town {
+		font-weight: $fw-light;
+		font-size: 15px;
+		line-height: 29px;
+		text-align: center;
+		color: $white;
+
+		@media all and (min-width: $md) {
+			font-size: 22px;
+		}
+	}
+
+	.hero-text {
+		font-weight: $fw-light;
+		font-size: 15px;
+		line-height: 23px;
+		text-align: center;
+		color: $white;
+		padding: 0 10px;
+
+		@media all and (min-width: $md) {
+			font-size: 18px;
+		}
+	}
+}
+
+.about .wrapper {
+	padding-top: 10vh;
+}
