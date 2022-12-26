@@ -40,10 +40,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-
-			@media all and (min-width: $sm) {
-				border: 1px solid $bg;
-			}
+			border: 1px solid $grey;
 
 			img {
 				cursor: pointer;
