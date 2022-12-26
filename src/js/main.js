@@ -20,3 +20,4 @@ import './tabsOuter'
 
 //Anchors
 import './smoothAnchors'
+import './scrollToTop'
