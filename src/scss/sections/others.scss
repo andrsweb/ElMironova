@@ -89,3 +89,11 @@
 		padding: 12px;
 	}
 }
+
+.about .surgeon-slider {
+	background: $white;
+
+	&::after {
+		display: none;
+	}
+}
