@@ -1,0 +1,15 @@
+.body .hero {
+	background-image: url( '../img/body/hero/hero-bg-mob.jpg');
+	background-size: 200%;
+	padding-top: 60%;
+
+	@media all and (min-width: $lg) {
+		background-image: url( '../img/body/hero/hero-bg.jpg');
+		background-size: 100%;
+		padding-top: 50vh;
+	}
+
+	@media all and (min-width: $xl) {
+		padding-top: 55vh;
+	}
+}
