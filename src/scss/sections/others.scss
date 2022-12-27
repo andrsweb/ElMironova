@@ -129,6 +129,22 @@
 	}
 }
 
+.testi .before {
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
+		border-bottom: 1px solid #6e6e6e;
+		padding-bottom: 20px;
+	}
+
+	.examples-box {
+		&::before {
+			display: none;
+		}
+		border: 0;
+	}
+}
+
 .scroll-img {
     opacity: 0;
 	visibility: hidden;
