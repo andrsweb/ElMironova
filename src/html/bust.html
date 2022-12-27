@@ -3,7 +3,7 @@ href4:'#ben', href5:'#price', href6:'#footer', text1: 'О враче', text2: '�
 text4: 'Стоимость', text5: 'О клинике', text6: 'Контакты' } )
 
 <main>
-	@@include( 'template-parts/sections/bust/bust-hero.html' )
+	@@include( 'template-parts/sections/bust/hero/bust-hero.html' )
 	@@include( 'template-parts/sections/home/category/category.html',
 		{ src1: 'img/bust/category/left.jpg', src2: 'img/bust/category/center.jpg', src3: 'img/bust/category/right.jpg',
 		title1: 'Натуральная грудь, идеально подходящая именно вам!', title2: 'Уверенность', title3: 'Лучшая версия',
@@ -12,6 +12,7 @@ text4: 'Стоимость', text5: 'О клинике', text6: 'Контакт�
 		text7: ' Доктор Миронова поможет Вам почувствовать себя гармонично и спокойно в вашем теле, создав идеальные пропорции, которые будут вас дополнять, делать 					сексуальнее.',
 		text8: '', text9: '' }
 	)
+	@@include( 'template-parts/sections/bust/introduce/intro.html' )
 	@@include( 'template-parts/sections/home/surgeon/surgeon.html' )
 	@@include( 'template-parts/sections/home/surgeon/surgeon-slider.html' )
 	@@include( 'template-parts/sections/face/live/live.html' )
