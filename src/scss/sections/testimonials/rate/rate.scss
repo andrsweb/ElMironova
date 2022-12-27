@@ -1,0 +1,93 @@
+.rate {
+	padding: 35px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 40px 0 100px;
+	}
+
+	.container {
+		max-width: 1070px;
+	}
+
+	h2 {
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: 23px;
+		text-align: center;
+		color: $black;
+		border-bottom: 1px solid #6e6e6e;
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px;
+
+		@media all and (min-width: $xl) {
+			margin: 0 -63px;
+		}
+	}
+
+	&-item {
+		width: calc( 100% / 2 );
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding:  0 20px;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $xl) {
+			padding: 0 63px;
+		}
+
+		@media all and (min-width: $sm) {
+			width: calc( 100% / 3 );
+
+			&:nth-child( n + 4 ) {
+				margin-bottom: 0;
+			}
+		}
+
+		@media all and (min-width: $md) {
+			width: calc( 100% / 5 );
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-title {
+		font-weight: $fw-bold;
+		font-size: 20px;
+		line-height: 31px;
+		text-align: center;
+		color: $black;
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+		}
+	}
+
+	&-mark {
+		font-weight: $fw-bold;
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+		color: $black;
+		margin-bottom: 13px;
+
+		@media all and (min-width: $lg) {
+			font-size: 16px;
+		}
+	}
+
+	&-stars {
+		display: flex;
+		align-items: flex-end;
+	}
+}
