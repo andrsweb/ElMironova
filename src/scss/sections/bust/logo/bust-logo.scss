@@ -1,0 +1,13 @@
+.bust-logo {
+	padding: 40px 0;
+
+	.container {
+		max-width: 100%;
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
