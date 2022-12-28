@@ -42,7 +42,11 @@
 	&-slide {
 		position: relative;
 		height: 100%;
-		max-height: 400px;
+		max-height: 280px;
+
+		&-inner {
+			height: 280px;
+		}
 
 		img {
 			width: 100%;
