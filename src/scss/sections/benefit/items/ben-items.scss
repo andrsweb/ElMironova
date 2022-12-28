@@ -1,0 +1,227 @@
+.books {
+	margin: 45px 0 30px;
+	padding: 30px 0;
+	background: $bg;
+
+	@media all and (min-width: $xl) {
+		padding: 60px 0;
+	}
+
+	.container {
+		max-width: 1400px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&-info {
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 65%;
+		}
+
+		h2 {
+			font-weight: $fw-bold;
+			font-size: 20px;
+			line-height: 46px;
+			color: $white;
+
+			@media all and (min-width: $md) {
+				font-size: 25px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 35px;
+			}
+		}
+
+		h3 {
+			font-weight: $fw-regular;
+			font-size: 18px;
+			line-height: 22px;
+			text-align: center;
+			color: $white;
+			margin-bottom: 15px;
+
+			@media all and (min-width: $md) {
+				font-size: 22px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 32px;
+				line-height: 42px;
+			}
+		}
+	}
+
+	&-text {
+		font-weight: $fw-light;
+		font-size: 15px;
+		line-height: 23px;
+		color: $white;
+		margin-bottom: 50px;
+
+		@media all and (min-width: $md) {
+			font-size: 18px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+		}
+
+		span {
+			font-weight: $fw-bold;
+		}
+	}
+
+	&-form-title {
+		font-weight: $fw-regular;
+		font-size: 15px;
+		line-height: 26px;
+		color: $white;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			font-size: 20px;
+		}
+	}
+
+	&-form {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 80px;
+
+		@media all and (min-width: $xl) {
+			flex-direction: row;
+		}
+
+		input {
+			width: 100%;
+			max-width: 305px;
+			height: 42px;
+			font-family: $ff;
+			font-weight: $fw-regular;
+			font-size: 16px;
+			line-height: 21px;
+			color: $black;
+			padding-left: 20px;
+			margin-right: 10px;
+			border: 0;
+			margin-bottom: 10px;
+
+			@media all and (min-width: $xl) {
+				margin-bottom: 0;
+			}
+
+			&::placeholder {
+				opacity: 1;
+			}
+		}
+	}
+
+	&-button-wrapp {
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		img {
+			margin-left: 20px;
+		}
+	}
+
+	.benefit-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 0;
+		border-style: none;
+		width: 305px;
+		height: 42px;
+		background: #00CD58;
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 16px;
+		line-height: 21px;
+		color: $white;
+		cursor: pointer;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity:  $op;
+		}
+	}
+
+	&-click {
+		position: absolute;
+		bottom: -25px;
+		left: 0;
+		font-weight: $fw-regular;
+		font-size: 10px;
+		line-height: 18px;
+		color: $black;
+		white-space: nowrap;
+
+		@media all and (min-width: $sm) {
+			font-size: 13px;
+		}
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -16px;
+	}
+
+	&-item {
+		width: calc( 100% / 2 );
+		padding: 0 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+
+		@media all and (min-width: $lg) {
+			width: calc( 100% / 4 );
+		}
+	}
+
+	&-num {
+		font-weight: $fw-regular;
+		font-size: 64px;
+		line-height: 83px;
+		text-align: center;
+		color: $black;
+	}
+
+	&-desc {
+		font-weight: $fw-regular;
+		font-size: 15px;
+		line-height: 26px;
+		text-align: center;
+		color: $black;
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+		}
+	}
+
+	&-img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 35%;
+		}
+	}
+}
