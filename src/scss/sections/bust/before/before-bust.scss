@@ -1,3 +1,11 @@
 .bust .face-slide {
 	height: 450px;
 }
+
+.bust-before {
+	padding-top: 30px;
+
+	@media all and (min-width: $xl) {
+		padding-top: 80px;
+	}
+}
