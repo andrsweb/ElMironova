@@ -15,7 +15,11 @@
 	}
 
 	h5 {
-		margin-bottom: 50px;
+		margin-bottom: 25px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 50px;
+		}
 	}
 
 	.hero-block-inner {
