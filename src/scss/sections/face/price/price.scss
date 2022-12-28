@@ -124,12 +124,22 @@
 		padding-bottom: 50px;
 	}
 
+	&-item-wrapper {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		span {
+			margin-right: 20px;
+		}
+	}
+
 	&-title {
 		font-weight: $fw-bold;
 		font-size: 9px;
 		line-height: 15px;
 		color: $black;
-		margin-bottom: 10px;
+		text-align: left;
 
 		@media all and (min-width: $sm) {
 			font-size: 12px;
