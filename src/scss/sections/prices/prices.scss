@@ -1,0 +1,89 @@
+.prices .hero {
+	background-image: url( '../img/price/hero-bg.png');
+	background-size: 100%;
+	padding-top: 30%;
+	background-repeat: no-repeat;
+
+	@media all and (min-width: $lg) {
+		padding-top: 50vh;
+	}
+
+	@media all and (min-width: $xl) {
+		padding-top: 60vh;
+	}
+}
+
+.prices {
+
+	.price-value {
+		text-align: left;
+	}
+
+	.price-title {
+		text-align: left;
+	}
+
+	.price-start {
+		border: 0;
+		text-align: left;
+		width: 100%;
+		transition: opacity ease $tr;
+		max-width: 100%;
+		font-size: 15px;
+		line-height: 25px;
+		background: #DCD7D7;
+
+		@media all and (min-width: $sm) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 30px;
+			line-height: 47px;
+		}
+
+		&:hover {
+			opacity: $op;
+			scale: none;
+		}
+	}
+
+	.price-heading {
+		max-width: 100%;
+		padding: 0 0 0 10px;
+		background: #DCD7D7;;
+	}
+
+	.prices-face {
+		padding: 70px 0 50px 0;
+
+		&-open {
+			background: #F7F4F4;;
+		}
+	}
+
+	.prices-body {
+		padding: 0 0 50px 0;
+	}
+
+	.prices-other {
+		padding: 0 0 100px 0;
+	}
+
+	.price-inner {
+		background: #F7F4F4;
+
+		&-top {
+			margin: 30px 0 0 10px;
+			max-width: 964px;
+
+			@media all and (min-width: $xl) {
+					margin: 30px 0 0 70px;
+			}
+
+			&-inner-bottom {
+				padding-bottom: 90px;
+			}
+		}
+	}
+}
