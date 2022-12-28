@@ -15,6 +15,9 @@ import './sliders/body-examples-swiper'
 //libs
 import './fancyBox'
 
+//svg's
+import './forSVG'
+
 //tabs
 import './tabsOuter'
 

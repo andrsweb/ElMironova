@@ -1,0 +1,173 @@
+.address {
+	.container {
+		max-width: 1600px;
+		padding: 0;
+	}
+
+	&-items {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		padding: 10px 40px;
+		text-align: center;
+		margin-top: 30px;
+
+		@media all and (min-width: $lg) {
+			width: 54%;
+			text-align: left;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+			margin: 0 20px;
+
+			path {
+				fill: $black;
+			}
+		}
+
+		picture {
+			display: contents;
+		}
+	}
+
+	&-img {
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 46%;
+		}
+
+		img {
+			border-radius: 0;
+		}
+	}
+
+	&-text {
+		font-size: 15px;
+		max-width: 480px;
+		line-height: 35px;
+		margin: 0 auto;
+
+		@media all and (min-width: $lg) {
+			margin: 0;
+		}
+
+		&-license {
+			margin-bottom: 30px;
+		}
+	}
+
+	&-benefit {
+		position: relative;
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-top: 10px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			display: block;
+			width: 45%;
+			background: $black;
+			height: 7px;
+		}
+	}
+
+	.benefit-text {
+		width:	100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+
+		h4 {
+			font-weight: $fw-bold;
+			font-size: 18px;
+			margin-bottom: 20px;
+			text-align: left;
+
+			@media all and (min-width: $lg) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	.benefit-img {
+		margin-bottom: 30px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+			justify-content: flex-start;
+		}
+	}
+
+	&-location {
+		margin: 30px 0;
+	}
+
+	&-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&-link {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 270px;
+		margin: 0 0 30px 0;
+		transition: fill ease $tr,
+					background ease $tr;
+
+		@media all and (min-width: $lg) {
+			margin: 0 10px 30px 0;
+			max-width: 200px;
+			font-size: 10px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin: 0 50px 30px 0;
+			max-width: 270px;
+			font-size: 15px;
+		}
+
+		&:hover {
+
+			svg path {
+				fill: $white;
+			}
+		}
+	}
+}
+
+.bust .footer {
+	padding: 0;
+}

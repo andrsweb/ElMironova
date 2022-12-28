@@ -1,0 +1,38 @@
+@@include( 'template-parts/header/header.html', { title: 'Пластика груди', class: 'bust', href1:'#plastyc', href2:'#history', href3:'#surgeon',
+href4:'#ben', href5:'#price', href6:'#footer', text1: 'О враче', text2: 'История пациенток', text3: 'До\После',
+text4: 'Стоимость', text5: 'О клинике', text6: 'Контакты' } )
+
+<main>
+	@@include( 'template-parts/sections/bust/hero/bust-hero.html' )
+	@@include( 'template-parts/sections/home/category/category.html',
+		{ src1: 'img/bust/category/left.jpg', src2: 'img/bust/category/center.jpg', src3: 'img/bust/category/right.jpg',
+		title1: 'Натуральная грудь, идеально подходящая именно вам!', title2: 'Уверенность', title3: 'Лучшая версия',
+		text1: ' Красивая, естественная форма груди гораздо важнее её размера. Беременность, колебания веса, наследственность или возраст приводят к потере объема, проекции и 			положения груди.', text2: '', text3: '',
+		text4: ' Пластическая хирургия, которая позволяет вам выглядеть и чувствовать себя самим собой: уверенно. Вы в хороших, надежных руках. Точнее, у доктора Елены 				Мироновой.', text5: '', text6: '',
+		text7: ' Доктор Миронова поможет Вам почувствовать себя гармонично и спокойно в вашем теле, создав идеальные пропорции, которые будут вас дополнять, делать 					сексуальнее.',
+		text8: '', text9: '' }
+	)
+	@@include( 'template-parts/sections/bust/introduce/intro.html' )
+	@@include( 'template-parts/sections/bust/before/bust-before.html', { h2: 'Примеры работ До\После', swiper: 'body-swiper', wrapper: 'body-wrapper',
+				pag: 'body-pagination', prev: 'body-prev', next: 'body-next' } )
+	@@include( 'template-parts/sections/bust/before/bust-before-video.html' )
+	@@include( 'template-parts/sections/bust/before/bust-before-history.html' )
+	@@include( 'template-parts/sections/bust/surgeon-bust/surgeon-bust.html' )
+	@@include( 'template-parts/sections/home/surgeon/surgeon-slider.html' )
+	@@include( 'template-parts/sections/face/live/live.html' )
+	@@include( 'template-parts/sections/face/benefits/benefits.html' )
+	@@include( 'template-parts/sections/bust/get/get.html' )
+	@@include( 'template-parts/sections/bust/state/state.html' )
+	@@include( 'template-parts/sections/face/price/price.html' )
+	@@include( 'template-parts/sections/form/form.html' )
+	@@include( 'template-parts/sections/bust/address/address.html' )
+	<footer class="footer" id="footer">
+		@@include( 'template-parts/sections/bust/logo/bust-logo.html' )
+	</footer>
+	<div class="scroll-img"></div>
+</div><!-- .wrapper -->
+
+<script src="js/main.min.js"></script>
+</body>
+</html>
+</main>
