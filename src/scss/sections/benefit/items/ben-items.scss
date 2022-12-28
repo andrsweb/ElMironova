@@ -1,0 +1,153 @@
+.books {
+	margin: 45px 0 30px;
+	padding: 60px 0;
+	background: $bg;
+
+	.container {
+		max-width: 1200px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&-info {
+		width: 70%;
+
+		h2 {
+			font-weight: $fw-bold;
+			font-size: 35px;
+			line-height: 46px;
+			color: $white;
+		}
+
+		h3 {
+			font-weight: $fw-regular;
+			font-size: 32px;
+			line-height: 42px;
+			text-align: center;
+			color: $white;
+			margin-bottom: 15px;
+		}
+	}
+
+	&-text {
+		font-weight: $fw-light;
+		font-size: 18px;
+		line-height: 23px;
+		color: $white;
+		margin-bottom: 50px;
+
+		span {
+			font-weight: $fw-bold;
+		}
+	}
+
+	&-form-title {
+		font-weight: $fw-regular;
+		font-size: 20px;
+		line-height: 26px;
+		color: $white;
+		margin-bottom: 20px;
+	}
+
+	&-form {
+		display: flex;
+		margin-bottom: 80px;
+
+		input {
+			width: 100%;
+			max-width: 305px;
+			font-family: $ff;
+			font-weight: $fw-regular;
+			font-size: 16px;
+			line-height: 21px;
+			color: $black;
+			padding-left: 20px;
+			margin-right: 10px;
+
+			&::placeholder {
+				opacity: 1;
+			}
+		}
+	}
+
+	&-button-wrapp {
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		img {
+			margin-left: 20px;
+		}
+	}
+
+	.benefit-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 0;
+		border-style: none;
+		width: 305px;
+		height: 42px;
+		background: #00CD58;
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 16px;
+		line-height: 21px;
+		color: $white;
+		cursor: pointer;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity:  $op;
+		}
+	}
+
+	&-click {
+		position: absolute;
+		bottom: -25px;
+		left: 0;
+		font-weight: $fw-regular;
+		font-size: 13px;
+		line-height: 18px;
+		color: $black;
+		white-space: nowrap;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -16px;
+	}
+
+	&-item {
+		width: calc( 100% / 4 );
+		padding: 0 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	&-num {
+		font-weight: $fw-regular;
+		font-size: 64px;
+		line-height: 83px;
+		text-align: center;
+		color: $black;
+	}
+
+	&-desc {
+		font-weight: $fw-regular;
+		font-size: 20px;
+		line-height: 26px;
+		text-align: center;
+		color: $black;
+	}
+
+	&-img {
+		width: 30%;
+	}
+}
