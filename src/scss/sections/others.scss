@@ -3,7 +3,7 @@
 }
 
 .examples-pagination, .face-pagination, .before-pagination,
-.live-pagination, .surgeon-pagination, .body-pagination {
+.live-pagination, .surgeon-pagination, .body-pagination, .bef-pagination {
 	position: relative;
 	bottom: 0;
 	margin-top: 25px;
@@ -107,6 +107,10 @@
 		height: 100%;
 		max-height: 427px;
 	}
+}
+
+.swiper {
+	padding: 20px 0;
 }
 
 

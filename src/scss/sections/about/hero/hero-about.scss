@@ -19,6 +19,13 @@
 		margin-bottom: 10px;
 	}
 
+	.hero-block {
+
+		@media all and (min-width: $xl) {
+			padding: 40px 0;
+		}
+	}
+
 	h5 {
 		font-size: 15px;
 		font-weight: $fw-light;

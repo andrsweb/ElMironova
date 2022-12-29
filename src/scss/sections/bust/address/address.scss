@@ -4,6 +4,11 @@
 		padding: 0;
 	}
 
+	.button {
+		font-size: 15px;
+		max-width: 211px;
+	}
+
 	&-items {
 		display: flex;
 		flex-direction: column;
@@ -30,7 +35,7 @@
 		svg {
 			width: 30px;
 			height: 30px;
-			margin: 0 20px;
+			margin: 0 5px;
 
 			path {
 				fill: $black;
@@ -38,7 +43,7 @@
 		}
 
 		picture {
-			display: contents;
+			display: inherit;
 		}
 	}
 

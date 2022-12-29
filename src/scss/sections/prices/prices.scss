@@ -24,6 +24,7 @@
 	}
 
 	.price-start {
+		font-weight: $fw-light;
 		border: 0;
 		text-align: left;
 		width: 100%;
@@ -32,6 +33,12 @@
 		font-size: 15px;
 		line-height: 25px;
 		background: #DCD7D7;
+
+		&::before {
+			width: 18px;
+			height: 18px;
+			margin-right: 10px;
+		}
 
 		@media all and (min-width: $sm) {
 			font-size: 20px;
