@@ -1,24 +1,30 @@
 
-.add-live {
+.add-live, .online {
 	.live-footer-logo {
 		display: block;
 		width: 273px;
 		margin: 0 auto;
 	}
 
+	.header {
+		padding: 0;
+		position: static;
+	}
+
 	.footer {
-		padding: 30px 0;
+		padding: 10px 0;
 		border: 0;
 
 	}
 }
 
-.add-live {
+.add-live, .online {
 
 	.header {
 		position: static;
 
 		&.scrolled {
+			position: static;
 			padding: 10px 0;
 		}
 	}
