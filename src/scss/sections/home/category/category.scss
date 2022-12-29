@@ -37,8 +37,9 @@
 				display: block;
 				background-image: url( '../img/home/category/face.png');
 				background-repeat: no-repeat;
-				background-size: 100% 100%;
+				background-size: cover;
 				border-radius: $bord;
+				background-position: 50% 25%;
 			}
 		}
 
@@ -54,7 +55,7 @@
 				display: block;
 				background-image: url( '../img/home/category/bust.png');
 				background-repeat: no-repeat;
-				background-size: 100% 100%;
+				background-size: cover;
 				border-radius: $bord;
 			}
 		}
