@@ -47,11 +47,16 @@
 			content: "";
 			display: block;
 			position: absolute;
-			top: 50%;
-			height: 50%;
+			top: 0;
+			height: 100%;
 			width: calc( (100vw - 100%) / 2 );
 			background: $white;
 			z-index: -1;
+
+			@media all and (min-width: $lg) {
+				top: 50%;
+				height: 50%;
+			}
 		}
 
 		@media all and (min-width: $md) {
