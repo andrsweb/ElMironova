@@ -5,7 +5,13 @@
 	background-repeat: no-repeat;
 
 	@media all and (min-width: $lg) {
-		padding-top: 42vh;
+		padding-top: 45vh;
 		background-repeat: no-repeat;
+	}
+
+	.hero-link {
+		max-width: 322px;
+		font-size: 15px;
+		height: 47px;
 	}
 }
