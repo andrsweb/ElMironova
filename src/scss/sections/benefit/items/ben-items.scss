@@ -222,6 +222,7 @@
 
 		@media all and (min-width: $lg) {
 			width: 35%;
+			justify-content: flex-end;
 		}
 	}
 }

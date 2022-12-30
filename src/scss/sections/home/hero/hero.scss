@@ -7,11 +7,13 @@
 	background-size: 100%;
 	padding-top: 50%;
 
-	@media all and (min-width: $lg) {
+	@media all and (min-width: $xl) {
 		padding-top: 65vh;
 		background-size: 100%;
 		background-image: url( '../img/home/hero/hero-bg.jpg');
 		background-repeat: no-repeat;
+		max-height: 740px;
+		background-position: 100% 15%;
 	}
 
 	&::before {
