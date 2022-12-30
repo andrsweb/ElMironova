@@ -114,7 +114,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		cursor: pointer;
 		border-radius: $bord;
 
 		&:hover {
@@ -144,13 +143,19 @@
 	}
 
 	&-text {
+		position: relative;
+		z-index: 1;
 		font-size: 14px;
 		line-height: 18px;
 		text-align: center;
 		color: $white;
 		padding: 0 5px;
-
 		margin-bottom: 20px;
+		transition: text-shadow ease $tr;
+
+		&:hover {
+			text-shadow: 1px 1px 1px $white;
+		}
 
 		&:last-child {
 			margin-bottom: 0;

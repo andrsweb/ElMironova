@@ -3,13 +3,7 @@
 	text4: 'Стоимость', text5: 'Контакты', text6: '' } )
 <main>
 	@@include( 'template-parts/sections/home/hero.html' )
-	@@loop( 'template-parts/sections/home/category/category.html', [
-	{ 'src1': 'img/home/category/face.png', 'src2': 'img/home/category/bust.png', 'src3': 'img/home/category/body.png',
-		'title1': 'Лицо', 'title2': 'Грудь', 'title3': 'Тело',
-		'text1': 'Эндоскопическая<br> подтяжка лба', 'text2': 'Блефаропластика<br> и броулифтинг', 'text3': 'СМАС-лифтинг',
-		'text4': 'Увеличение груди', 'text5': 'Подтяжка без<br> имплантов', 'text6': 'Подтяжка груди на<br> имплантах',
-		'text7': 'Абдоминопластика', 'text8': 'Липосакция', 'text9': '' }
-	] )
+	@@include( 'template-parts/sections/home/category/category.html' )
 	@@include( 'template-parts/sections/home/examples/examples.html', { h2: 'Примеры работ', swiper: 'examples-swiper', wrapper: 'examples-wrapper',
 		pag: 'examples-pagination', prev: 'examples-prev', next: 'examples-next' } )
 	@@include( 'template-parts/sections/home/surgeon/surgeon.html' )

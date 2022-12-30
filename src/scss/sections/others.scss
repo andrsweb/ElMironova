@@ -1,14 +1,9 @@
 // For swiper
 .examples-pagination, .face-pagination, .before-pagination,
-.live-pagination, .surgeon-pagination, .body-pagination, .bef-pagination {
+.live-pagination, .surgeon-pagination, .body-pagination, .before-body-pagination {
 	position: relative;
 	bottom: 0;
 	margin-top: 25px;
-}
-
-.swiper-pagination-bullet {
-	width: 12px;
-	height: 12px;
 }
 
 .swiper-pagination-bullet-active {
