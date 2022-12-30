@@ -6,6 +6,11 @@
 	margin-top: 25px;
 }
 
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+}
+
 .swiper-pagination-bullet-active {
 	background: $black;
 }

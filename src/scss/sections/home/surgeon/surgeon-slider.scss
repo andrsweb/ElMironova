@@ -94,6 +94,11 @@
 	position: relative;
 	bottom: 0;
 	margin: 20px 0 32px;
+
+	.swiper-pagination-bullet {
+		width: 6px;
+		height: 6px;
+	}
 }
 
 .surgeon-slider .slide-link {
