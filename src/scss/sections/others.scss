@@ -52,8 +52,14 @@
 		display: none;
 	}
 }
-.testi-plastyc .before-wrapper {
-	align-items: flex-start;
+#testi-plastyc {
+	.before-text {
+		margin-bottom: 0;
+	}
+
+	.before-pagination {
+		margin-top: 50px;
+	}
 }
 
 .bust {
