@@ -2,7 +2,7 @@
 	padding: 10px 0 30px;
 
 	@media all and (min-width: $xl) {
-		padding: 80px 0 12px;
+		padding: 30px 0 12px;
 	}
 
 	.container {
@@ -22,13 +22,8 @@
 		}
 
 		@media all and (min-width: $md) {
-			font-size: 25px;
+			font-size: 22px;
 			line-height: 35px;
-		}
-
-		@media all and (min-width: $xl) {
-			font-size: 35px;
-			line-height: 46px;
 		}
 	}
 }

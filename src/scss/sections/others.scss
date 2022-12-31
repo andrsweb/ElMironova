@@ -15,7 +15,7 @@
 	background: $black;
 }
 
-.examples-prev, .examples-next, .body-prev, .body-next {
+.examples-prev, .examples-next, .body-prev, .body-next, .about-prev, .about-next {
 	position: absolute;
 	z-index: 2;
 	display: block;
@@ -31,14 +31,14 @@
 	}
 }
 
-.examples-prev, .body-prev {
+.examples-prev, .body-prev, .about-prev {
 	top: 45%;
 	left: 20px;
 	transform: rotate( -135deg )
 			translateY( 45% );
 }
 
-.examples-next, .body-next {
+.examples-next, .body-next, .about-next {
 	top: 45%;
 	right: 20px;
 	transform: rotate( 45deg )
@@ -51,6 +51,9 @@
 	&::after {
 		display: none;
 	}
+}
+.testi-plastyc .before-wrapper {
+	align-items: flex-start;
 }
 
 .bust {
@@ -150,10 +153,15 @@
 
 .testi .before {
 	h2 {
+		display: block;
 		text-transform: uppercase;
 		text-align: center;
 		border-bottom: 1px solid #6e6e6e;
 		padding-bottom: 20px;
+
+		&::before {
+			display: none;
+		}
 	}
 
 	.examples-box {

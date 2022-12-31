@@ -1,18 +1,19 @@
 .about .hero {
 	background-image: url( '../img/about/hero/hero-bg.jpg');
 	background-size: 100%;
-	padding-top: 30%;
+	padding-top: 40%;
 	background-repeat: no-repeat;
 
 	@media all and (min-width: $lg) {
 		background-image: url( '../img/about/hero/hero-bg.jpg');
 		background-size: 100%;
-		padding-top: 50vh;
+		padding-top: 55vh;
 		background-repeat: no-repeat;
 	}
 
 	@media all and (min-width: $xl) {
 		padding-top: 62vh;
+		background-position: 50% 25%;
 	}
 
 	h1 {

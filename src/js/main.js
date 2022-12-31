@@ -12,6 +12,7 @@ import './sliders/before-swiper'
 import './sliders/live-swiper'
 import './sliders/body-examples-swiper'
 import './sliders/body-swiper-before'
+import './sliders/about-swiper'
 
 //libs
 import './fancyBox'
