@@ -9,6 +9,11 @@ const toogleDropdown = () => {
 
     if ( ! dropdowns.length ) return
 
+	dropdowns.forEach( dropdown => {
+		if ( dropdown.classList.contains( 'opened' ) )
+			reCalculateDropdownHeight( dropdown )
+	} )
+
     dropdowns.forEach( dropdown => {
         dropdown.addEventListener( 'click', () => {
             const dropdownOpen = dropdown.querySelector( '.dropdown-open' )

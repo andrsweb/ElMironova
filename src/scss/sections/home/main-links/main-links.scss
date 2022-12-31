@@ -1,0 +1,105 @@
+.main-links {
+
+	.container {
+		max-width: 1200px;
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main-link-inner {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			max-height: 260px;
+		}
+	}
+
+	.main-link-item {
+		width: 100%;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			width: calc( 33.333% - 20px );
+			margin-right: 20px;
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.slide-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 14px;
+		right: 14px;
+		padding: 5px 10px;
+		text-transform: uppercase;
+		font-size: 10px;
+		line-height: 16px;
+		text-align: center;
+		color: $btn;
+		background: $white;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+		transition: background ease $tr,
+			color ease $tr;
+		max-width: 250px;
+
+		&:hover {
+			background: #505050;
+			color: $white;
+		}
+
+		@media all and (min-width: $sm) {
+			font-size: 12px;
+			max-width: 296px;
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 12px;
+		}
+	}
+
+	.examples-box {
+		width: 100%;
+		padding: 10px 0;
+		border-top: 3px solid #6e6e6e;
+
+		@media all and (min-width: $xl) {
+			padding: 10px 0 100px;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-align: left;
+			font-weight: $fw-bold;
+			font-size: 22px;
+			line-height: 29px;
+			color: $black;
+			margin-bottom: 55px;
+			padding-left: 10px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: -10px;
+				left: 0;
+				width: 100%;
+				height: 5px;
+				background: #505050;
+			}
+		}
+	}
+}
