@@ -1,4 +1,5 @@
 @import '../../node_modules/@fancyapps/ui/dist/fancybox';
+@import '../../node_modules/lazyframe/dist/lazyframe';
 
 //Swiper modules and styles
 @import '../../node_modules/swiper/swiper-bundle.min';
@@ -19,6 +20,9 @@
 
 //off links in burger-menu
 @import './burger-links';
+
+//Frames
+@import './frames';
 
 // Home page sections styles.
 @import 'sections/home/hero/hero';

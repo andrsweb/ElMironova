@@ -38,6 +38,11 @@
 		align-items: center;
 		padding:  0 20px;
 		margin-bottom: 30px;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
 
 		@media all and (min-width: $xl) {
 			padding: 0 63px;
