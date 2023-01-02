@@ -1,5 +1,11 @@
 .how-cost {
 	background:  #F7F4F4;
+	position: relative;
+
+	.hidden-anchor {
+		position: absolute;
+		top: -50px;
+	}
 
 	.container {
 		max-width: 1140px;

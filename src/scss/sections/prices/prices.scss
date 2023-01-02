@@ -24,6 +24,7 @@
 	}
 
 	.price-start {
+		font-weight: $fw-light;
 		border: 0;
 		text-align: left;
 		width: 100%;
@@ -33,13 +34,19 @@
 		line-height: 25px;
 		background: #DCD7D7;
 
+		&::before {
+			width: 18px;
+			height: 18px;
+			margin-right: 10px;
+		}
+
 		@media all and (min-width: $sm) {
 			font-size: 20px;
 		}
 
 		@media all and (min-width: $xl) {
-			font-size: 30px;
-			line-height: 47px;
+			font-size: 25px;
+			line-height: 30px;
 		}
 
 		&:hover {

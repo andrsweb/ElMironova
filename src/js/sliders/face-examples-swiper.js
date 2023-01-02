@@ -20,12 +20,10 @@ const initSwiper = () => {
 				slidesPerView: 1,
 				spaceBetween: 20
 			},
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 12
-			},
+
 			767: {
-				slidesPerView: 3,
+				slidesPerView: 2,
+				spaceBetween: 24
 			}
 		},
 

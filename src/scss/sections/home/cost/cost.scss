@@ -1,6 +1,13 @@
 .cost {
 	padding: 50px 0 63px;
 	background: #F7F4F4;
+	position: relative;
+
+	.hidden-anchor {
+		position: absolute;
+		top: -50px;
+		left: 0;
+	}
 
 	h2 {
 		font-weight: $fw-bold;

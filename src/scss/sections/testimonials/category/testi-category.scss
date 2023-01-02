@@ -52,6 +52,7 @@
 	}
 
 	&-text {
+		cursor: pointer;
 		text-align: center;
 		width: 100%;
 		max-width: 250px;
@@ -65,9 +66,14 @@
 		line-height: 31px;
 		padding: 0 10px;
 		color: $white;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
 
 		@media all and (min-width: $xxl) {
-			font-size: 22px;
+			font-size: 19px;
 		}
 	}
 }

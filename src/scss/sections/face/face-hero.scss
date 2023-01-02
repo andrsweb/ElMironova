@@ -1,18 +1,13 @@
 .face .hero {
-	background-image: url( '../img/face/hero/hero-bg-mob.jpg');
-	background-size: 100%;
-	padding-top: 30%;
+	background-image: url( '../img/face/hero/hero-bg.jpg');
+	background-size: 100% contain;
+	padding-top: 40%;
 	background-repeat: no-repeat;
+	background-position: top;
 
-	@media all and (min-width: $lg) {
-		background-image: url( '../img/face/hero/hero-bg.jpg');
-		background-size: 100%;
-		padding-top: 50vh;
-		background-repeat: no-repeat;
-	}
-
-	@media all and (min-width: $xl) {
-		padding-top: 60vh;
+	@media all and (min-width: $xxl) {
+		padding-top: 53vh;
+		background-position: 100% 80%;
 	}
 }
 
@@ -20,6 +15,7 @@
 
 	h1 {
 		text-transform: uppercase;
+		margin-bottom: 10px;
 	}
 
 	h5 {
@@ -32,7 +28,7 @@
 
 		@media all and (min-width: $md) {
 			font-size: 22px;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 		}
 
 		@media all and (min-width: $lg) {
@@ -45,6 +41,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		padding: 10px;
 
 		&-inner {
 			display: flex;
@@ -60,12 +57,12 @@
 		padding: 0 10px;
 
 		@media all and (min-width: $lg) {
-			margin-bottom: 25px;
+			margin-bottom: 15px;
 		}
 	}
 
 	&-item {
-		text-align: center;
+		text-align: left;
 		display: flex;
 		align-items: center;
 		font-size: 11px;

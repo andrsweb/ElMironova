@@ -1,32 +1,21 @@
-.body .off {
-	display: none;
-}
-
+// For swiper
 .examples-pagination, .face-pagination, .before-pagination,
-.live-pagination, .surgeon-pagination, .body-pagination {
+.live-pagination, .surgeon-pagination, .body-pagination, .before-body-pagination {
 	position: relative;
 	bottom: 0;
 	margin-top: 25px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .swiper-pagination-bullet {
-	transition: scale ease $tr;
-}
-
-.swiper-pagination-bullet:hover {
-	scale: 1.3;
+	width: 10px;
+	height: 10px;
 }
 
 .swiper-pagination-bullet-active {
 	background: $black;
-	width: 13px;
-	height: 13px;
 }
 
-.examples-prev, .examples-next, .body-prev, .body-next {
+.examples-prev, .examples-next, .body-prev, .body-next, .about-prev, .about-next {
 	position: absolute;
 	z-index: 2;
 	display: block;
@@ -42,52 +31,18 @@
 	}
 }
 
-.examples-prev, .body-prev {
+.examples-prev, .body-prev, .about-prev {
 	top: 45%;
 	left: 20px;
 	transform: rotate( -135deg )
 			translateY( 45% );
 }
 
-.examples-next, .body-next {
+.examples-next, .body-next, .about-next {
 	top: 45%;
 	right: 20px;
 	transform: rotate( 45deg )
 			translateY( 45% );
-}
-
-.slide-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	bottom: 14px;
-	right: 14px;
-	padding: 5px 10px;
-	text-transform: uppercase;
-	font-size: 10px;
-	line-height: 16px;
-	text-align: center;
-	color: $btn;
-	background: $white;
-	box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
-	transition: background ease $tr,
-				color ease $tr;
-	max-width: 250px;
-
-	&:hover {
-		background: #505050;
-		color: $white;
-	}
-
-	@media all and (min-width: $sm) {
-		font-size: 12px;
-		max-width: 296px;
-	}
-
-	@media all and (min-width: $xl) {
-		padding: 12px;
-	}
 }
 
 .about .surgeon-slider {
@@ -96,6 +51,45 @@
 	&::after {
 		display: none;
 	}
+}
+#testi-plastyc {
+	.before-text {
+		margin-bottom: 0;
+	}
+
+	.before-pagination {
+		margin-top: 50px;
+	}
+}
+
+.bust {
+	.examples-slide-inner {
+		height: 100%;
+	}
+
+	.face-slide {
+		height: 100%;
+		max-height: 427px;
+	}
+}
+
+.swiper {
+	padding: 20px 0;
+}
+
+// Off link in swiper on main page
+.body .off {
+	display: none;
+}
+
+.about .off-btn {
+	display: none;
+}
+
+//links
+
+.bust .button .link {
+	font-size: 15px;
 }
 
 .about .press {
@@ -106,6 +100,7 @@
 	}
 }
 
+//sections
 .about .before {
 	padding: 30px 0;
 
@@ -131,10 +126,15 @@
 
 .testi .before {
 	h2 {
+		display: block;
 		text-transform: uppercase;
 		text-align: center;
 		border-bottom: 1px solid #6e6e6e;
 		padding-bottom: 20px;
+
+		&::before {
+			display: none;
+		}
 	}
 
 	.examples-box {
@@ -153,7 +153,7 @@
 	color: $black;
 }
 
-
+//Styles of scroll arrow
 .scroll-img {
     opacity: 0;
 	visibility: hidden;
@@ -191,4 +191,76 @@
         opacity: 1;
 		visibility: visible;
     }
+}
+
+//thanks page
+
+.thanks-page {
+	.wrapper {
+		padding-top: 0;
+	}
+}
+
+.thanks {
+	background: $bg;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.container {
+		max-width: 100%;
+	}
+
+	&-wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&-img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 10%;
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-text {
+		display: flex;
+		justify-content: center;
+		font-size: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@media all and (min-width: $m) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.button {
+		margin-top: 50px;
+		max-width: 200px;
+		font-size: 12px;
+	}
 }

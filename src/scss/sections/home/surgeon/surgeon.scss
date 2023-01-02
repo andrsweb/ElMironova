@@ -28,7 +28,11 @@
 	&-title-wrapper {
 		border-bottom: 1px solid $dark;
 		border-top: 1px solid $dark;
-		margin-bottom: 40px;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $xl) {
+			margin-bottom: 40px;
+		}
 
 		h2 {
 			padding: 10px 0 7px;
@@ -47,21 +51,26 @@
 
 	&-video {
 		position: relative;
-		width: 100%;
+		width: 255px;
+		height: 481px;
 		margin-bottom: 20px;
+		margin: 0 auto 30px auto;
 
 		@media all and (min-width: $md) {
-			width: 43%;
+			margin: 0 auto;
 		}
 
-		img {
-			width: 100%;
-			max-width: 70%;
-			margin: 0 auto;
+		@media all and (min-width: $xl) {
+			width: 455px;
+			height: 681px;
+		}
 
-			@media all and (min-width: $xl) {
-				max-width: 100%;
-			}
+		.surg-img {
+			width: 100%;
+			max-width: 455px;
+			height: 100%;
+			max-height: 681px;
+			margin: 0 auto;
 		}
 	}
 

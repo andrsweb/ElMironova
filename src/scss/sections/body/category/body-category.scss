@@ -12,7 +12,7 @@
 			display: block;
 			background-image: url( '../img/body/category/bodyplus.jpg');
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
+			background-size: cover;
 			border-radius: $bord;
 		}
 	}
@@ -29,7 +29,7 @@
 			display: block;
 			background-image: url( '../img/body/category/center.png');
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
+			background-size: cover;
 			border-radius: $bord;
 		}
 	}
@@ -46,8 +46,9 @@
 			display: block;
 			background-image: url( '../img/body/category/coat.jpg');
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
+			background-size: 120%;
 			border-radius: $bord;
+			background-position: 10% 30%;
 		}
 	}
 }

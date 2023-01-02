@@ -1,0 +1,34 @@
+<section class="dropdown price anchor" id="price">
+	<div class="container">
+		<div class="price-wrapper">
+			<div class="price-heading">
+				<h3 class="price-start">СТОИМОСТЬ</h3>
+			</div>
+			<div class="dropdown-open price-open">
+				<div class="dropdown-inner price-inner">
+					<div class="price-inner-top">
+						@@loop( '../../../sections/face/price/price-items-top.html', [
+							{ 'span': '01/', 'h5':'Увеличение груди', 'value': '180 000 р' },
+							{ 'span': '02/', 'h5':'Подтяжка (уменьшение груди)', 'value': '170 000 р' },
+							{ 'span': '03/', 'h5':'Подтяжка груди на имплантах', 'value': '200 000 р' },
+						] )
+					</div>
+					<h4>
+						Дополнительные услуги
+					</h4>
+					<div class="price-inner-bottom">
+						@@loop( '../../../sections/face/price/price-items-bottom.html', [
+							{ 'span': '01/', 'h5':'Анестезия (наркоз)', 'value': 'от 18 000 до 55 000' },
+							{ 'span': '02/', 'h5':'Пребывание в стационаре, койко-день до вечера', 'value': '6 000' },
+							{ 'span': '03/', 'h5':'Пребывание в стационаре, койко-день', 'value': '12 000' },
+							{ 'span': '04/', 'h5':'Компрессионное белье', 'value': 'от 3 000 до 13 000' },
+							{ 'span': '05/', 'h5':'Местная анестезия', 'value': 'Зависит от операции' },
+							{ 'span': '06/', 'h5':'Анализы', 'value': 'Зависит от операции' },
+							{ 'span': '07/', 'h5':'Программы реабилитации после пластических операций', 'value': 'Зависит от операции' }
+						] )
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

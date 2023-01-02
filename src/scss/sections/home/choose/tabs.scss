@@ -37,6 +37,10 @@
 	@media all and (min-width: $lg) {
 		width: 50%;
 	}
+
+	img {
+		object-position: 50% 25%;
+	}
 }
 
 .choose-tabs-block {

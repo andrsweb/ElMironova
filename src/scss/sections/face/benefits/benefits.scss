@@ -123,16 +123,35 @@
 		justify-content: center;
 		width: 100%;
 
+		img {
+			max-height: 540px;
+			max-width: 330px;
+		}
+
 		@media all and (min-width: $lg) {
 			width: 50%;
+			justify-content: flex-end;
 		}
 	}
 
 	&-num-list {
+		position: relative;
 		margin: 5px 0 20px 0;
 
 		@media all and (min-width: $lg) {
 			margin: 5px 0 40px 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY( -50% );
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: url( '../img/face/benefits/check.png');
+			background-size: contain;
 		}
 	}
 
@@ -152,19 +171,6 @@
 
 		&:last-child {
 			margin-bottom: 0;
-		}
-
-		&::before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 0;
-			transform: translateY( -50% );
-			display: block;
-			width: 20px;
-			height: 20px;
-			background-image: url( '../img/face/benefits/check.png');
-			background-size: contain;
 		}
 	}
 

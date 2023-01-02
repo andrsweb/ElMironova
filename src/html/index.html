@@ -1,24 +1,17 @@
 @@include( 'template-parts/header/header.html', { title: 'Главная', class: '', href1:'#category', href2:'#surgeon', href3:'#choose',
 	href4:'#cost', href5:'#footer', href6:'', text1: 'Направления', text2: 'О враче', text3: 'Выберите операцию',
-	text4: 'Стоимость', text5: 'Контакты', text6: '' } )
+	text4: 'Стоимость', text5: 'Контакты', text6: '', class: 'main-page' } )
 <main>
 	@@include( 'template-parts/sections/home/hero.html' )
-	@@loop( 'template-parts/sections/home/category/category.html', [
-	{ 'src1': 'img/home/category/face.png', 'src2': 'img/home/category/bust.png', 'src3': 'img/home/category/body.png',
-		'title1': 'Лицо', 'title2': 'Грудь', 'title3': 'Тело',
-		'text1': 'Эндоскопическая<br> подтяжка лба', 'text2': 'Блефаропластика<br> и броулифтинг', 'text3': 'СМАС-лифтинг',
-		'text4': 'Увеличение груди', 'text5': 'Подтяжка без<br> имплантов', 'text6': 'Подтяжка груди на<br> имплантах',
-		'text7': 'Абдоминопластика', 'text8': 'Липосакция', 'text9': '' }
-	] )
-	@@include( 'template-parts/sections/home/examples/examples.html', { h2: 'Примеры работ', swiper: 'examples-swiper', wrapper: 'examples-wrapper',
-		pag: 'examples-pagination', prev: 'examples-prev', next: 'examples-next' } )
+	@@include( 'template-parts/sections/home/category/category.html' )
+	@@include( 'template-parts/sections/home/main-links/main-links.html' )
 	@@include( 'template-parts/sections/home/surgeon/surgeon.html' )
 	@@include( 'template-parts/sections/home/surgeon/surgeon-slider.html' )
 	@@include( 'template-parts/sections/home/press/press.html' )
 	@@include( 'template-parts/sections/home/choose/choose.html' )
 	@@include( 'template-parts/sections/home/cost/cost.html' )
 	@@include( 'template-parts/sections/form/form.html' )
-	@@include( 'template-parts/sections/home/benefit/benefit.html' )
+	@@include( 'template-parts/sections/home/benefit/benefit-section.html' )
 </main>
 
 @@include( 'template-parts/footer/footer.html' )

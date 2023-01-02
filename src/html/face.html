@@ -1,17 +1,10 @@
-@@include( 'template-parts/header/header.html', { title: 'Пластика лица', class: 'face', href1:'#plastyc', href2:'#history', href3:'#surgeon',
+@@include( 'template-parts/header/header.html', { title: 'Пластика лица', class: 'face', href1:'#plastyc', href2:'#face-before-anchor', href3:'#surgeon',
 href4:'#ben', href5:'#price', href6:'#footer', text1: 'Операция', text2: 'Отзывы', text3: 'О враче',
 text4: 'Пособия', text5: 'Стоимость', text6: 'Контакты' } )
 
 <main>
 	@@include( 'template-parts/sections/face/hero.html' )
-	@@include( 'template-parts/sections/home/category/category.html',
-		{ src1: 'img/face/category/milf.jpg', src2: 'img/face/category/face.jpg', src3: 'img/face/category/women.jpg',
-		title1: 'Устранение возрастных изменений', title2: 'Конфиденциальность', title3: 'Безопасность ',
-		text1: 'Cоздание гармоничных пропорций лица и коррекция несовершенств кожи сделают Вас моложе на 10-15 лет', text2: '', text3: '',
-		text4: 'Изменения настолько искусны, что окружающие заметят Ваше преображение, но не догадаются, в чем секрет', text5: '', text6: '',
-		text7: 'Доктор Миронова имеет за плечами 10 лет практики и проводит более 300 успешных операций в год, что подтверждается положительными отзывами пациенток',
-		text8: '', text9: '' }
-	)
+	@@include( 'template-parts/sections/face/category/face-category.html' )
 	@@include( 'template-parts/sections/face/plastyc/plastyc.html')
 	@@include( 'template-parts/sections/face/examples/face-examples.html', { h2: 'Примеры работ', swiper: 'face-swiper', wrapper: 'face-wrapper',
 				pag: 'face-pagination', prev: 'face-prev', next: 'face-next' } )

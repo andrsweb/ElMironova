@@ -4,14 +4,7 @@ text4: 'Пособия', text5: 'Стоимость', text6: 'Контакты' 
 
 <main>
 	@@include( 'template-parts/sections/body/hero/body-hero.html' )
-	@@include( 'template-parts/sections/home/category/category.html',
-		{ src1: 'img/face/category/milf.jpg', src2: 'img/face/category/face.jpg', src3: 'img/face/category/women.jpg',
-		title1: 'Гармоничная фигура', title2: 'Эстетичный пупок', title3: 'Свобода в выборе белья и одежды',
-		text1: 'Если вы находитесь в стабильном весе, то абдоминопластика будет идеальным решением для создания гармоничного силуэта и избавления от всех проблем в области живота на долгие годы',text2: '', text3: '',
-		text4: 'Ссоответствующий стандартам золотого сечения и вашим личным предпочтениям', text5: '', text6: '',
-		text7: 'Носите то, что нравится, а не то, что призвано скрывать несовершенства фигуры',
-		text8: '', text9: '' }
-	)
+	@@include( 'template-parts/sections/body/category/body-category.html' )
 	@@include( 'template-parts/sections/body/plastyc/body-plastyc.html' )
 	@@include( 'template-parts/sections/body/examples/body-examples.html', { h2: 'Примеры работ', swiper: 'body-swiper', wrapper: 'body-wrapper',
 				pag: 'body-pagination', prev: 'body-prev', next: 'body-next' } )
@@ -21,7 +14,7 @@ text4: 'Пособия', text5: 'Стоимость', text6: 'Контакты' 
 	@@include( 'template-parts/sections/home/surgeon/surgeon-slider.html' )
 	@@include( 'template-parts/sections/face/live/live.html' )
 	@@include( 'template-parts/sections/face/benefits/benefits.html' )
-	@@include( 'template-parts/sections/face/price/price.html' )
+	@@include( 'template-parts/sections/body/price/body-price.html' )
 	@@include( 'template-parts/sections/form/form.html' )
 </main>
 

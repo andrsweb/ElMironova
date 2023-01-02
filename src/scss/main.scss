@@ -1,4 +1,5 @@
 @import '../../node_modules/@fancyapps/ui/dist/fancybox';
+@import '../../node_modules/lazyframe/src/scss/lazyframe';
 
 //Swiper modules and styles
 @import '../../node_modules/swiper/swiper-bundle.min';
@@ -16,11 +17,19 @@
 
 // Footer styles.
 @import 'footer/footer';
+@import 'footer/popup';
+
+//off links in burger-menu
+@import './burger-links';
+
+//Frames
+@import './frames';
 
 // Home page sections styles.
 @import 'sections/home/hero/hero';
 @import 'sections/home/category/category';
 @import 'sections/home/examples/examples';
+@import 'sections/home/main-links/main-links';
 @import 'sections/home/surgeon/surgeon';
 @import 'sections/home/dropdown/dropdown';
 @import 'sections/home/surgeon/surgeon-slider';
@@ -47,7 +56,6 @@
 @import 'sections/bust/before/before-bust';
 @import 'sections/bust/get/get';
 @import 'sections/bust/state/state';
-@import 'sections/bust/address/address';
 @import 'sections/bust/logo/bust-logo';
 
 // Body page sections styles.
@@ -77,10 +85,19 @@
 @import 'sections/benefit/hero/ben-hero';
 @import 'sections/benefit/items/ben-items';
 
+//Whatsapp page
+@import 'sections/whatsapp/whatsapp';
+
+//Live page
+@import 'sections/live/live';
+
+//Online page
+@import 'sections/online/online';
+
 //Form
 @import 'sections/form/form';
 
 //Other
-@import 'sections/others'
+@import 'sections/others';
 
 
