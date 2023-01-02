@@ -1,4 +1,5 @@
 import './common/common'
+import './common/send-form'
 
 //Header js
 import './header'
@@ -13,9 +14,6 @@ import './sliders/live-swiper'
 import './sliders/body-examples-swiper'
 import './sliders/body-swiper-before'
 import './sliders/about-swiper'
-
-//form
-import './form'
 
 //frames
 import './frames'

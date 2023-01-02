@@ -4,7 +4,7 @@
 			Запись на консультацию
 		</h2>
 		<div class="form-wrapper">
-			<form class="form">
+			<form class="form" data-type="consultation">
 				<fieldset>
 					<label class="consultation">
 						Выберите вариант консультации:
@@ -12,14 +12,14 @@
 					<div class="radio-wrapper">
 						<div class="radio-inner">
 							<label class="radio-label">
-								<input name="radio" class="radio" type="radio">
+								<input name="radio" class="radio" type="radio" value="Онлайн консультация по видеосвязи (Бесплатно)">
 								Онлайн консультация по видеосвязи<br>
 								(Бесплатно)
-							</д>
+							</label>
 						</div>
 						<div class="radio-inner">
 							<label class="radio-label">
-								<input name="radio" class="radio" type="radio" checked>
+								<input name="radio" class="radio" type="radio" checked value="Личная консультация в клинике на м. Охотный ряд (Бесплатно)">
 								Личная консультация в клинике на м. Охотный ряд<br>
 								(Бесплатно)
 							</label>
@@ -33,6 +33,8 @@
 					<button class="button">
 						ЗАПИСАТЬСЯ
 					</button>
+
+					<div class="form-response"></div>
 				</fieldset>
 			</form>
 		</div>
