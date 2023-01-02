@@ -9,6 +9,8 @@ const toggleBurgerMenu = () => {
 	const burgerButton  = document.querySelector( '.burger-button' )
 	const burgerMenu    = document.querySelector( '.burger-menu' )
 
+	if( ! burgerButton || ! burgerMenu ) return
+
 	burgerButton.addEventListener( 'click', () => {
 
 		if( ! burgerButton && ! burgerMenu ) return
@@ -42,6 +44,8 @@ const headerScroll = () => {
     window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY
         const header = document.querySelector( '.header' )
+
+		if( ! header ) return
 
         if ( scrollTop > 0 ) {
             if ( ! header.classList.contains( 'scrolled' ) )
