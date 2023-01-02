@@ -98,3 +98,9 @@
 		align-items: flex-end;
 	}
 }
+
+.tel {
+	&::placeholder {
+		color: $black;
+	}
+}

@@ -19,6 +19,8 @@ import './frames'
 
 //libs
 import './fancyBox'
+import './lazyFrame'
+import './inputs'
 
 //svg's
 import './forSVG'
