@@ -7,5 +7,3 @@ lazyframe(elements, {
 	lazyload: true,
 	autoplay: true
 })
-
-console.log( elements )

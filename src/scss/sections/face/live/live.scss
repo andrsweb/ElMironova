@@ -84,6 +84,10 @@
 .live-img-wrapp {
 	position: relative;
 
+	iframe {
+		display: none;
+	}
+
 	img {
 		border-radius: 0;
 		margin: 0 auto;
@@ -102,6 +106,7 @@
 		}
 
 		iframe {
+			display: block;
 			width: 100%;
 			height: 100%;
 			z-index: 0;

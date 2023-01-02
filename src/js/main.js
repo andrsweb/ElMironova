@@ -14,6 +14,9 @@ import './sliders/body-examples-swiper'
 import './sliders/body-swiper-before'
 import './sliders/about-swiper'
 
+//form
+import './form'
+
 //frames
 import './frames'
 

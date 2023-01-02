@@ -6,11 +6,11 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 const playVideoByClick = () => {
 	const wrapper = document.querySelectorAll( '.live-img-wrapp' )
-	const frame   = document.querySelectorAll( 'iFrame' )
+	const frame   = document.querySelectorAll( '.frame-before' )
 
 	wrapper.forEach( item => {
 		item.addEventListener( 'click', () => {
-			console.log( frame.src)
+			console.log( frame )
 			if( ! item.classList.contains( 'played' ) ) {
 				item.classList.add( 'played' )
 			}
