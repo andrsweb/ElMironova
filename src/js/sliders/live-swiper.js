@@ -13,6 +13,7 @@ const initSwiper = () => {
 		direction: 'horizontal',
 		loop: true,
 		slidesPerView: 1,
+		spaceBetween: 30,
 
 		modules: [Pagination, Navigation],
 

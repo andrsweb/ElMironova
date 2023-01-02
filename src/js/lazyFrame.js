@@ -1,9 +1,16 @@
-import lazyframe from "lazyframe";
+import lazyframe from "lazyframe"
 
-let elements = document.querySelectorAll( '.frame-before' );
+document.addEventListener( 'DOMContentLoaded', () => {
+	'use strict'
 
-lazyframe(elements, {
-	debounce: 1000,
-	lazyload: true,
-	autoplay: true
-})
+	let elements = document.querySelectorAll( '.frame-before' )
+
+	lazyframe(elements, {
+		debounce: 1000,
+		lazyload: true,
+		autoplay: true
+	})
+} )
+
+
+

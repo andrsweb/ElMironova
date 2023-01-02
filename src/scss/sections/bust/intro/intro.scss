@@ -14,6 +14,26 @@
 }
 
 .bust .button {
-		width: 100%;
-		max-width: 300px;
+	width: 100%;
+	max-width: 300px;
+}
+
+.introduction-video {
+	width: 250px;
+	height: 406px;
+	margin: 0 auto;
+
+	@media all and (min-width: $md) {
+		width: 342px;
+		height: 506px;
+	}
+
+	@media all and (min-width: $xl) {
+		width: 342px;
+		height: 606px;
+	}
+
+	.frame-before {
+		box-shadow: none;
+	}
 }
