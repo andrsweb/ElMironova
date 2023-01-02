@@ -38,11 +38,7 @@
 		align-items: center;
 		padding:  0 20px;
 		margin-bottom: 30px;
-		transition: opacity ease $tr;
-
-		&:hover {
-			opacity: $op;
-		}
+		cursor: default;
 
 		@media all and (min-width: $xl) {
 			padding: 0 63px;
@@ -72,6 +68,12 @@
 		line-height: 31px;
 		text-align: center;
 		color: $black;
+		transition: color ease $tr;
+		cursor: pointer;
+
+		&:hover {
+			color: $bg;
+		}
 
 		@media all and (min-width: $lg) {
 			font-size: 24px;

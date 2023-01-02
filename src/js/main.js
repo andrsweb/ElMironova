@@ -26,6 +26,9 @@ import './forSVG'
 //tabs
 import './tabsOuter'
 
+//popups
+import './popup'
+
 //Anchors
 import './smoothAnchors'
 import './scrollToTop'
