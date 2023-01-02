@@ -20,13 +20,15 @@ const showPopup = () => {
 
 	if( ! popupWrapper ) return
 
+	if ( localStorage.getItem( 'showed' ) ) localStorage.removeItem( 'showed' )
+
 	body.addEventListener( 'mouseleave', e => {
 		const mouseY = e.clientY
 
 		if(  mouseY <= 0 ) {
 
 			if(  ! localStorage.getItem( 'showed' ) && ! popupWrapper.classList.contains( 'showed' ) ) {
-				// localStorage.setItem( 'showed', 1 )
+				localStorage.setItem( 'showed', 1 )
 				popupWrapper.classList.add( 'showed' )
 				disableBodyScroll( getTargetElement(), { reserveScrollBarGap: true } )
 			}
