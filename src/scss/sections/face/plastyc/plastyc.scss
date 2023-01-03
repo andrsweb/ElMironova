@@ -60,9 +60,21 @@
 
 	&-video {
 		margin: 0 0 30px 0;
+		width: 250px;
+		height: 406px;
+
+		@media all and (min-width: $m) {
+			width: 300px;
+			height: 506px;
+		}
 
 		@media all and (min-width: $md) {
 			margin: 0 30px 0 0;
+		}
+
+		@media all and (min-width: $lg) {
+			width: 341px;
+			height: 606px;
 		}
 
 		img {
