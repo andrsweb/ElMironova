@@ -1,18 +1,14 @@
 .hero {
 	position: relative;
 	width: 100vw;
-	background-image: url( '../img/home/hero/hero-bg-mob.jpg');
+	background-image: url( '../img/home/hero/hero-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: 100%;
 	padding-top: 50%;
 
 	@media all and (min-width: $xl) {
-		padding-top: 65vh;
-		background-size: 100%;
-		background-image: url( '../img/home/hero/hero-bg.jpg');
-		background-repeat: no-repeat;
-		max-height: 740px;
+		padding-top: 32vw;
 		background-position: 100% 15%;
 	}
 

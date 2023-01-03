@@ -22,10 +22,10 @@ const submitForm = selector => {
 			e.preventDefault()
 
 			const formResponse	= form.querySelector( '.form-response' ),
-				  request		= new XMLHttpRequest(),
-				  formData		= new FormData( form ),
-				  formType		= form.dataset.type,
-				  isRedirect	= form.dataset.thanksRedirect
+				request		= new XMLHttpRequest(),
+				formData		= new FormData( form ),
+				formType		= form.dataset.type,
+				isRedirect	= form.dataset.thanksRedirect
 
 			// Add request param for large or small form.
 			formData.append( 'func', formType )

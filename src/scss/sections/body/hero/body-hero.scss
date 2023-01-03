@@ -1,17 +1,14 @@
 .body .hero {
-	background-image: url( '../img/body/hero/hero-bg-mob.jpg');
+	background-image: url( '../img/body/hero/hero-bg.jpg');
 	background-size: 100%;
 	padding-top: 30%;
 	background-repeat: no-repeat;
 
 	@media all and (min-width: $lg) {
-		background-image: url( '../img/body/hero/hero-bg.jpg');
-		background-size: 100%;
-		padding-top: 50vh;
-		background-repeat: no-repeat;
+		padding-top: 30vw;
 	}
 
 	@media all and (min-width: $xl) {
-		padding-top: 50vh;
+		padding-top: 23vw;
 	}
 }

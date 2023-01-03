@@ -4,12 +4,8 @@
 	padding-top: 30%;
 	background-repeat: no-repeat;
 
-	@media all and (min-width: $lg) {
-		padding-top: 50vh;
-	}
-
 	@media all and (min-width: $xl) {
-		padding-top: 60vh;
+		padding-top: 30vw;
 	}
 }
 

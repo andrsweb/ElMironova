@@ -7,8 +7,12 @@
 	padding-top: 50%;
 
 	@media all and (min-width: $lg) {
-		padding-top: 60vh;
+		padding-top: 32vw;
 		background-position: 50% 15%;
+	}
+
+	@media all and (min-width: $xl) {
+		padding-top: 27vw;
 	}
 
 	.container {

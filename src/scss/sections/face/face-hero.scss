@@ -5,8 +5,13 @@
 	background-repeat: no-repeat;
 	background-position: top;
 
+	@media all and (min-width: $xl) {
+		padding-top: 30vw;
+		background-position: 100% 80%;
+	}
+
 	@media all and (min-width: $xxl) {
-		padding-top: 53vh;
+		padding-top: 25vw;
 		background-position: 100% 80%;
 	}
 }
