@@ -32,6 +32,10 @@
 		@media all and (min-width: $xl) {
 			padding: 10px 0 100px;
 		}
+
+		h2 {
+			font-weight: 300;
+		}
 	}
 
 	&-wrapper {

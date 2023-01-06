@@ -2,11 +2,7 @@
 	padding: 40px 0;
 
 	@media all and (min-width: $md) {
-		padding: 100px 0 40px;
-	}
-
-	@media all and (min-width: $xl) {
-		padding: 120px 0 123px;
+		padding: 70px 0 40px;
 	}
 
 	.container {
@@ -22,7 +18,7 @@
 	&-item {
 		padding: 0 14px;
 		width: calc( 100% / 1 );
-		cursor: default;
+		cursor: pointer;
 		margin-bottom: 20px;
 
 		@media all and (min-width: $sm) {
@@ -51,4 +47,8 @@
 			}
 		}
 	}
+}
+
+.about .press-item {
+	pointer-events: none;
 }

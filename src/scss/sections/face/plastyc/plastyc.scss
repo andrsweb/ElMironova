@@ -3,24 +3,11 @@
 	padding: 30px 0;
 
 	@media all and (min-width: $xl) {
-		padding: 120px 0 70px;
+		padding: 60px 0 70px;
 	}
 
 	.container {
 		max-width: 1400px;
-	}
-
-	&::before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: "";
-		display: block;
-		width: 100vw;
-		height: 80px;
-		background-image: url( '../img/face/plastyc/bg.png');
-		background-size: 100%;
-		background-repeat: no-repeat;
 	}
 
 	h2 {

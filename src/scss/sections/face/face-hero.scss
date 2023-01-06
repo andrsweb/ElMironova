@@ -1,25 +1,10 @@
-.face .hero {
-	background-image: url( '../img/face/hero/hero-bg.jpg');
-	background-size: 100% contain;
-	padding-top: 40%;
-	background-repeat: no-repeat;
-	background-position: top;
-
-	@media all and (min-width: $xl) {
-		padding-top: 30vw;
-		background-position: 100% 80%;
-	}
-
-	@media all and (min-width: $xxl) {
-		padding-top: 25vw;
-		background-position: 100% 80%;
-	}
-}
-
 .hero {
 
+	&-img {
+		object-position: 100% 25%;
+	}
+
 	h1 {
-		text-transform: uppercase;
 		margin-bottom: 10px;
 	}
 
