@@ -1,8 +1,28 @@
 .face {
 
+	.examples {
+		padding: 40px 0;
+
+		@media all and (min-width: $xl) {
+			padding: 90px 0 40px;
+		}
+
+		&-box {
+			padding: 0;
+
+			h2 {
+				margin-top: 10px;
+			}
+		}
+	}
+
 	&-slide {
 		position: relative;
-		height: 420px;
+		height: 80vw;
+
+		@media all and (min-width: $lg) {
+			height: 650px;
+		}
 
 		img {
 			object-fit: cover;
@@ -16,8 +36,19 @@
 		width: 100%;
 	}
 
+	
+	&-title {
+		&::before {
+			display: none;
+		}
+	}
+
 	h2 {
 		margin-bottom: 35px;
+
+		&::before {
+			top: 0;
+		}
 	}
 
 	.off {
@@ -62,5 +93,4 @@
 		}
 	}
 }
-
 

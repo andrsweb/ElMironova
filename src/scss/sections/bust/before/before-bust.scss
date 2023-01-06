@@ -23,11 +23,11 @@
 	position: relative;
 	display: inline-block;
 	text-align: left;
-	font-weight: $fw-bold;
+	font-weight: 300;
 	font-size: 22px;
 	line-height: 29px;
 	color: $black;
-	margin-bottom: 55px;
+	margin-bottom: 20px;
 	padding-left: 10px;
 
 	&::before {
