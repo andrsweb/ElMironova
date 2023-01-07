@@ -63,13 +63,13 @@
 
 	& .face-prev {
 		top: 40%;
-		left: 20px;
+		left: 0;
 		transform: rotate( -135deg );
 	}
 
 	& .face-next {
 		top: 40%;
-		right: 20px;
+		right: 0;
 		transform: rotate( 45deg );
 	}
 
@@ -77,10 +77,10 @@
 		position: absolute;
 		z-index: 2;
 		display: block;
-		width: 12px;
-		height: 12px;
-		border-top: 3px solid $grey;
-		border-right: 3px solid $grey;
+		width: 25px;
+		height: 25px;
+		border-top: 4px solid $grey;
+		border-right: 4px solid $grey;
 		cursor: pointer;
 		transition: scale ease $tr;
 
@@ -89,4 +89,3 @@
 		}
 	}
 }
-
