@@ -1,5 +1,6 @@
 .live {
 	padding: 30px 0 20px;
+	position: relative;
 
 	@media all and (min-width: $sm) {
 		padding: 50px 0 30px;
@@ -61,25 +62,33 @@
 	}
 
 	& .live-prev {
-		top: 40%;
-		left: 30px;
+		top: 50%;
+		left: 10%;
 		transform: rotate( -135deg );
+
+		@media all and (min-width: $xl) {
+			left: 20%;
+		}
 	}
 
 	& .live-next {
-		top: 40%;
-		right: 30px;
+		top: 50%;
+		right: 10%;
 		transform: rotate( 45deg );
+
+		@media all and (min-width: $xl) {
+			right: 20%;
+		}
 	}
 
 	& .live-prev, & .live-next {
 		position: absolute;
 		z-index: 2;
 		display: block;
-		width: 12px;
-		height: 12px;
-		border-top: 3px solid $grey;
-		border-right: 3px solid $grey;
+		width: 25px;
+		height: 25px;
+		border-top: 4px solid $grey;
+		border-right: 4px solid $grey;
 		cursor: pointer;
 		transition: scale ease $tr;
 

@@ -2,6 +2,7 @@
 
 	.examples {
 		padding: 40px 0;
+		position: relative;
 
 		@media all and (min-width: $xl) {
 			padding: 90px 0 40px;
@@ -62,14 +63,14 @@
 	}
 
 	& .face-prev {
-		top: 40%;
-		left: 0;
+		top: 50%;
+		left: 10%;
 		transform: rotate( -135deg );
 	}
 
 	& .face-next {
-		top: 40%;
-		right: 0;
+		top: 50%;
+		right: 10%;
 		transform: rotate( 45deg );
 	}
 
@@ -88,4 +89,8 @@
 			scale: 1.1;
 		}
 	}
+}
+
+.before {
+	position: relative;
 }

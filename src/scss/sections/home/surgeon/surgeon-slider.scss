@@ -43,10 +43,10 @@
 	position: absolute;
 	z-index: 2;
 	display: block;
-	width: 12px;
-	height: 12px;
-	border-top: 3px solid $grey;
-	border-right: 3px solid $grey;
+	width: 25px;
+	height: 25px;
+	border-top: 4px solid $grey;
+	border-right: 4px solid $grey;
 	cursor: pointer;
 	transition: scale ease $tr;
 
@@ -56,17 +56,15 @@
 }
 
 .surgeon-prev {
-	top: 50%;
-	left: 20px;
-	transform: rotate( -135deg )
-			translateY( -50% );
+	top: 35%;
+	left: 10%;
+	transform: rotate( -135deg );
 }
 
 .surgeon-next {
-	top: 50%;
-	right: 20px;
-	transform: rotate( 45deg )
-			translateY( 50% );
+	top: 35%;
+	right: 10%;
+	transform: rotate( 45deg );
 }
 
 .surgeon-slide {

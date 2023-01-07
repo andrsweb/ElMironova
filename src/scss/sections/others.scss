@@ -19,10 +19,10 @@
 	position: absolute;
 	z-index: 2;
 	display: block;
-	width: 12px;
-	height: 12px;
-	border-top: 3px solid $grey;
-	border-right: 3px solid $grey;
+	width: 25px;
+	height: 25px;
+	border-top: 4px solid $grey;
+	border-right: 4px solid $grey;
 	cursor: pointer;
 	transition: scale ease $tr;
 
@@ -33,14 +33,14 @@
 
 .examples-prev, .body-prev, .about-prev {
 	top: 45%;
-	left: 20px;
+	left: 10%;
 	transform: rotate( -135deg )
 			translateY( 45% );
 }
 
 .examples-next, .body-next, .about-next {
 	top: 45%;
-	right: 20px;
+	right: 10%;
 	transform: rotate( 45deg )
 			translateY( 45% );
 }
@@ -354,9 +354,17 @@
 	}
 }
 
+.examples {
+	position: relative;
+}
+
 .form-response {
 	display: block;
 	text-align: center;
 	font-size: 18px;
-	color: $grey;
+	color: $bg;
+}
+
+.about-press {
+	position: relative;
 }
