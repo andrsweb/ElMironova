@@ -153,6 +153,16 @@
 	color: $black;
 }
 
+.body {
+	.examples {
+		padding-bottom: 50px;
+
+		&-box {
+			padding: 0;
+		}
+	}
+}
+
 //Styles of scroll arrow
 .scroll-img {
     opacity: 0;
