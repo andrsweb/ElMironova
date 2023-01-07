@@ -28,24 +28,17 @@
 	}
 
 	&-block {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX( -50% );
+		position: relative;
 		background:rgba(186, 165, 134, 0.862745098);
 		padding: 15px 0 10px;
 		max-width: 1040px;
 
 		@media all and (min-width: $md) {
 			padding: 25px 0 20px;
-		}
-
-		&::before {
-			left: 100%;
-		}
-
-		&::after {
-			right: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX( -50% );
 		}
 
 		h1 {

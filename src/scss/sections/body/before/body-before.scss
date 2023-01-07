@@ -54,3 +54,12 @@
 		}
 	}
 }
+
+.body .hero-block {
+	position: relative;
+
+	@media all and (min-width: $md) {
+		position: absolute;
+		bottom: 0;
+	}
+}

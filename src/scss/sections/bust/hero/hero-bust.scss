@@ -1,13 +1,12 @@
-.bust .hero {
-	background-image: url( '../img/bust/hero/hero-bg.jpg');
-	background-size: 100%;
-	padding-top: 25%;
-	background-repeat: no-repeat;
-	background-position: top;
+.bust {
 
-	@media all and (min-width: $lg) {
-		padding-top: 25vw;
-		background-repeat: no-repeat;
+	.hero-block {
+		position: relative;
+
+		@media all and (min-width: $md) {
+			position: absolute;
+			bottom: 0;
+		}
 	}
 
 	.hero-link {
