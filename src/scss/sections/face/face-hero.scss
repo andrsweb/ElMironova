@@ -87,3 +87,15 @@
 		}
 	}
 }
+
+.face .examples-title {
+	text-align: center;
+	width: 100%;
+	font-weight: 300;
+	font-size: 30px;
+	margin-bottom: 30px;
+
+	&::before {
+		display: none;
+	}
+}

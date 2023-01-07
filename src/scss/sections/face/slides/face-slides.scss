@@ -1,0 +1,102 @@
+.face .examples-box {
+    position: relative;
+}
+
+.blef-prev, .blef-next, .down-prev, .down-next,
+.smac-prev, .smac-next, .brow-next, .brow-prev {
+	position: absolute;
+		z-index: 2;
+		display: block;
+		width: 25px;
+		height: 25px;
+		border-top: 4px solid $grey;
+		border-right: 4px solid $grey;
+		cursor: pointer;
+		transition: border-color ease $tr;
+
+		&:hover {
+			border-color: $dark;
+		}
+}
+
+.blef-prev, .down-prev, .smac-prev, .brow-prev {
+    top: 80%;
+    left: -1%;
+    transform: rotate( -135deg );
+
+    @media all and (min-width: $md) {
+        top: 50%;
+    }
+
+    @media all and (min-width: $xxl) {
+        left: -5%;
+    }
+}
+
+.blef-next, .down-next, .smac-next, .brow-next {
+    top: 80%;
+    right: -1%;
+    transform: rotate( 45deg );
+
+    @media all and (min-width: $md) {
+        top: 50%;
+    }
+
+    @media all and (min-width: $xxl) {
+        right: -5%;
+    }
+}
+
+.blef-pag, .smac-pag, .down-pag, .brow-pag {
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.swiper-blef .face-slide {
+    height: 70vw;
+
+    @media all and (min-width: $sm) {
+        height: 80vw;
+    }
+
+    @media all and (min-width: $lg) {
+        height: 500px;
+    }
+}
+
+.down-swiper .face-slide {
+    height: 80vw;
+
+    @media all and (min-width: $sm) {
+        height: 90vw;
+    }
+
+    @media all and (min-width: $lg) {
+        height: 550px;
+    }
+}
+
+.smac-swiper .face-slide {
+    height: 60vw;
+
+    @media all and (min-width: $sm) {
+        height: 70vw;
+    }
+
+    @media all and (min-width: $lg) {
+        height: 450px;
+    }
+}
+
+.brow-swiper .face-slide {
+    height: 60vw;
+
+    @media all and (min-width: $sm) {
+        height: 70vw;
+    }
+
+    @media all and (min-width: $lg) {
+        height: 450px;
+    }
+}
