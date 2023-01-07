@@ -18,4 +18,10 @@
 	.hero-link {
 		white-space: normal;
 	}
+
+	.introduction {
+		&::before {
+			display: none;
+		}
+	}
 }
