@@ -58,7 +58,7 @@
 			width: 100%;
 			max-width: 172px;
 			cursor: pointer;
-			transition: scale ease $tr;
+			transition: color ease $tr;
 
 			@media all and (min-width: $sm) {
 				max-width: 220px;
@@ -90,7 +90,7 @@
 			}
 
 			&:hover {
-				scale: 1.02;
+				color: $dark;
 			}
 		}
 	}
@@ -128,6 +128,7 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 10px;
+		width: 100%;
 
 		span {
 			margin-right: 20px;
