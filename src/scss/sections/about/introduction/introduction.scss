@@ -82,4 +82,14 @@
 		width: 455px;
 		height: 255px;
 	}
+
+	@media all and (min-width: $lg) {
+		width: 655px;
+		height: 355px;
+	}
+
+	@media all and (min-width: $xl) {
+		width: 855px;
+		height: 455px;
+	}
 }
