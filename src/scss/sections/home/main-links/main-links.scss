@@ -99,5 +99,13 @@
 
 	@media all and (min-width: $xl) {
 		padding: 12px;
+		font-size: 16px;
+		max-width: 320px;
+	}
+}
+
+.main-page .main-links {
+	.slide-link {
+		font-size: 12px;
 	}
 }

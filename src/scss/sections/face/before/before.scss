@@ -150,15 +150,31 @@
 	}
 
 	& .before-prev {
-		top: 50%;
-		left: 10%;
+		top: 80%;
+		left: -1%;
 		transform: rotate( -135deg );
+	
+		@media all and (min-width: $md) {
+			top: 50%;
+		}
+	
+		@media all and (min-width: $xxl) {
+			left: -5%;
+		}
 	}
 
 	& .before-next {
-		top: 50%;
-		right: 10%;
+		top: 80%;
+		right: -1%;
 		transform: rotate( 45deg );
+	
+		@media all and (min-width: $md) {
+			top: 50%;
+		}
+	
+		@media all and (min-width: $xxl) {
+			right: -5%;
+		}
 	}
 
 	& .before-prev, & .before-next {
