@@ -37,22 +37,6 @@
 	@media all and (min-width: $xl) {
 		max-width: 500px;
 	}
-
-	.body-text {
-		font-weight: 300;
-		font-size: 15px;
-		margin-bottom: 30px;
-		text-align: center;
-
-		@media all and (min-width: $md) {
-			font-size: 20px;
-			text-align: left;
-		}
-
-		@media all and (min-width: $xl) {
-			margin-bottom: 100px;
-		}
-	}
 }
 
 .body .hero-block {

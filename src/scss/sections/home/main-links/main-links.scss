@@ -97,9 +97,12 @@
 		max-width: 296px;
 	}
 
+	@media all and (min-width: $md) {
+		font-size: 16px;
+	}
+
 	@media all and (min-width: $xl) {
 		padding: 12px;
-		font-size: 16px;
 		max-width: 320px;
 	}
 }
