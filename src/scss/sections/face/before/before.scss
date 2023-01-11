@@ -150,46 +150,45 @@
 	}
 
 	& .before-prev {
-		top: 80%;
-		left: -1%;
+		top: 50%;
+		left: 1%;
 		transform: rotate( -135deg );
 	
-		@media all and (min-width: $md) {
-			top: 50%;
+		@media all and (min-width: $xxl) {
+			left: 5%;
 		}
 	
-		@media all and (min-width: $xxl) {
-			left: -5%;
+		@media all and (min-width: 1600px) {
+			left: 10%;
 		}
 	}
 
 	& .before-next {
-		top: 80%;
-		right: -1%;
+		top: 50%;
+		right: 1%;
 		transform: rotate( 45deg );
 	
-		@media all and (min-width: $md) {
-			top: 50%;
+		@media all and (min-width: $xxl) {
+			right: 5%;
 		}
 	
-		@media all and (min-width: $xxl) {
-			right: -5%;
+		@media all and (min-width: 1600px) {
+			right: 10%;
 		}
 	}
 
 	& .before-prev, & .before-next {
 		position: absolute;
 		z-index: 2;
-		display: block;
 		width: 25px;
 		height: 25px;
 		border-top: 4px solid $grey;
 		border-right: 4px solid $grey;
 		cursor: pointer;
-		transition: scale ease $tr;
+		transition: border-color ease $tr;
 
 		&:hover {
-			scale: 1.1;
+			border-color: $dark;
 		}
 	}
 

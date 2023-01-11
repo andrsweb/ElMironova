@@ -84,16 +84,15 @@
 	& .live-prev, & .live-next {
 		position: absolute;
 		z-index: 2;
-		display: block;
 		width: 25px;
 		height: 25px;
 		border-top: 4px solid $grey;
 		border-right: 4px solid $grey;
 		cursor: pointer;
-		transition: scale ease $tr;
+		transition: border-color ease $tr;
 
 		&:hover {
-			scale: 1.1;
+			border-color: $dark;
 		}
 	}
 }
