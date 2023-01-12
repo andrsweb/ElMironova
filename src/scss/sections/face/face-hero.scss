@@ -9,10 +9,6 @@
 		}
 	}
 
-	&-img {
-		object-position: 100% 25%;
-	}
-
 	h1 {
 		margin-bottom: 10px;
 	}
@@ -98,4 +94,8 @@
 	&::before {
 		display: none;
 	}
+}
+
+.face .hero-img {
+	object-position: bottom;
 }
