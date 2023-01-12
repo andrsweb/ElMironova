@@ -25,12 +25,27 @@
 		}
 	}
 
+	.face-title {
+		font-weight: 300;
+		text-align: center;
+		font-size: 30px;
+		text-align: center;
+		width: 100%;
+
+		@media all and (min-width: $xl) {
+			font-size: 40px;
+		}
+	}
+
 	&-box {
-		padding: 10px 0;
 		border-top: 3px solid #6e6e6e;
 
 		@media all and (min-width: $xl) {
-			padding: 10px 0 100px;
+			// padding: 0 0 100px;
+		}
+
+		h2 {
+			font-weight: 300;
 		}
 	}
 

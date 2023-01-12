@@ -19,7 +19,7 @@
 	}
 
 	@media all and (min-width: $xl) {
-		padding: 110px 0 100px;
+		padding: 100px 0 100px;
 	}
 
 	&::before {
@@ -66,5 +66,30 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+}
+
+.about .introduction-video {
+	width: 255px;
+	height: 255px;
+
+	@media all and (min-width: $sm) {
+		width: 400px;
+		height: 255px;
+	}
+
+	@media all and (min-width: $m) {
+		width: 455px;
+		height: 255px;
+	}
+
+	@media all and (min-width: $lg) {
+		width: 655px;
+		height: 355px;
+	}
+
+	@media all and (min-width: $xl) {
+		width: 855px;
+		height: 455px;
 	}
 }

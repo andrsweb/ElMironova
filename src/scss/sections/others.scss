@@ -18,31 +18,45 @@
 .examples-prev, .examples-next, .body-prev, .body-next, .about-prev, .about-next {
 	position: absolute;
 	z-index: 2;
-	display: block;
-	width: 12px;
-	height: 12px;
-	border-top: 3px solid $grey;
-	border-right: 3px solid $grey;
+	width: 25px;
+	height: 25px;
+	border-top: 4px solid $grey;
+	border-right: 4px solid $grey;
 	cursor: pointer;
-	transition: scale ease $tr;
+	transition: border-color ease $tr;
+	display: none;
 
 	&:hover {
-		scale: 1.1;
+		border-color: $dark;
 	}
 }
 
 .examples-prev, .body-prev, .about-prev {
-	top: 45%;
-	left: 20px;
-	transform: rotate( -135deg )
-			translateY( 45% );
+	top: 50%;
+	left: 1%;
+	transform: rotate( -135deg );
+
+	@media all and (min-width: $xxl) {
+		left: 5%;
+	}
+
+	@media all and (min-width: 1600px) {
+		left: 10%;
+	}
 }
 
 .examples-next, .body-next, .about-next {
-	top: 45%;
-	right: 20px;
-	transform: rotate( 45deg )
-			translateY( 45% );
+	top: 50%;
+	right: 1%;
+	transform: rotate( 45deg );
+
+	@media all and (min-width: $xxl) {
+		right: 5%;
+	}
+
+	@media all and (min-width: 1600px) {
+		right: 10%;
+	}
 }
 
 .about .surgeon-slider {
@@ -68,8 +82,15 @@
 	}
 
 	.face-slide {
-		height: 100%;
-		max-height: 427px;
+		height: 60vw;
+
+		@media all and (min-width: $md) {
+			height: 40vw;
+		}
+
+		@media all and (min-width: $xl) {
+			height: 427px;
+		}
 	}
 }
 
@@ -151,6 +172,16 @@
 	line-height: 31px;
 	text-align: center;
 	color: $black;
+}
+
+.body {
+	.examples {
+		padding-bottom: 50px;
+
+		&-box {
+			padding: 0;
+		}
+	}
 }
 
 //Styles of scroll arrow
@@ -344,9 +375,32 @@
 	}
 }
 
-.form-response {
+.examples {
+	position: relative;
+}
+
+.success {
 	display: block;
 	text-align: center;
 	font-size: 18px;
-	color: $grey;
+	color: $white;
+}
+
+.about-press {
+	position: relative;
+}
+
+.live-link {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-prev, .swiper-next {
+	display: none;
+
+	@media all and (min-width: $md) {
+		display: block;
+	}
 }

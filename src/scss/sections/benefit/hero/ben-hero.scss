@@ -1,22 +1,20 @@
 .benefit-page .hero {
-	width: 100vw;
-	background-image: url( '../img/about/hero/practice-bg.jpg');
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: 100%;
-	padding-top: 50%;
-
-	@media all and (min-width: $lg) {
-		padding-top: 32vw;
-		background-position: 50% 15%;
-	}
-
-	@media all and (min-width: $xl) {
-		padding-top: 27vw;
-	}
-
+	
 	.container {
 		max-width: 1350px;
+	}
+
+	.hero-img {
+		object-position: 100% 38%;
+	}
+
+	.hero-block {
+		position: relative;
+	
+		@media all and (min-width: $md) {
+			position: absolute;
+			bottom: 0;
+		}
 	}
 
 	h5 {
@@ -31,8 +29,8 @@
 		width: 100%;
 		padding: 20px 0;
 
-		@media all and (min-width: $xl) {
-			padding: 40px 0;
+		h5 {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -44,7 +42,7 @@
 		align-items: center;
 		padding: 0 10px;
 
-		@media all and (min-width: $xl) {
+		@media all and (min-width: $lg) {
 			flex-direction: row;
 			width: 100%;
 		}
@@ -57,7 +55,7 @@
 				margin-bottom: 0;
 			}
 
-			@media all and (min-width: $xl) {
+			@media all and (min-width: $lg) {
 				margin-bottom: 0;
 				margin-right: 20px;
 

@@ -43,30 +43,44 @@
 	position: absolute;
 	z-index: 2;
 	display: block;
-	width: 12px;
-	height: 12px;
-	border-top: 3px solid $grey;
-	border-right: 3px solid $grey;
+	width: 25px;
+	height: 25px;
+	border-top: 4px solid $grey;
+	border-right: 4px solid $grey;
 	cursor: pointer;
-	transition: scale ease $tr;
+	transition: border-color ease $tr;
 
 	&:hover {
-		scale: 1.1;
+		border-color: $dark;
 	}
 }
 
 .surgeon-prev {
-	top: 50%;
-	left: 20px;
-	transform: rotate( -135deg )
-			translateY( -50% );
+	top: 35%;
+	left: 1%;
+	transform: rotate( -135deg );
+
+	@media all and (min-width: $xxl) {
+		left: 5%;
+	}
+
+	@media all and (min-width: 1600px) {
+		left: 10%;
+	}
 }
 
 .surgeon-next {
-	top: 50%;
-	right: 20px;
-	transform: rotate( 45deg )
-			translateY( 50% );
+	top: 35%;
+	right: 1%;
+	transform: rotate( 45deg );
+
+	@media all and (min-width: $xxl) {
+		right: 5%;
+	}
+
+	@media all and (min-width: 1600px) {
+		right: 10%;
+	}
 }
 
 .surgeon-slide {

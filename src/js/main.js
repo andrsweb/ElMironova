@@ -14,6 +14,10 @@ import './sliders/live-swiper'
 import './sliders/body-examples-swiper'
 import './sliders/body-swiper-before'
 import './sliders/about-swiper'
+import './sliders/blefaro'
+import './sliders/down-swiper'
+import './sliders/smac-swiper'
+import './sliders/brow-swiper'
 
 //frames
 import './frames'

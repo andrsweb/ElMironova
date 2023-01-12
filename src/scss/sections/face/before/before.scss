@@ -9,10 +9,6 @@
 		padding-bottom: 105px;
 	}
 
-	.examples-box {
-		padding: 10px 0 0 0;
-	}
-
 	&-video {
 		width: 250px;
 		height: 433px;
@@ -154,30 +150,45 @@
 	}
 
 	& .before-prev {
-		top: 40%;
-		left: 20px;
+		top: 50%;
+		left: 1%;
 		transform: rotate( -135deg );
+	
+		@media all and (min-width: $xxl) {
+			left: 5%;
+		}
+	
+		@media all and (min-width: 1600px) {
+			left: 10%;
+		}
 	}
 
 	& .before-next {
-		top: 40%;
-		right: 20px;
+		top: 50%;
+		right: 1%;
 		transform: rotate( 45deg );
+	
+		@media all and (min-width: $xxl) {
+			right: 5%;
+		}
+	
+		@media all and (min-width: 1600px) {
+			right: 10%;
+		}
 	}
 
 	& .before-prev, & .before-next {
 		position: absolute;
 		z-index: 2;
-		display: block;
-		width: 12px;
-		height: 12px;
-		border-top: 3px solid $grey;
-		border-right: 3px solid $grey;
+		width: 25px;
+		height: 25px;
+		border-top: 4px solid $grey;
+		border-right: 4px solid $grey;
 		cursor: pointer;
-		transition: scale ease $tr;
+		transition: border-color ease $tr;
 
 		&:hover {
-			scale: 1.1;
+			border-color: $dark;
 		}
 	}
 

@@ -1,26 +1,22 @@
 .hero {
 	position: relative;
 	width: 100vw;
-	background-image: url( '../img/home/hero/hero-bg.jpg');
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: 100%;
-	padding-top: 50%;
 
-	@media all and (min-width: $xl) {
-		padding-top: 32vw;
-		background-position: 100% 15%;
-	}
-
-	&::before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: "";
-		display: block;
+	&-img {
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.315);
+		max-height: 350px;
+		object-fit: cover;
+		object-position: top;
+		border-radius: 0;
+
+		@media all and (min-width: $m) {
+			max-height: 650px;
+		}
+
+		@media all and (min-width: $xl) {
+			max-height: 90vh;
+		}
 	}
 
 	.container {
@@ -31,42 +27,18 @@
 		box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.15);
 	}
 
-	&-shadow {
-		position: relative;
-		z-index: 10;
-	}
-
 	&-block {
 		position: relative;
 		background:rgba(186, 165, 134, 0.862745098);
 		padding: 15px 0 10px;
-
-		&::before, &::after {
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			height: 100%;
-			width: calc( (100vw - 100%) / 2 );
-			background: $white;
-			z-index: -1;
-
-			@media all and (min-width: $lg) {
-				top: 50%;
-				height: 50%;
-			}
-		}
+		max-width: 1040px;
 
 		@media all and (min-width: $md) {
 			padding: 25px 0 20px;
-		}
-
-		&::before {
-			left: 100%;
-		}
-
-		&::after {
-			right: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX( -50% );
 		}
 
 		h1 {
@@ -81,7 +53,7 @@
 		align-items: center;
 		width: 250px;
 		max-width: 345px;
-		height: 45px;
+		height: 30px;
 		font-family: $ff;
 		font-weight: $fw-regular;
 		font-size: 12px;
@@ -97,8 +69,9 @@
 		transition: background ease $tr,
 					color ease $tr;
 
-		@media all and (min-width: 400px) {
+		@media all and (min-width: 390px) {
 			width: 100%;
+			height: 45px;
 		}
 
 		@media all and (min-width: $lg) {

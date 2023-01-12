@@ -1,19 +1,11 @@
-.about .hero {
-	background-image: url( '../img/about/hero/hero-bg.jpg');
-	background-size: 100%;
-	padding-top: 40%;
-	background-repeat: no-repeat;
-
-	@media all and (min-width: $xl) {
-		padding-top: 28vw;
-		background-position: 50% 25%;
-	}
-
-	h1 {
-		margin-bottom: 10px;
-	}
-
+.about {
 	.hero-block {
+		position: relative;
+
+		@media all and (min-width: $md) {
+			position: absolute;
+			bottom: 0;
+		}
 
 		@media all and (min-width: $xl) {
 			padding: 40px 0;
@@ -58,6 +50,6 @@
 	}
 }
 
-.about .wrapper {
-	padding-top: 10vh;
+.about .hero-img {
+	object-position: 100% 20%;
 }
