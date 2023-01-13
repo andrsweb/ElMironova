@@ -102,7 +102,7 @@
 		color: $black;
 		margin-bottom: 30px;
 
-		@media all and (min-width: $xl) {
+		@media all and (min-width: $md) {
 			font-size: 24px;
 			margin-bottom: 51px;
 			line-height: 31px;
@@ -137,7 +137,7 @@
 		color: $black;
 		text-align: center;
 
-		@media all and (min-width: $xl) {
+		@media all and (min-width: $md) {
 			font-size: 24px;
 			line-height: 31px;
 		}
@@ -205,7 +205,8 @@
 	}
 }
 
-.bust .before-prev, .body .before-prev, .about .before-prev {
+.bust .before-prev, .body .before-prev,
+.about .before-prev, .testi .before-prev {
 	@media all and (min-width: $lg) {
 		left: 2%;
 	}
@@ -219,7 +220,8 @@
 	}
 }
 
-.bust .before-next, .body .before-next, .about .before-next {
+.bust .before-next, .body .before-next,
+.about .before-next, .testi .before-next {
 	@media all and (min-width: $lg) {
 		right: 2%;
 	}
@@ -230,5 +232,15 @@
 
 	@media all and (min-width: $xxl) {
 		right: 10%;
+	}
+}
+
+.testi #testi-plastyc .before-text {
+	@media all and (min-width: $lg) {
+		padding:  0 10%;
+	}
+
+	@media all and (min-width: 1600px) {
+		padding:  0;
 	}
 }
