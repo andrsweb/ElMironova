@@ -68,6 +68,10 @@
 		transition: color ease $tr;
 
 		@media all and (min-width: $sm) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $lg) {
 			font-size: 14px;
 		}
 
@@ -98,6 +102,10 @@
 		color: $black;
 
 		@media all and (min-width: $sm) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $lg) {
 			font-size: 14px;
 		}
 
