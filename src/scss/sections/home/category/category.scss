@@ -97,7 +97,7 @@
 		align-items: center;
 		flex-direction: column;
 
-		a {
+		.category-text {
 			height: 0;
 			visibility: hidden;
 			opacity: 0;
@@ -123,7 +123,7 @@
 		&:hover {
 		background: rgba(186, 165, 134, 0.9);
 
-			.category-links a {
+			.category-links .category-text {
 				animation: show 1s ease forwards;
 
 				@keyframes show {
