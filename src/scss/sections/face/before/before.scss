@@ -151,29 +151,29 @@
 
 	& .before-prev {
 		top: 50%;
-		left: 1%;
+		left: 5%;
 		transform: rotate( -135deg );
-	
-		@media all and (min-width: $xxl) {
-			left: 5%;
+
+		@media all and (min-width: $lg) {
+			left: 0;
 		}
 	
-		@media all and (min-width: 1600px) {
-			left: 10%;
+		@media all and (min-width: $xl) {
+			left: 5%;
 		}
 	}
 
 	& .before-next {
 		top: 50%;
-		right: 1%;
+		right: 5%;
 		transform: rotate( 45deg );
-	
-		@media all and (min-width: $xxl) {
-			right: 5%;
+
+		@media all and (min-width: $lg) {
+			right: 0;
 		}
 	
-		@media all and (min-width: 1600px) {
-			right: 10%;
+		@media all and (min-width: $xl) {
+			right: 5%;
 		}
 	}
 

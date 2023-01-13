@@ -67,6 +67,10 @@
 		transform: rotate( -135deg );
 
 		@media all and (min-width: $xl) {
+			left: 15%;
+		}
+
+		@media all and (min-width: $xxl) {
 			left: 20%;
 		}
 	}
@@ -77,6 +81,10 @@
 		transform: rotate( 45deg );
 
 		@media all and (min-width: $xl) {
+			right: 15%;
+		}
+
+		@media all and (min-width: $xxl) {
 			right: 20%;
 		}
 	}
