@@ -205,7 +205,7 @@
 	}
 }
 
-.bust .before-prev {
+.bust .before-prev, .body .before-prev {
 	@media all and (min-width: $lg) {
 		left: 2%;
 	}
@@ -219,7 +219,7 @@
 	}
 }
 
-.bust .before-next {
+.bust .before-next, .body .before-next {
 	@media all and (min-width: $lg) {
 		right: 2%;
 	}

@@ -15,10 +15,10 @@
 	height: 60vw;
 
 	@media all and (min-width: $md) {
-		height: 40vw
+		height: 30vw
 	}
 
-	@media all and (min-width: $lg) {
+	@media all and (min-width: $xl) {
 		height: 420px;
 	}
 }
