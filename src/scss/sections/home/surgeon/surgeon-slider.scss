@@ -18,6 +18,18 @@
 
 	.container {
 		max-width: 1240px;
+
+		@media all and (min-width: $md) {
+			padding: 0 50px;
+		}
+
+		@media all and (min-width: $lg) {
+			padding: 0 70px;
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 0 20px;
+		}
 	}
 
 	.slide-link {
@@ -57,7 +69,7 @@
 
 .surgeon-prev {
 	top: 35%;
-	left: 1%;
+	left: 3%;
 	transform: rotate( -135deg );
 
 	@media all and (min-width: $xxl) {
@@ -71,7 +83,7 @@
 
 .surgeon-next {
 	top: 35%;
-	right: 1%;
+	right: 3%;
 	transform: rotate( 45deg );
 
 	@media all and (min-width: $xxl) {

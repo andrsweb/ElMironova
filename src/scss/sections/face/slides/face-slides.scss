@@ -21,29 +21,21 @@
 
 .blef-prev, .down-prev, .smac-prev, .brow-prev {
     top: 80%;
-    left: -1%;
+    left: -4%;
     transform: rotate( -135deg );
 
     @media all and (min-width: $md) {
         top: 50%;
     }
-
-    @media all and (min-width: $xxl) {
-        left: -5%;
-    }
 }
 
 .blef-next, .down-next, .smac-next, .brow-next {
     top: 80%;
-    right: -1%;
+    right: -4%;
     transform: rotate( 45deg );
 
     @media all and (min-width: $md) {
         top: 50%;
-    }
-
-    @media all and (min-width: $xxl) {
-        right: -5%;
     }
 }
 
@@ -61,6 +53,10 @@
     }
 
     @media all and (min-width: $lg) {
+        height: 400px;
+    }
+
+	@media all and (min-width: $xl) {
         height: 500px;
     }
 }
@@ -73,6 +69,10 @@
     }
 
     @media all and (min-width: $lg) {
+        height: 450px;
+    }
+
+	@media all and (min-width: $xl) {
         height: 550px;
     }
 }
@@ -85,6 +85,10 @@
     }
 
     @media all and (min-width: $lg) {
+        height: 400px;
+    }
+
+	@media all and (min-width: $xl) {
         height: 450px;
     }
 }
@@ -97,6 +101,10 @@
     }
 
     @media all and (min-width: $lg) {
+        height: 350px;
+    }
+
+	@media all and (min-width: $xl) {
         height: 450px;
     }
 }

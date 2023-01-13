@@ -1,6 +1,18 @@
 .examples {
 	.container {
 		max-width: 1240px;
+
+		@media all and (min-width: $md) {
+			padding: 0 50px;
+		}
+
+		@media all and (min-width: $lg) {
+			padding: 0 70px;
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 0 20px;
+		}
 	}
 
 	h2 {
@@ -39,10 +51,6 @@
 
 	&-box {
 		border-top: 3px solid #6e6e6e;
-
-		@media all and (min-width: $xl) {
-			// padding: 0 0 100px;
-		}
 
 		h2 {
 			font-weight: 300;
