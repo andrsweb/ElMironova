@@ -204,3 +204,31 @@
 		}
 	}
 }
+
+.bust .before-prev {
+	@media all and (min-width: $lg) {
+		left: 2%;
+	}
+
+	@media all and (min-width: $xl) {
+		left: 5%;
+	}
+
+	@media all and (min-width: $xxl) {
+		left: 10%;
+	}
+}
+
+.bust .before-next {
+	@media all and (min-width: $lg) {
+		right: 2%;
+	}
+
+	@media all and (min-width: $xl) {
+		right: 5%;
+	}
+
+	@media all and (min-width: $xxl) {
+		right: 10%;
+	}
+}

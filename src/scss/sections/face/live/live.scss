@@ -63,8 +63,12 @@
 
 	& .live-prev {
 		top: 50%;
-		left: 10%;
+		left: 2%;
 		transform: rotate( -135deg );
+
+		@media all and (min-width: $lg) {
+			left: 10%;
+		}
 
 		@media all and (min-width: $xl) {
 			left: 15%;
@@ -77,8 +81,12 @@
 
 	& .live-next {
 		top: 50%;
-		right: 10%;
+		right: 2%;
 		transform: rotate( 45deg );
+
+		@media all and (min-width: $lg) {
+			right: 10%;
+		}
 
 		@media all and (min-width: $xl) {
 			right: 15%;
