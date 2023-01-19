@@ -144,8 +144,7 @@
 		align-items: center;
 		border: 0;
 		border-style: none;
-		width: 305px;
-		height: 42px;
+		min-width: 305px;
 		background: #00CD58;
 		font-family: $ff;
 		font-weight: $fw-bold;

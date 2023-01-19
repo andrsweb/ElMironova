@@ -1,8 +1,8 @@
 .button {
-	padding: 6px 10px;
+	padding: 6px 15px;
 	font-family: $ff;
 	font-weight: $fw-regular;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 22px;
 	text-transform: uppercase;
 	text-align: center;
@@ -11,7 +11,6 @@
 	background: $white;
 	box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
 	cursor: pointer;
-	white-space: nowrap;
 	transition: background ease $tr,
 				color ease $tr;
 
@@ -26,7 +25,6 @@
 	}
 
 	&.tab {
-		width: 155px;
 		font-size: 14px;
 		line-height: 18px;
 		text-align: center;

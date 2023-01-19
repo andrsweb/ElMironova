@@ -131,6 +131,10 @@
 			border-radius: 0;
 			border-style: none;
 
+			&::placeholder {
+				color: $dark;
+			}
+
 			@media all and (min-width: $md) {
 				margin: 0 18px 0 0;
 			}
@@ -151,7 +155,7 @@
 		background: $bg;
 		color: $white;
 		font-weight: $fw-bold;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 18px;
 		padding: 9.5px 26px 9.5px 26px;
 		transition: opacity ease $tr;

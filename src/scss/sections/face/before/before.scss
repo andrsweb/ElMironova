@@ -163,6 +163,11 @@
 		}
 	}
 
+	.before-btn-wrapp {
+		display: flex;
+		justify-content: center;
+	}
+
 	& .before-next {
 		top: 50%;
 		right: 5%;
@@ -193,11 +198,9 @@
 	}
 
 	.hero-link {
+		display: inline-block;
 		font-size: 12px;
-		white-space:normal;
-		max-width: 457px;
 		margin-top: 50px;
-		height: 47px;
 
 		@media all and (min-width: $md) {
 			font-size: 16px;

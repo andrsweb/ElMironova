@@ -37,13 +37,9 @@
 
 	&-item {
 		font-weight: 400;
-		font-size: 12px;
+		font-size: 16px;
 		line-height: 21px;
 		color: $black;
-
-		@media all and (min-width: 576px) {
-			font-size: 16px;
-		}
 	}
 
 	&-info {
@@ -86,7 +82,7 @@
 	}
 
 	.button {
-		width: 100%;
-		max-width: 345px;
+		padding: 8px 20px;
+		font-size: 18px;
 	}
 }

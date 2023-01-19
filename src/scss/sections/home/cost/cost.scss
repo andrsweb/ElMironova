@@ -31,12 +31,4 @@
 		justify-content: center;
 		align-items: center;
 	}
-
-	.button {
-
-		@media all and (min-width: $sm) {
-			width: 100%;
-			max-width: 345px;
-		}
-	}
 }

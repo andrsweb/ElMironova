@@ -33,12 +33,10 @@
 	}
 
 	.slide-link {
+		padding: 15.5px 15px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
-		max-width: 297px;
-		height: 47px;
 		white-space: nowrap;
 	}
 }
@@ -130,6 +128,7 @@
 .surgeon-slider .slide-link {
 	position: static;
 	text-align: center;
+	font-size: 15px;
 
 	&-wrapper {
 		display: flex;
