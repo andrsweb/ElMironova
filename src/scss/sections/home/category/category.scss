@@ -24,61 +24,22 @@
 		width: calc( 100% / 1 );
 		margin-bottom: 30px;
 		height: 400px;
-		z-index: 0;
 
-		&:first-child {
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 50%;
-				transform: translateX( -50% );
-				width: 300px;
-				height: 400px;
-				display: block;
-				background-image: url( '../img/home/category/face.png');
-				background-repeat: no-repeat;
-				background-size: cover;
-				border-radius: $bord;
-				z-index: -1;
-			}
+		span {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX( -50% );
+			width: 300px;
+			height: 400px;
+			display: block;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: $bord;
+			background-position: center;
 		}
 
-		&:nth-child(2) {
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 50%;
-				transform: translateX( -50% );
-				width: 300px;
-				height: 400px;
-				display: block;
-				background-image: url( '../img/home/category/bust.png');
-				background-repeat: no-repeat;
-				background-size: cover;
-				border-radius: $bord;
-				z-index: -1;
-			}
-		}
-
-		&:nth-child(3) {
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 50%;
-				transform: translateX( -50% );
-				width: 300px;
-				height: 400px;
-				display: block;
-				background-image: url( '../img/home/category/body.png');
-				background-repeat: no-repeat;
-				background-size: cover;
-				border-radius: $bord;
-				z-index: -1;
-			}
-		}
+	
 
 		@media all and (min-width: $sm) {
 			padding: 0 -20px;
