@@ -39,8 +39,6 @@
 			background-position: center;
 		}
 
-	
-
 		@media all and (min-width: $sm) {
 			padding: 0 -20px;
 		}
@@ -57,6 +55,7 @@
 	}
 
 	&-links {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -70,6 +69,7 @@
 	}
 
 	&-inner {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -83,29 +83,50 @@
 		height: 100%;
 		border-radius: $bord;
 		transition: background ease $tr;
-		cursor: pointer;
 
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transition: height ease $tr;
+
+			@media all and (min-width: $xl) {
+				display: none;
+			}
+		}
+		
 		&:hover {
-		background: rgba(186, 165, 134, 0.9);
+			background: rgba(186, 165, 134, 0.9);
 
-			.category-links .category-text {
-				animation: show 1s ease forwards;
+			&::after {
+				height: 0;
+				z-index: 1;
+			}
 
-				@keyframes show {
-					0% {
-						height: 0;
-						transform: translateY( 1000%);
-						visibility: hidden;
-					}
+			.category-links {
 
-					100% {
-						visibility: visible;
-						transform: translateY(0);
-						height: 100%;
-						opacity: 1;
+				.category-text {
+					animation: show 1s ease forwards;
+	
+					@keyframes show {
+						0% {
+							height: 0;
+							transform: translateY( 1000%);
+							visibility: hidden;
+						}
+	
+						100% {
+							visibility: visible;
+							transform: translateY(0);
+							height: 100%;
+							opacity: 1;
+						}
 					}
 				}
-			}
+			} 
 		}
 	}
 
