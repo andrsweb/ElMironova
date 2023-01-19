@@ -1,14 +1,4 @@
 .hero {
-
-	.hero-block {
-		position: relative;
-	
-		@media all and (min-width: $md) {
-			position: absolute;
-			bottom: 0;
-		}
-	}
-
 	h1 {
 		margin-bottom: 10px;
 	}

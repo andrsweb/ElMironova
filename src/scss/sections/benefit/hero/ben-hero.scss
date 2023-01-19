@@ -6,14 +6,35 @@
 
 	.hero-img {
 		object-position: top;
+		height: 500px;
+
+		@media all and (min-width: $sm) {
+			height: 600px;
+		}
+
+		@media all and (min-width: $lg) {
+			height: 650px;
+		}
+
+		@media all and (min-width: $xl) {
+			height: calc( 100vh - 67px );
+		}
 	}
 
 	.hero-block {
-		position: relative;
 	
 		@media all and (min-width: $md) {
 			position: absolute;
 			bottom: 0;
+			max-width: 750px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 920px;
+		}
+
+		@media all and (min-width: $xl) {
+			max-width: 1040px;
 		}
 	}
 

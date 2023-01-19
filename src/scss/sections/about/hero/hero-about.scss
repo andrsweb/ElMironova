@@ -1,12 +1,5 @@
 .about {
 	.hero-block {
-		position: relative;
-
-		@media all and (min-width: $md) {
-			position: absolute;
-			bottom: 0;
-		}
-
 		@media all and (min-width: $xl) {
 			padding: 40px 0;
 		}

@@ -4,15 +4,6 @@
 		object-position: top;
 	}
 
-	.hero-block {
-		position: relative;
-
-		@media all and (min-width: $md) {
-			position: absolute;
-			bottom: 0;
-		}
-	}
-
 	.hero-link {
 		max-width: 322px;
 		font-size: 15px;

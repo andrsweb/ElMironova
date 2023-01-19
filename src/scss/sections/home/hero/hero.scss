@@ -4,12 +4,12 @@
 
 	&-img {
 		width: 100%;
-		height: 200px;
+		height: 350px;
 		object-fit: cover;
 		object-position: top;
 		border-radius: 0;
 
-		@media all and (min-width: $m) {
+		@media all and (min-width: $sm) {
 			height: 350px;
 		}
 
@@ -30,22 +30,52 @@
 		max-width: 1240px;
 	}
 
-	&-wrapper {
-		box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.15);
-	}
-
 	&-block {
-		position: relative;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX( -50% );
 		background:rgba(186, 165, 134, 0.862745098);
 		padding: 15px 0 10px;
-		max-width: 1040px;
+		max-width: 300px;
+
+		&::before, &::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			height: 50%;
+			width: calc( (100vw - 100%) / 2 );
+			background: $white;
+		}
+
+		&::before {
+			left: 100%;
+		}
+
+		&::after {
+			right: 100%;
+		}
+
+		@media all and (min-width: 390px) {
+			max-width: 370px;
+		}
+
+		@media all and (min-width: 480px) {
+			max-width: 430px;
+		}
 
 		@media all and (min-width: $md) {
 			padding: 25px 0 20px;
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			transform: translateX( -50% );
+			max-width: 700px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 920px;
+		}
+
+		@media all and (min-width: $xl) {
+			max-width: 1040px;
 		}
 
 		h1 {
