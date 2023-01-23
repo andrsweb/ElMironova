@@ -1,19 +1,31 @@
 .about {
 	.hero-block {
 		@media all and (min-width: $xl) {
-			padding: 40px 0;
+			padding: 10px 0;
+		}
+
+		&-inner {
+			padding: 0 10px;
 		}
 	}
 
-	h5 {
-		font-size: 15px;
-		font-weight: $fw-light;
-		text-transform: none;
-		margin-bottom: 5px;
-		padding: 0 10px;
+	.hero-img {
+		height: 500px;
+
+		@media all and (min-width: $m) {
+			height: 600px;
+		}
 
 		@media all and (min-width: $md) {
-			font-size: 22px;
+			// height: 500px;
+		}
+
+		@media all and (min-width: $lg) {
+			height: 650px;
+		}
+
+		@media all and (min-width: $xl) {
+			height: calc( 100vh - 67px );
 		}
 	}
 
@@ -25,7 +37,7 @@
 		color: $white;
 
 		@media all and (min-width: $md) {
-			font-size: 22px;
+			font-size: 26px;
 		}
 	}
 
