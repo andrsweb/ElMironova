@@ -152,9 +152,19 @@
 		border-bottom: 1px solid #6e6e6e;
 		padding-bottom: 20px;
 
+		@media all and (min-width: $xl) {
+			font-size: 24px;
+		}
+
 		&::before {
 			display: none;
 		}
+	}
+
+	&-text, &-name {
+		@media all and (min-width: $xl) {
+			font-size: 25px;
+		}	
 	}
 
 	.examples-box {
@@ -399,7 +409,7 @@
 .swiper-prev, .swiper-next {
 	display: none;
 
-	@media all and (min-width: $md) {
+	@media all and (min-width: $xl) {
 		display: block;
 	}
 }
