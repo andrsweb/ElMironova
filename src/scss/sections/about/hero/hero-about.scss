@@ -16,10 +16,6 @@
 			height: 600px;
 		}
 
-		@media all and (min-width: $md) {
-			// height: 500px;
-		}
-
 		@media all and (min-width: $lg) {
 			height: 650px;
 		}
@@ -42,6 +38,7 @@
 	}
 
 	.hero-text {
+		display: none;
 		font-weight: $fw-light;
 		font-size: 15px;
 		line-height: 23px;
@@ -50,11 +47,14 @@
 		padding: 0 10px;
 
 		@media all and (min-width: $md) {
+			display: block;
 			font-size: 18px;
 		}
 	}
 }
 
 .about .hero-img {
-	object-position: 100% 20%;
+	@media all and (min-width: $md) {
+		object-position: 100% 20%;
+	}
 }

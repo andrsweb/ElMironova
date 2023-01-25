@@ -44,10 +44,9 @@ const submitForm = selector => {
 						form.innerHTML = request.response.message
 						setTimeout(() => {
 							window.location.href = 'thankyou.html'
-						}, 2000);
-							
-						
-						if( isRedirect ) location.href = '/thanks.html'
+						}, 1000);
+
+						if( isRedirтect ) location.href = '/thanks.html'
 					}	else {	// If error.
 						formResponse.classList.remove( 'success' )
 						formResponse.classList.add( 'error' )
