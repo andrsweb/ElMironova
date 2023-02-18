@@ -46,7 +46,7 @@ const submitForm = selector => {
 							window.location.href = 'thankyou.html'
 						}, 1000);
 
-						if( isRedirтect ) location.href = '/thanks.html'
+						if( isRedirect ) location.href = 'thankyou-wa-grud.html'
 					}	else {	// If error.
 						formResponse.classList.remove( 'success' )
 						formResponse.classList.add( 'error' )
